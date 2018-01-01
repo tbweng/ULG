@@ -1,0 +1,886 @@
+16.5288 	WARNING 	User requested fullscreen with size [1440  900], but screen is actually [1680, 1050]. Using actual size
+17.2533 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x13617abe0>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x136190e80>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([3360, 2100]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+17.2534 	EXP 	window1: recordFrameIntervals = False
+17.4195 	EXP 	window1: recordFrameIntervals = True
+17.6031 	EXP 	window1: recordFrameIntervals = False
+18.1639 	EXP 	Created preinstruct_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='preinstruct_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Money Task - Scanner 1', units='height', win=Window(...), wrapWidth=1)
+18.2257 	EXP 	Created instructFig = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='images/MID_instructions.bmp', interpolate=True, mask=None, maskParams=None, name='instructFig', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.3, 1. ]), texRes=128, units='height', win=Window(...))
+18.2275 	EXP 	Created PrepFixation = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='PrepFixation', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.2292 	EXP 	Created cueImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='cueImage', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.3, 1. ]), texRes=128, units='height', win=Window(...))
+18.2307 	EXP 	Created fixation = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='fixation', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.2324 	EXP 	Created Target = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Target', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.3, 1. ]), texRes=128, units='height', win=Window(...))
+18.2427 	EXP 	Created feedbackMsg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feedbackMsg', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=2)
+18.2444 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.2513 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.07, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+18.2527 	EXP 	Created polygon2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='polygon2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+18.2695 	EXP 	preinstruct_text: autoDraw = True
+20.3241 	EXP 	preinstruct_text: autoDraw = False
+20.3241 	EXP 	instructFig: autoDraw = True
+23.1085 	DATA 	Keypress: 5
+23.1534 	EXP 	instructFig: autoDraw = False
+23.1534 	EXP 	PrepFixation: autoDraw = True
+25.1383 	EXP 	Imported TimeVersion2.csv as conditions, 50 conditions, 2 params
+25.1388 	EXP 	Created sequence: sequential, trialTypes=50, nReps=1, seed=None
+25.1391 	EXP 	New trial (rep=0, index=0): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 4000)])
+25.1725 	EXP 	PrepFixation: autoDraw = False
+25.1725 	EXP 	PrepFixation: autoDraw = False
+25.1725 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+25.1725 	EXP 	cueImage: autoDraw = True
+27.1870 	EXP 	cueImage: autoDraw = False
+27.1870 	EXP 	fixation: autoDraw = True
+31.2074 	EXP 	fixation: autoDraw = False
+31.2074 	EXP 	fixation: autoDraw = False
+31.2074 	EXP 	Target: image = 'images/WinProbe.bmp'
+31.2074 	EXP 	Target: autoDraw = True
+31.4414 	DATA 	Keypress: 1
+31.5716 	EXP 	Target: autoDraw = False
+31.5716 	EXP 	Target: autoDraw = False
+31.5716 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $0.20!'
+31.5716 	EXP 	feedbackMsg: autoDraw = True
+33.1899 	EXP 	New trial (rep=0, index=1): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 1500)])
+33.2095 	EXP 	feedbackMsg: autoDraw = False
+33.2095 	EXP 	feedbackMsg: autoDraw = False
+33.2095 	EXP 	cueImage: image = 'images/Neutral.bmp'
+33.2095 	EXP 	cueImage: autoDraw = True
+35.2386 	EXP 	cueImage: autoDraw = False
+35.2386 	EXP 	cueImage: autoDraw = False
+35.2386 	EXP 	fixation: autoDraw = True
+36.7427 	EXP 	fixation: autoDraw = False
+36.7427 	EXP 	fixation: autoDraw = False
+36.7427 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+36.7427 	EXP 	Target: autoDraw = True
+37.0257 	DATA 	Keypress: 1
+37.1049 	EXP 	Target: autoDraw = False
+37.1049 	EXP 	Target: autoDraw = False
+37.1049 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not win or lose anything!'
+37.1049 	EXP 	feedbackMsg: autoDraw = True
+38.7243 	EXP 	New trial (rep=0, index=2): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 3000)])
+38.7559 	EXP 	feedbackMsg: autoDraw = False
+38.7559 	EXP 	feedbackMsg: autoDraw = False
+38.7559 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+38.7559 	EXP 	cueImage: autoDraw = True
+40.7724 	EXP 	cueImage: autoDraw = False
+40.7724 	EXP 	cueImage: autoDraw = False
+40.7724 	EXP 	fixation: autoDraw = True
+43.7892 	EXP 	fixation: autoDraw = False
+43.7892 	EXP 	fixation: autoDraw = False
+43.7892 	EXP 	Target: image = 'images/WinProbe.bmp'
+43.7892 	EXP 	Target: autoDraw = True
+44.0587 	DATA 	Keypress: 1
+44.1396 	EXP 	Target: autoDraw = False
+44.1396 	EXP 	Target: autoDraw = False
+44.1396 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $0.20!'
+44.1396 	EXP 	feedbackMsg: autoDraw = True
+45.7750 	EXP 	New trial (rep=0, index=3): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 1500)])
+45.8063 	EXP 	feedbackMsg: autoDraw = False
+45.8063 	EXP 	feedbackMsg: autoDraw = False
+45.8063 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+45.8063 	EXP 	cueImage: autoDraw = True
+47.8234 	EXP 	cueImage: autoDraw = False
+47.8234 	EXP 	cueImage: autoDraw = False
+47.8234 	EXP 	fixation: autoDraw = True
+49.3278 	EXP 	fixation: autoDraw = False
+49.3278 	EXP 	fixation: autoDraw = False
+49.3278 	EXP 	Target: image = 'images/LoseProbe.bmp'
+49.3278 	EXP 	Target: autoDraw = True
+49.5772 	DATA 	Keypress: 1
+49.6742 	EXP 	Target: autoDraw = False
+49.6742 	EXP 	Target: autoDraw = False
+49.6742 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $0.20!'
+49.6742 	EXP 	feedbackMsg: autoDraw = True
+51.3091 	EXP 	New trial (rep=0, index=4): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 1500)])
+51.3406 	EXP 	feedbackMsg: autoDraw = False
+51.3406 	EXP 	feedbackMsg: autoDraw = False
+51.3406 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+51.3406 	EXP 	cueImage: autoDraw = True
+53.3576 	EXP 	cueImage: autoDraw = False
+53.3576 	EXP 	cueImage: autoDraw = False
+53.3576 	EXP 	fixation: autoDraw = True
+54.8582 	EXP 	fixation: autoDraw = False
+54.8582 	EXP 	fixation: autoDraw = False
+54.8582 	EXP 	Target: image = 'images/LoseProbe.bmp'
+54.8582 	EXP 	Target: autoDraw = True
+55.1579 	EXP 	Target: autoDraw = False
+55.1579 	EXP 	Target: autoDraw = False
+55.1579 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou lost $5.00!'
+55.1579 	EXP 	feedbackMsg: autoDraw = True
+55.1776 	DATA 	Keypress: 1
+56.8433 	EXP 	New trial (rep=0, index=5): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 1500)])
+56.8600 	EXP 	feedbackMsg: autoDraw = False
+56.8600 	EXP 	feedbackMsg: autoDraw = False
+56.8600 	EXP 	cueImage: image = 'images/Neutral.bmp'
+56.8600 	EXP 	cueImage: autoDraw = True
+58.8917 	EXP 	cueImage: autoDraw = False
+58.8917 	EXP 	cueImage: autoDraw = False
+58.8917 	EXP 	fixation: autoDraw = True
+60.3927 	EXP 	fixation: autoDraw = False
+60.3927 	EXP 	fixation: autoDraw = False
+60.3927 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+60.3927 	EXP 	Target: autoDraw = True
+60.6284 	DATA 	Keypress: 1
+60.6918 	EXP 	Target: autoDraw = False
+60.6918 	EXP 	Target: autoDraw = False
+60.6918 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not win or lose anything!'
+60.6918 	EXP 	feedbackMsg: autoDraw = True
+62.3772 	EXP 	New trial (rep=0, index=6): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 1500)])
+62.3941 	EXP 	feedbackMsg: autoDraw = False
+62.3941 	EXP 	feedbackMsg: autoDraw = False
+62.3941 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+62.3941 	EXP 	cueImage: autoDraw = True
+64.4253 	EXP 	cueImage: autoDraw = False
+64.4253 	EXP 	cueImage: autoDraw = False
+64.4253 	EXP 	fixation: autoDraw = True
+65.9263 	EXP 	fixation: autoDraw = False
+65.9263 	EXP 	fixation: autoDraw = False
+65.9263 	EXP 	Target: image = 'images/LoseProbe.bmp'
+65.9263 	EXP 	Target: autoDraw = True
+66.1635 	DATA 	Keypress: 1
+66.2261 	EXP 	Target: autoDraw = False
+66.2261 	EXP 	Target: autoDraw = False
+66.2261 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $0.20!'
+66.2261 	EXP 	feedbackMsg: autoDraw = True
+67.9103 	EXP 	New trial (rep=0, index=7): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 2000)])
+67.9267 	EXP 	feedbackMsg: autoDraw = False
+67.9267 	EXP 	feedbackMsg: autoDraw = False
+67.9267 	EXP 	cueImage: image = 'images/Neutral.bmp'
+67.9267 	EXP 	cueImage: autoDraw = True
+69.9601 	EXP 	cueImage: autoDraw = False
+69.9601 	EXP 	cueImage: autoDraw = False
+69.9601 	EXP 	fixation: autoDraw = True
+71.9610 	EXP 	fixation: autoDraw = False
+71.9610 	EXP 	fixation: autoDraw = False
+71.9610 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+71.9610 	EXP 	Target: autoDraw = True
+72.2563 	DATA 	Keypress: 1
+72.2758 	EXP 	Target: autoDraw = False
+72.2758 	EXP 	Target: autoDraw = False
+72.2758 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win or lose anything!'
+72.2758 	EXP 	feedbackMsg: autoDraw = True
+73.9454 	EXP 	New trial (rep=0, index=8): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 2500)])
+73.9785 	EXP 	feedbackMsg: autoDraw = False
+73.9785 	EXP 	feedbackMsg: autoDraw = False
+73.9785 	EXP 	cueImage: image = 'images/WinBig.bmp'
+73.9785 	EXP 	cueImage: autoDraw = True
+75.9943 	EXP 	cueImage: autoDraw = False
+75.9943 	EXP 	cueImage: autoDraw = False
+75.9943 	EXP 	fixation: autoDraw = True
+78.5131 	EXP 	fixation: autoDraw = False
+78.5131 	EXP 	fixation: autoDraw = False
+78.5131 	EXP 	Target: image = 'images/WinProbe.bmp'
+78.5131 	EXP 	Target: autoDraw = True
+78.7141 	DATA 	Keypress: 1
+78.8107 	EXP 	Target: autoDraw = False
+78.8107 	EXP 	Target: autoDraw = False
+78.8107 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $5.00!'
+78.8107 	EXP 	feedbackMsg: autoDraw = True
+80.4953 	EXP 	New trial (rep=0, index=9): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 2500)])
+80.5112 	EXP 	feedbackMsg: autoDraw = False
+80.5112 	EXP 	feedbackMsg: autoDraw = False
+80.5112 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+80.5112 	EXP 	cueImage: autoDraw = True
+82.5445 	EXP 	cueImage: autoDraw = False
+82.5445 	EXP 	cueImage: autoDraw = False
+82.5445 	EXP 	fixation: autoDraw = True
+85.0449 	EXP 	fixation: autoDraw = False
+85.0449 	EXP 	fixation: autoDraw = False
+85.0449 	EXP 	Target: image = 'images/LoseProbe.bmp'
+85.0449 	EXP 	Target: autoDraw = True
+85.2483 	DATA 	Keypress: 1
+85.3128 	EXP 	Target: autoDraw = False
+85.3128 	EXP 	Target: autoDraw = False
+85.3128 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $5.00!'
+85.3128 	EXP 	feedbackMsg: autoDraw = True
+87.0137 	EXP 	New trial (rep=0, index=10): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 3000)])
+87.0304 	EXP 	feedbackMsg: autoDraw = False
+87.0304 	EXP 	feedbackMsg: autoDraw = False
+87.0304 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+87.0304 	EXP 	cueImage: autoDraw = True
+89.0617 	EXP 	cueImage: autoDraw = False
+89.0617 	EXP 	cueImage: autoDraw = False
+89.0617 	EXP 	fixation: autoDraw = True
+92.0627 	EXP 	fixation: autoDraw = False
+92.0627 	EXP 	fixation: autoDraw = False
+92.0627 	EXP 	Target: image = 'images/LoseProbe.bmp'
+92.0627 	EXP 	Target: autoDraw = True
+92.3278 	DATA 	Keypress: 1
+92.3453 	EXP 	Target: autoDraw = False
+92.3453 	EXP 	Target: autoDraw = False
+92.3453 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou lost $0.20!'
+92.3453 	EXP 	feedbackMsg: autoDraw = True
+94.0315 	EXP 	New trial (rep=0, index=11): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 2000)])
+94.0623 	EXP 	feedbackMsg: autoDraw = False
+94.0623 	EXP 	feedbackMsg: autoDraw = False
+94.0623 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+94.0623 	EXP 	cueImage: autoDraw = True
+96.0799 	EXP 	cueImage: autoDraw = False
+96.0799 	EXP 	cueImage: autoDraw = False
+96.0799 	EXP 	fixation: autoDraw = True
+98.0797 	EXP 	fixation: autoDraw = False
+98.0797 	EXP 	fixation: autoDraw = False
+98.0797 	EXP 	Target: image = 'images/WinProbe.bmp'
+98.0797 	EXP 	Target: autoDraw = True
+98.3603 	DATA 	Keypress: 1
+98.3797 	EXP 	Target: autoDraw = False
+98.3797 	EXP 	Target: autoDraw = False
+98.3797 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win $0.20!'
+98.3797 	EXP 	feedbackMsg: autoDraw = True
+100.0653 	EXP 	New trial (rep=0, index=12): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 4000)])
+100.0821 	EXP 	feedbackMsg: autoDraw = False
+100.0821 	EXP 	feedbackMsg: autoDraw = False
+100.0821 	EXP 	cueImage: image = 'images/Neutral.bmp'
+100.0821 	EXP 	cueImage: autoDraw = True
+102.1130 	EXP 	cueImage: autoDraw = False
+102.1130 	EXP 	cueImage: autoDraw = False
+102.1130 	EXP 	fixation: autoDraw = True
+106.1154 	EXP 	fixation: autoDraw = False
+106.1154 	EXP 	fixation: autoDraw = False
+106.1154 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+106.1154 	EXP 	Target: autoDraw = True
+106.3336 	DATA 	Keypress: 1
+106.4147 	EXP 	Target: autoDraw = False
+106.4147 	EXP 	Target: autoDraw = False
+106.4147 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not win or lose anything!'
+106.4147 	EXP 	feedbackMsg: autoDraw = True
+108.0991 	EXP 	New trial (rep=0, index=13): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 2000)])
+108.1310 	EXP 	feedbackMsg: autoDraw = False
+108.1310 	EXP 	feedbackMsg: autoDraw = False
+108.1310 	EXP 	cueImage: image = 'images/WinBig.bmp'
+108.1310 	EXP 	cueImage: autoDraw = True
+110.1486 	EXP 	cueImage: autoDraw = False
+110.1486 	EXP 	cueImage: autoDraw = False
+110.1486 	EXP 	fixation: autoDraw = True
+112.1655 	EXP 	fixation: autoDraw = False
+112.1655 	EXP 	fixation: autoDraw = False
+112.1655 	EXP 	Target: image = 'images/WinProbe.bmp'
+112.1655 	EXP 	Target: autoDraw = True
+112.4465 	DATA 	Keypress: 1
+112.4641 	EXP 	Target: autoDraw = False
+112.4641 	EXP 	Target: autoDraw = False
+112.4641 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win $5.00!'
+112.4641 	EXP 	feedbackMsg: autoDraw = True
+114.1338 	EXP 	New trial (rep=0, index=14): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 3000)])
+114.1649 	EXP 	feedbackMsg: autoDraw = False
+114.1649 	EXP 	feedbackMsg: autoDraw = False
+114.1649 	EXP 	cueImage: image = 'images/WinBig.bmp'
+114.1649 	EXP 	cueImage: autoDraw = True
+116.1819 	EXP 	cueImage: autoDraw = False
+116.1819 	EXP 	cueImage: autoDraw = False
+116.1819 	EXP 	fixation: autoDraw = True
+119.1993 	EXP 	fixation: autoDraw = False
+119.1993 	EXP 	fixation: autoDraw = False
+119.1993 	EXP 	Target: image = 'images/WinProbe.bmp'
+119.1993 	EXP 	Target: autoDraw = True
+119.4357 	DATA 	Keypress: 1
+119.4992 	EXP 	Target: autoDraw = False
+119.4992 	EXP 	Target: autoDraw = False
+119.4992 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $5.00!'
+119.4992 	EXP 	feedbackMsg: autoDraw = True
+121.1849 	EXP 	New trial (rep=0, index=15): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 1500)])
+121.2016 	EXP 	feedbackMsg: autoDraw = False
+121.2016 	EXP 	feedbackMsg: autoDraw = False
+121.2016 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+121.2016 	EXP 	cueImage: autoDraw = True
+123.2336 	EXP 	cueImage: autoDraw = False
+123.2336 	EXP 	cueImage: autoDraw = False
+123.2336 	EXP 	fixation: autoDraw = True
+124.7338 	EXP 	fixation: autoDraw = False
+124.7338 	EXP 	fixation: autoDraw = False
+124.7338 	EXP 	Target: image = 'images/LoseProbe.bmp'
+124.7338 	EXP 	Target: autoDraw = True
+125.0308 	DATA 	Keypress: 1
+125.0496 	EXP 	Target: autoDraw = False
+125.0496 	EXP 	Target: autoDraw = False
+125.0496 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou lost $0.20!'
+125.0496 	EXP 	feedbackMsg: autoDraw = True
+126.7188 	EXP 	New trial (rep=0, index=16): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 1500)])
+126.7675 	EXP 	feedbackMsg: autoDraw = False
+126.7675 	EXP 	feedbackMsg: autoDraw = False
+126.7675 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+126.7675 	EXP 	cueImage: autoDraw = True
+128.7666 	EXP 	cueImage: autoDraw = False
+128.7666 	EXP 	cueImage: autoDraw = False
+128.7666 	EXP 	fixation: autoDraw = True
+130.2839 	EXP 	fixation: autoDraw = False
+130.2839 	EXP 	fixation: autoDraw = False
+130.2839 	EXP 	Target: image = 'images/WinProbe.bmp'
+130.2839 	EXP 	Target: autoDraw = True
+130.5215 	DATA 	Keypress: 1
+130.6337 	EXP 	Target: autoDraw = False
+130.6337 	EXP 	Target: autoDraw = False
+130.6337 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $0.20!'
+130.6337 	EXP 	feedbackMsg: autoDraw = True
+132.2697 	EXP 	New trial (rep=0, index=17): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 1500)])
+132.3008 	EXP 	feedbackMsg: autoDraw = False
+132.3008 	EXP 	feedbackMsg: autoDraw = False
+132.3008 	EXP 	cueImage: image = 'images/WinBig.bmp'
+132.3008 	EXP 	cueImage: autoDraw = True
+134.3179 	EXP 	cueImage: autoDraw = False
+134.3179 	EXP 	cueImage: autoDraw = False
+134.3179 	EXP 	fixation: autoDraw = True
+135.8344 	EXP 	fixation: autoDraw = False
+135.8344 	EXP 	fixation: autoDraw = False
+135.8344 	EXP 	Target: image = 'images/WinProbe.bmp'
+135.8344 	EXP 	Target: autoDraw = True
+136.0378 	DATA 	Keypress: 1
+136.1842 	EXP 	Target: autoDraw = False
+136.1842 	EXP 	Target: autoDraw = False
+136.1842 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $5.00!'
+136.1842 	EXP 	feedbackMsg: autoDraw = True
+137.8204 	EXP 	New trial (rep=0, index=18): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 2000)])
+137.8370 	EXP 	feedbackMsg: autoDraw = False
+137.8370 	EXP 	feedbackMsg: autoDraw = False
+137.8370 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+137.8370 	EXP 	cueImage: autoDraw = True
+139.8686 	EXP 	cueImage: autoDraw = False
+139.8686 	EXP 	cueImage: autoDraw = False
+139.8686 	EXP 	fixation: autoDraw = True
+141.8695 	EXP 	fixation: autoDraw = False
+141.8695 	EXP 	fixation: autoDraw = False
+141.8695 	EXP 	Target: image = 'images/LoseProbe.bmp'
+141.8695 	EXP 	Target: autoDraw = True
+142.1057 	DATA 	Keypress: 1
+142.2186 	EXP 	Target: autoDraw = False
+142.2186 	EXP 	Target: autoDraw = False
+142.2186 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $0.20!'
+142.2186 	EXP 	feedbackMsg: autoDraw = True
+143.8544 	EXP 	New trial (rep=0, index=19): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 1500)])
+143.8861 	EXP 	feedbackMsg: autoDraw = False
+143.8861 	EXP 	feedbackMsg: autoDraw = False
+143.8861 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+143.8861 	EXP 	cueImage: autoDraw = True
+145.9030 	EXP 	cueImage: autoDraw = False
+145.9030 	EXP 	cueImage: autoDraw = False
+145.9030 	EXP 	fixation: autoDraw = True
+147.4203 	EXP 	fixation: autoDraw = False
+147.4203 	EXP 	fixation: autoDraw = False
+147.4203 	EXP 	Target: image = 'images/WinProbe.bmp'
+147.4203 	EXP 	Target: autoDraw = True
+147.7522 	EXP 	Target: autoDraw = False
+147.7522 	EXP 	Target: autoDraw = False
+147.7522 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win $0.20!'
+147.7522 	EXP 	feedbackMsg: autoDraw = True
+147.7558 	DATA 	Keypress: 1
+149.4052 	EXP 	New trial (rep=0, index=20): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 1500)])
+149.4227 	EXP 	feedbackMsg: autoDraw = False
+149.4227 	EXP 	feedbackMsg: autoDraw = False
+149.4227 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+149.4227 	EXP 	cueImage: autoDraw = True
+151.4534 	EXP 	cueImage: autoDraw = False
+151.4534 	EXP 	cueImage: autoDraw = False
+151.4534 	EXP 	fixation: autoDraw = True
+152.9540 	EXP 	fixation: autoDraw = False
+152.9540 	EXP 	fixation: autoDraw = False
+152.9540 	EXP 	Target: image = 'images/LoseProbe.bmp'
+152.9540 	EXP 	Target: autoDraw = True
+153.1727 	DATA 	Keypress: 1
+153.2714 	EXP 	Target: autoDraw = False
+153.2714 	EXP 	Target: autoDraw = False
+153.2714 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $5.00!'
+153.2714 	EXP 	feedbackMsg: autoDraw = True
+154.9392 	EXP 	New trial (rep=0, index=21): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 3500)])
+154.9725 	EXP 	feedbackMsg: autoDraw = False
+154.9725 	EXP 	feedbackMsg: autoDraw = False
+154.9725 	EXP 	cueImage: image = 'images/WinBig.bmp'
+154.9725 	EXP 	cueImage: autoDraw = True
+156.9877 	EXP 	cueImage: autoDraw = False
+156.9877 	EXP 	cueImage: autoDraw = False
+156.9877 	EXP 	fixation: autoDraw = True
+160.5214 	EXP 	fixation: autoDraw = False
+160.5214 	EXP 	fixation: autoDraw = False
+160.5214 	EXP 	Target: image = 'images/WinProbe.bmp'
+160.5214 	EXP 	Target: autoDraw = True
+160.7242 	DATA 	Keypress: 1
+160.8376 	EXP 	Target: autoDraw = False
+160.8376 	EXP 	Target: autoDraw = False
+160.8376 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $5.00!'
+160.8376 	EXP 	feedbackMsg: autoDraw = True
+162.4903 	EXP 	New trial (rep=0, index=22): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 3500)])
+162.5071 	EXP 	feedbackMsg: autoDraw = False
+162.5071 	EXP 	feedbackMsg: autoDraw = False
+162.5071 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+162.5071 	EXP 	cueImage: autoDraw = True
+164.5381 	EXP 	cueImage: autoDraw = False
+164.5381 	EXP 	cueImage: autoDraw = False
+164.5381 	EXP 	fixation: autoDraw = True
+168.0398 	EXP 	fixation: autoDraw = False
+168.0398 	EXP 	fixation: autoDraw = False
+168.0398 	EXP 	Target: image = 'images/LoseProbe.bmp'
+168.0398 	EXP 	Target: autoDraw = True
+168.2420 	DATA 	Keypress: 1
+168.3225 	EXP 	Target: autoDraw = False
+168.3225 	EXP 	Target: autoDraw = False
+168.3225 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $5.00!'
+168.3225 	EXP 	feedbackMsg: autoDraw = True
+170.0246 	EXP 	New trial (rep=0, index=23): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 1500)])
+170.0573 	EXP 	feedbackMsg: autoDraw = False
+170.0573 	EXP 	feedbackMsg: autoDraw = False
+170.0573 	EXP 	cueImage: image = 'images/WinBig.bmp'
+170.0573 	EXP 	cueImage: autoDraw = True
+172.0730 	EXP 	cueImage: autoDraw = False
+172.0730 	EXP 	cueImage: autoDraw = False
+172.0730 	EXP 	fixation: autoDraw = True
+173.5934 	EXP 	fixation: autoDraw = False
+173.5934 	EXP 	fixation: autoDraw = False
+173.5934 	EXP 	Target: image = 'images/WinProbe.bmp'
+173.5934 	EXP 	Target: autoDraw = True
+173.8103 	DATA 	Keypress: 1
+173.8741 	EXP 	Target: autoDraw = False
+173.8741 	EXP 	Target: autoDraw = False
+173.8741 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $5.00!'
+173.8741 	EXP 	feedbackMsg: autoDraw = True
+175.5750 	EXP 	New trial (rep=0, index=24): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 2000)])
+175.5920 	EXP 	feedbackMsg: autoDraw = False
+175.5920 	EXP 	feedbackMsg: autoDraw = False
+175.5920 	EXP 	cueImage: image = 'images/Neutral.bmp'
+175.5920 	EXP 	cueImage: autoDraw = True
+177.6237 	EXP 	cueImage: autoDraw = False
+177.6237 	EXP 	cueImage: autoDraw = False
+177.6237 	EXP 	fixation: autoDraw = True
+179.6231 	EXP 	fixation: autoDraw = False
+179.6231 	EXP 	fixation: autoDraw = False
+179.6231 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+179.6231 	EXP 	Target: autoDraw = True
+179.8271 	DATA 	Keypress: 1
+179.9240 	EXP 	Target: autoDraw = False
+179.9240 	EXP 	Target: autoDraw = False
+179.9240 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not win or lose anything!'
+179.9240 	EXP 	feedbackMsg: autoDraw = True
+181.6097 	EXP 	New trial (rep=0, index=25): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 2500)])
+181.6263 	EXP 	feedbackMsg: autoDraw = False
+181.6263 	EXP 	feedbackMsg: autoDraw = False
+181.6263 	EXP 	cueImage: image = 'images/Neutral.bmp'
+181.6263 	EXP 	cueImage: autoDraw = True
+183.6578 	EXP 	cueImage: autoDraw = False
+183.6578 	EXP 	cueImage: autoDraw = False
+183.6578 	EXP 	fixation: autoDraw = True
+186.1585 	EXP 	fixation: autoDraw = False
+186.1585 	EXP 	fixation: autoDraw = False
+186.1585 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+186.1585 	EXP 	Target: autoDraw = True
+186.3615 	DATA 	Keypress: 1
+186.4408 	EXP 	Target: autoDraw = False
+186.4408 	EXP 	Target: autoDraw = False
+186.4408 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not win or lose anything!'
+186.4408 	EXP 	feedbackMsg: autoDraw = True
+188.1437 	EXP 	New trial (rep=0, index=26): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 2500)])
+188.1611 	EXP 	feedbackMsg: autoDraw = False
+188.1611 	EXP 	feedbackMsg: autoDraw = False
+188.1611 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+188.1611 	EXP 	cueImage: autoDraw = True
+190.1920 	EXP 	cueImage: autoDraw = False
+190.1920 	EXP 	cueImage: autoDraw = False
+190.1920 	EXP 	fixation: autoDraw = True
+192.6936 	EXP 	fixation: autoDraw = False
+192.6936 	EXP 	fixation: autoDraw = False
+192.6936 	EXP 	Target: image = 'images/LoseProbe.bmp'
+192.6936 	EXP 	Target: autoDraw = True
+192.9123 	DATA 	Keypress: 1
+192.9760 	EXP 	Target: autoDraw = False
+192.9760 	EXP 	Target: autoDraw = False
+192.9760 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $0.20!'
+192.9760 	EXP 	feedbackMsg: autoDraw = True
+194.6779 	EXP 	New trial (rep=0, index=27): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 1500)])
+194.7091 	EXP 	feedbackMsg: autoDraw = False
+194.7091 	EXP 	feedbackMsg: autoDraw = False
+194.7091 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+194.7091 	EXP 	cueImage: autoDraw = True
+196.7265 	EXP 	cueImage: autoDraw = False
+196.7265 	EXP 	cueImage: autoDraw = False
+196.7265 	EXP 	fixation: autoDraw = True
+198.2431 	EXP 	fixation: autoDraw = False
+198.2431 	EXP 	fixation: autoDraw = False
+198.2431 	EXP 	Target: image = 'images/WinProbe.bmp'
+198.2431 	EXP 	Target: autoDraw = True
+198.5097 	EXP 	Target: autoDraw = False
+198.5097 	EXP 	Target: autoDraw = False
+198.5097 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win $0.20!'
+198.5097 	EXP 	feedbackMsg: autoDraw = True
+198.5300 	DATA 	Keypress: 1
+200.2288 	EXP 	New trial (rep=0, index=28): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 3000)])
+200.2453 	EXP 	feedbackMsg: autoDraw = False
+200.2453 	EXP 	feedbackMsg: autoDraw = False
+200.2453 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+200.2453 	EXP 	cueImage: autoDraw = True
+202.2764 	EXP 	cueImage: autoDraw = False
+202.2764 	EXP 	cueImage: autoDraw = False
+202.2764 	EXP 	fixation: autoDraw = True
+205.2777 	EXP 	fixation: autoDraw = False
+205.2777 	EXP 	fixation: autoDraw = False
+205.2777 	EXP 	Target: image = 'images/LoseProbe.bmp'
+205.2777 	EXP 	Target: autoDraw = True
+205.5210 	DATA 	Keypress: 1
+205.5284 	EXP 	Target: autoDraw = False
+205.5284 	EXP 	Target: autoDraw = False
+205.5284 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou lost $5.00!'
+205.5284 	EXP 	feedbackMsg: autoDraw = True
+207.2632 	EXP 	New trial (rep=0, index=29): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 2000)])
+207.2936 	EXP 	feedbackMsg: autoDraw = False
+207.2936 	EXP 	feedbackMsg: autoDraw = False
+207.2936 	EXP 	cueImage: image = 'images/WinBig.bmp'
+207.2936 	EXP 	cueImage: autoDraw = True
+209.3109 	EXP 	cueImage: autoDraw = False
+209.3109 	EXP 	cueImage: autoDraw = False
+209.3109 	EXP 	fixation: autoDraw = True
+211.3285 	EXP 	fixation: autoDraw = False
+211.3285 	EXP 	fixation: autoDraw = False
+211.3285 	EXP 	Target: image = 'images/WinProbe.bmp'
+211.3285 	EXP 	Target: autoDraw = True
+211.5785 	DATA 	Keypress: 1
+211.5946 	EXP 	Target: autoDraw = False
+211.5946 	EXP 	Target: autoDraw = False
+211.5946 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win $5.00!'
+211.5946 	EXP 	feedbackMsg: autoDraw = True
+213.3134 	EXP 	New trial (rep=0, index=30): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 1500)])
+213.3449 	EXP 	feedbackMsg: autoDraw = False
+213.3449 	EXP 	feedbackMsg: autoDraw = False
+213.3449 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+213.3449 	EXP 	cueImage: autoDraw = True
+215.3621 	EXP 	cueImage: autoDraw = False
+215.3621 	EXP 	cueImage: autoDraw = False
+215.3621 	EXP 	fixation: autoDraw = True
+216.8791 	EXP 	fixation: autoDraw = False
+216.8791 	EXP 	fixation: autoDraw = False
+216.8791 	EXP 	Target: image = 'images/WinProbe.bmp'
+216.8791 	EXP 	Target: autoDraw = True
+217.0816 	DATA 	Keypress: 1
+217.1454 	EXP 	Target: autoDraw = False
+217.1454 	EXP 	Target: autoDraw = False
+217.1454 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $0.20!'
+217.1454 	EXP 	feedbackMsg: autoDraw = True
+218.8477 	EXP 	New trial (rep=0, index=31): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 4000)])
+218.8798 	EXP 	feedbackMsg: autoDraw = False
+218.8798 	EXP 	feedbackMsg: autoDraw = False
+218.8798 	EXP 	cueImage: image = 'images/WinBig.bmp'
+218.8798 	EXP 	cueImage: autoDraw = True
+220.8956 	EXP 	cueImage: autoDraw = False
+220.8956 	EXP 	cueImage: autoDraw = False
+220.8956 	EXP 	fixation: autoDraw = True
+222.7502 	DATA 	Keypress: 1
+224.9175 	EXP 	fixation: autoDraw = False
+224.9175 	EXP 	fixation: autoDraw = False
+224.9175 	EXP 	Target: image = 'images/WinProbe.bmp'
+224.9175 	EXP 	Target: autoDraw = True
+225.2132 	EXP 	Target: autoDraw = False
+225.2132 	EXP 	Target: autoDraw = False
+225.2132 	EXP 	feedbackMsg: text = 'You pressed too soon!\n\nYou did not win $5.00!'
+225.2132 	EXP 	feedbackMsg: autoDraw = True
+226.8995 	EXP 	New trial (rep=0, index=32): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 1500)])
+226.9163 	EXP 	feedbackMsg: autoDraw = False
+226.9163 	EXP 	feedbackMsg: autoDraw = False
+226.9163 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+226.9163 	EXP 	cueImage: autoDraw = True
+228.9474 	EXP 	cueImage: autoDraw = False
+228.9474 	EXP 	cueImage: autoDraw = False
+228.9474 	EXP 	fixation: autoDraw = True
+230.4463 	EXP 	fixation: autoDraw = False
+230.4463 	EXP 	fixation: autoDraw = False
+230.4463 	EXP 	Target: image = 'images/LoseProbe.bmp'
+230.4463 	EXP 	Target: autoDraw = True
+230.7103 	DATA 	Keypress: 1
+230.7302 	EXP 	Target: autoDraw = False
+230.7302 	EXP 	Target: autoDraw = False
+230.7302 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou lost $5.00!'
+230.7302 	EXP 	feedbackMsg: autoDraw = True
+232.4165 	EXP 	New trial (rep=0, index=33): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 4000)])
+232.4333 	EXP 	feedbackMsg: autoDraw = False
+232.4333 	EXP 	feedbackMsg: autoDraw = False
+232.4333 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+232.4333 	EXP 	cueImage: autoDraw = True
+234.4640 	EXP 	cueImage: autoDraw = False
+234.4640 	EXP 	cueImage: autoDraw = False
+234.4640 	EXP 	fixation: autoDraw = True
+238.4654 	EXP 	fixation: autoDraw = False
+238.4654 	EXP 	fixation: autoDraw = False
+238.4654 	EXP 	Target: image = 'images/LoseProbe.bmp'
+238.4654 	EXP 	Target: autoDraw = True
+238.6683 	DATA 	Keypress: 1
+238.7980 	EXP 	Target: autoDraw = False
+238.7980 	EXP 	Target: autoDraw = False
+238.7980 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $5.00!'
+238.7980 	EXP 	feedbackMsg: autoDraw = True
+240.4327 	EXP 	New trial (rep=0, index=34): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 1500)])
+240.4476 	EXP 	feedbackMsg: autoDraw = False
+240.4476 	EXP 	feedbackMsg: autoDraw = False
+240.4476 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+240.4476 	EXP 	cueImage: autoDraw = True
+242.4821 	EXP 	cueImage: autoDraw = False
+242.4821 	EXP 	cueImage: autoDraw = False
+242.4821 	EXP 	fixation: autoDraw = True
+243.9828 	EXP 	fixation: autoDraw = False
+243.9828 	EXP 	fixation: autoDraw = False
+243.9828 	EXP 	Target: image = 'images/LoseProbe.bmp'
+243.9828 	EXP 	Target: autoDraw = True
+244.2945 	DATA 	Keypress: 1
+244.3154 	EXP 	Target: autoDraw = False
+244.3154 	EXP 	Target: autoDraw = False
+244.3154 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou lost $0.20!'
+244.3154 	EXP 	feedbackMsg: autoDraw = True
+245.9513 	EXP 	New trial (rep=0, index=35): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 2000)])
+245.9680 	EXP 	feedbackMsg: autoDraw = False
+245.9680 	EXP 	feedbackMsg: autoDraw = False
+245.9680 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+245.9680 	EXP 	cueImage: autoDraw = True
+247.9995 	EXP 	cueImage: autoDraw = False
+247.9995 	EXP 	cueImage: autoDraw = False
+247.9995 	EXP 	fixation: autoDraw = True
+250.0002 	EXP 	fixation: autoDraw = False
+250.0002 	EXP 	fixation: autoDraw = False
+250.0002 	EXP 	Target: image = 'images/LoseProbe.bmp'
+250.0002 	EXP 	Target: autoDraw = True
+250.2207 	DATA 	Keypress: 1
+250.3330 	EXP 	Target: autoDraw = False
+250.3330 	EXP 	Target: autoDraw = False
+250.3330 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $5.00!'
+250.3330 	EXP 	feedbackMsg: autoDraw = True
+251.9687 	EXP 	New trial (rep=0, index=36): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 3000)])
+251.9852 	EXP 	feedbackMsg: autoDraw = False
+251.9852 	EXP 	feedbackMsg: autoDraw = False
+251.9852 	EXP 	cueImage: image = 'images/Neutral.bmp'
+251.9852 	EXP 	cueImage: autoDraw = True
+254.0164 	EXP 	cueImage: autoDraw = False
+254.0164 	EXP 	cueImage: autoDraw = False
+254.0164 	EXP 	fixation: autoDraw = True
+257.0186 	EXP 	fixation: autoDraw = False
+257.0186 	EXP 	fixation: autoDraw = False
+257.0186 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+257.0186 	EXP 	Target: autoDraw = True
+257.2373 	DATA 	Keypress: 1
+257.3834 	EXP 	Target: autoDraw = False
+257.3834 	EXP 	Target: autoDraw = False
+257.3834 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not win or lose anything!'
+257.3834 	EXP 	feedbackMsg: autoDraw = True
+259.0029 	EXP 	New trial (rep=0, index=37): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 1500)])
+259.0198 	EXP 	feedbackMsg: autoDraw = False
+259.0198 	EXP 	feedbackMsg: autoDraw = False
+259.0198 	EXP 	cueImage: image = 'images/Neutral.bmp'
+259.0198 	EXP 	cueImage: autoDraw = True
+261.0518 	EXP 	cueImage: autoDraw = False
+261.0518 	EXP 	cueImage: autoDraw = False
+261.0518 	EXP 	fixation: autoDraw = True
+262.5522 	EXP 	fixation: autoDraw = False
+262.5522 	EXP 	fixation: autoDraw = False
+262.5522 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+262.5522 	EXP 	Target: autoDraw = True
+262.8054 	DATA 	Keypress: 1
+262.9013 	EXP 	Target: autoDraw = False
+262.9013 	EXP 	Target: autoDraw = False
+262.9013 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not win or lose anything!'
+262.9013 	EXP 	feedbackMsg: autoDraw = True
+264.5369 	EXP 	New trial (rep=0, index=38): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 2500)])
+264.5704 	EXP 	feedbackMsg: autoDraw = False
+264.5704 	EXP 	feedbackMsg: autoDraw = False
+264.5704 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+264.5704 	EXP 	cueImage: autoDraw = True
+266.5848 	EXP 	cueImage: autoDraw = False
+266.5848 	EXP 	cueImage: autoDraw = False
+266.5848 	EXP 	fixation: autoDraw = True
+268.8216 	DATA 	Keypress: 1
+269.1020 	EXP 	fixation: autoDraw = False
+269.1020 	EXP 	fixation: autoDraw = False
+269.1020 	EXP 	Target: image = 'images/WinProbe.bmp'
+269.1020 	EXP 	Target: autoDraw = True
+269.4519 	EXP 	Target: autoDraw = False
+269.4519 	EXP 	Target: autoDraw = False
+269.4519 	EXP 	feedbackMsg: text = 'You pressed too soon!\n\nYou did not win $0.20!'
+269.4519 	EXP 	feedbackMsg: autoDraw = True
+271.0706 	EXP 	New trial (rep=0, index=39): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 1500)])
+271.0873 	EXP 	feedbackMsg: autoDraw = False
+271.0873 	EXP 	feedbackMsg: autoDraw = False
+271.0873 	EXP 	cueImage: image = 'images/Neutral.bmp'
+271.0873 	EXP 	cueImage: autoDraw = True
+273.1192 	EXP 	cueImage: autoDraw = False
+273.1192 	EXP 	cueImage: autoDraw = False
+273.1192 	EXP 	fixation: autoDraw = True
+274.6194 	EXP 	fixation: autoDraw = False
+274.6194 	EXP 	fixation: autoDraw = False
+274.6194 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+274.6194 	EXP 	Target: autoDraw = True
+274.9695 	DATA 	Keypress: 1
+274.9864 	EXP 	Target: autoDraw = False
+274.9864 	EXP 	Target: autoDraw = False
+274.9864 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win or lose anything!'
+274.9864 	EXP 	feedbackMsg: autoDraw = True
+276.6052 	EXP 	New trial (rep=0, index=40): OrderedDict([('Condition', 'Triangle'), ('FixationDur', 3500)])
+276.6221 	EXP 	feedbackMsg: autoDraw = False
+276.6221 	EXP 	feedbackMsg: autoDraw = False
+276.6221 	EXP 	cueImage: image = 'images/Neutral.bmp'
+276.6221 	EXP 	cueImage: autoDraw = True
+277.1060 	DATA 	Keypress: 1
+278.6531 	EXP 	cueImage: autoDraw = False
+278.6531 	EXP 	cueImage: autoDraw = False
+278.6531 	EXP 	fixation: autoDraw = True
+282.1542 	EXP 	fixation: autoDraw = False
+282.1542 	EXP 	fixation: autoDraw = False
+282.1542 	EXP 	Target: image = 'images/NeutralProbe.bmp'
+282.1542 	EXP 	Target: autoDraw = True
+282.3569 	DATA 	Keypress: 1
+282.5207 	EXP 	Target: autoDraw = False
+282.5207 	EXP 	Target: autoDraw = False
+282.5207 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not win or lose anything!'
+282.5207 	EXP 	feedbackMsg: autoDraw = True
+284.1390 	EXP 	New trial (rep=0, index=41): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 1500)])
+284.1558 	EXP 	feedbackMsg: autoDraw = False
+284.1558 	EXP 	feedbackMsg: autoDraw = False
+284.1558 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+284.1558 	EXP 	cueImage: autoDraw = True
+286.1878 	EXP 	cueImage: autoDraw = False
+286.1878 	EXP 	cueImage: autoDraw = False
+286.1878 	EXP 	fixation: autoDraw = True
+287.6890 	EXP 	fixation: autoDraw = False
+287.6890 	EXP 	fixation: autoDraw = False
+287.6890 	EXP 	Target: image = 'images/LoseProbe.bmp'
+287.6890 	EXP 	Target: autoDraw = True
+287.9575 	DATA 	Keypress: 1
+288.0540 	EXP 	Target: autoDraw = False
+288.0540 	EXP 	Target: autoDraw = False
+288.0540 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $5.00!'
+288.0540 	EXP 	feedbackMsg: autoDraw = True
+289.6735 	EXP 	New trial (rep=0, index=42): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 3500)])
+289.6905 	EXP 	feedbackMsg: autoDraw = False
+289.6905 	EXP 	feedbackMsg: autoDraw = False
+289.6905 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+289.6905 	EXP 	cueImage: autoDraw = True
+291.7221 	EXP 	cueImage: autoDraw = False
+291.7221 	EXP 	cueImage: autoDraw = False
+291.7221 	EXP 	fixation: autoDraw = True
+295.2224 	EXP 	fixation: autoDraw = False
+295.2224 	EXP 	fixation: autoDraw = False
+295.2224 	EXP 	Target: image = 'images/LoseProbe.bmp'
+295.2224 	EXP 	Target: autoDraw = True
+295.4926 	DATA 	Keypress: 1
+295.5727 	EXP 	Target: autoDraw = False
+295.5727 	EXP 	Target: autoDraw = False
+295.5727 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $0.20!'
+295.5727 	EXP 	feedbackMsg: autoDraw = True
+297.2078 	EXP 	New trial (rep=0, index=43): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 1500)])
+297.2393 	EXP 	feedbackMsg: autoDraw = False
+297.2393 	EXP 	feedbackMsg: autoDraw = False
+297.2393 	EXP 	cueImage: image = 'images/WinBig.bmp'
+297.2393 	EXP 	cueImage: autoDraw = True
+299.2565 	EXP 	cueImage: autoDraw = False
+299.2565 	EXP 	cueImage: autoDraw = False
+299.2565 	EXP 	fixation: autoDraw = True
+300.7731 	EXP 	fixation: autoDraw = False
+300.7731 	EXP 	fixation: autoDraw = False
+300.7731 	EXP 	Target: image = 'images/WinProbe.bmp'
+300.7731 	EXP 	Target: autoDraw = True
+301.1059 	EXP 	Target: autoDraw = False
+301.1059 	EXP 	Target: autoDraw = False
+301.1059 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win $5.00!'
+301.1059 	EXP 	feedbackMsg: autoDraw = True
+301.1103 	DATA 	Keypress: 1
+302.7422 	EXP 	New trial (rep=0, index=44): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 2000)])
+302.7734 	EXP 	feedbackMsg: autoDraw = False
+302.7734 	EXP 	feedbackMsg: autoDraw = False
+302.7734 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+302.7734 	EXP 	cueImage: autoDraw = True
+304.7901 	EXP 	cueImage: autoDraw = False
+304.7901 	EXP 	cueImage: autoDraw = False
+304.7901 	EXP 	fixation: autoDraw = True
+306.8078 	EXP 	fixation: autoDraw = False
+306.8078 	EXP 	fixation: autoDraw = False
+306.8078 	EXP 	Target: image = 'images/WinProbe.bmp'
+306.8078 	EXP 	Target: autoDraw = True
+307.0273 	DATA 	Keypress: 1
+307.1402 	EXP 	Target: autoDraw = False
+307.1402 	EXP 	Target: autoDraw = False
+307.1402 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $0.20!'
+307.1402 	EXP 	feedbackMsg: autoDraw = True
+308.7761 	EXP 	New trial (rep=0, index=45): OrderedDict([('Condition', 'LgPun'), ('FixationDur', 2000)])
+308.7931 	EXP 	feedbackMsg: autoDraw = False
+308.7931 	EXP 	feedbackMsg: autoDraw = False
+308.7931 	EXP 	cueImage: image = 'images/LoseBig.bmp'
+308.7931 	EXP 	cueImage: autoDraw = True
+310.8250 	EXP 	cueImage: autoDraw = False
+310.8250 	EXP 	cueImage: autoDraw = False
+310.8250 	EXP 	fixation: autoDraw = True
+312.8245 	EXP 	fixation: autoDraw = False
+312.8245 	EXP 	fixation: autoDraw = False
+312.8245 	EXP 	Target: image = 'images/LoseProbe.bmp'
+312.8245 	EXP 	Target: autoDraw = True
+313.1413 	EXP 	Target: autoDraw = False
+313.1413 	EXP 	Target: autoDraw = False
+313.1413 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou lost $5.00!'
+313.1413 	EXP 	feedbackMsg: autoDraw = True
+314.7936 	EXP 	New trial (rep=0, index=46): OrderedDict([('Condition', 'SmallReward'), ('FixationDur', 3500)])
+314.8612 	EXP 	feedbackMsg: autoDraw = False
+314.8612 	EXP 	feedbackMsg: autoDraw = False
+314.8612 	EXP 	cueImage: image = 'images/WinSmall.bmp'
+314.8612 	EXP 	cueImage: autoDraw = True
+316.8422 	EXP 	cueImage: autoDraw = False
+316.8422 	EXP 	cueImage: autoDraw = False
+316.8422 	EXP 	fixation: autoDraw = True
+320.3761 	EXP 	fixation: autoDraw = False
+320.3761 	EXP 	fixation: autoDraw = False
+320.3761 	EXP 	Target: image = 'images/WinProbe.bmp'
+320.3761 	EXP 	Target: autoDraw = True
+320.6453 	DATA 	Keypress: 1
+320.7095 	EXP 	Target: autoDraw = False
+320.7095 	EXP 	Target: autoDraw = False
+320.7095 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou won $0.20!'
+320.7095 	EXP 	feedbackMsg: autoDraw = True
+322.3448 	EXP 	New trial (rep=0, index=47): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 2000)])
+322.3616 	EXP 	feedbackMsg: autoDraw = False
+322.3616 	EXP 	feedbackMsg: autoDraw = False
+322.3616 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+322.3616 	EXP 	cueImage: autoDraw = True
+324.3933 	EXP 	cueImage: autoDraw = False
+324.3933 	EXP 	cueImage: autoDraw = False
+324.3933 	EXP 	fixation: autoDraw = True
+326.3935 	EXP 	fixation: autoDraw = False
+326.3935 	EXP 	fixation: autoDraw = False
+326.3935 	EXP 	Target: image = 'images/LoseProbe.bmp'
+326.3935 	EXP 	Target: autoDraw = True
+326.6295 	DATA 	Keypress: 1
+326.7441 	EXP 	Target: autoDraw = False
+326.7441 	EXP 	Target: autoDraw = False
+326.7441 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $0.20!'
+326.7441 	EXP 	feedbackMsg: autoDraw = True
+328.3788 	EXP 	New trial (rep=0, index=48): OrderedDict([('Condition', 'LgReward'), ('FixationDur', 1500)])
+328.4093 	EXP 	feedbackMsg: autoDraw = False
+328.4093 	EXP 	feedbackMsg: autoDraw = False
+328.4093 	EXP 	cueImage: image = 'images/WinBig.bmp'
+328.4093 	EXP 	cueImage: autoDraw = True
+330.4275 	EXP 	cueImage: autoDraw = False
+330.4275 	EXP 	cueImage: autoDraw = False
+330.4275 	EXP 	fixation: autoDraw = True
+331.9434 	EXP 	fixation: autoDraw = False
+331.9434 	EXP 	fixation: autoDraw = False
+331.9434 	EXP 	Target: image = 'images/WinProbe.bmp'
+331.9434 	EXP 	Target: autoDraw = True
+332.2918 	DATA 	Keypress: 1
+332.3106 	EXP 	Target: autoDraw = False
+332.3106 	EXP 	Target: autoDraw = False
+332.3106 	EXP 	feedbackMsg: text = 'You pressed too slow!\n\nYou did not win $5.00!'
+332.3106 	EXP 	feedbackMsg: autoDraw = True
+333.9295 	EXP 	New trial (rep=0, index=49): OrderedDict([('Condition', 'SmallPun'), ('FixationDur', 4000)])
+333.9463 	EXP 	feedbackMsg: autoDraw = False
+333.9463 	EXP 	feedbackMsg: autoDraw = False
+333.9463 	EXP 	cueImage: image = 'images/LoseSmall.bmp'
+333.9463 	EXP 	cueImage: autoDraw = True
+335.9779 	EXP 	cueImage: autoDraw = False
+335.9779 	EXP 	cueImage: autoDraw = False
+335.9779 	EXP 	fixation: autoDraw = True
+339.9789 	EXP 	fixation: autoDraw = False
+339.9789 	EXP 	fixation: autoDraw = False
+339.9789 	EXP 	Target: image = 'images/LoseProbe.bmp'
+339.9789 	EXP 	Target: autoDraw = True
+340.1983 	DATA 	Keypress: 1
+340.3454 	EXP 	Target: autoDraw = False
+340.3454 	EXP 	Target: autoDraw = False
+340.3454 	EXP 	feedbackMsg: text = 'Correct Response!\n\nYou did not lose $0.20!'
+340.3454 	EXP 	feedbackMsg: autoDraw = True
+341.9778 	EXP 	feedbackMsg: autoDraw = False
+341.9778 	EXP 	feedbackMsg: autoDraw = False
+341.9778 	EXP 	polygon: autoDraw = True
+346.9955 	EXP 	polygon: autoDraw = False
+346.9955 	EXP 	polygon: autoDraw = False
+346.9955 	EXP 	text: text = 'All done!\n\nYou earned a total of: $5.60!'
+346.9955 	EXP 	text: autoDraw = True
+347.3147 	DATA 	Keypress: 1
+350.0134 	EXP 	text: autoDraw = False
+350.0134 	EXP 	text: autoDraw = False
+350.0134 	EXP 	polygon2: autoDraw = True
+361.6509 	DATA 	Keypress: space
+361.6639 	EXP 	polygon2: autoDraw = False
+361.9499 	EXP 	window1: mouseVisible = True
