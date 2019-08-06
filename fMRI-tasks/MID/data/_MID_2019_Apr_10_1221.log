@@ -1,0 +1,99 @@
+6.5651 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x126665e48>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x129151780>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.5651 	EXP 	window1: recordFrameIntervals = False
+6.7324 	EXP 	window1: recordFrameIntervals = True
+6.9147 	EXP 	window1: recordFrameIntervals = False
+6.9664 	EXP 	Created instructFig = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='images/MID_instructions.bmp', interpolate=True, mask=None, maskParams=None, name='instructFig', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.3, 1. ]), texRes=128, units='height', win=Window(...))
+6.9682 	EXP 	Created cueImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='cueImage', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.3, 1. ]), texRes=128, units='height', win=Window(...))
+7.0366 	EXP 	Created Fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='Fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+7.0382 	EXP 	Created Target = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Target', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.3, 1. ]), texRes=128, units='height', win=Window(...))
+7.0481 	EXP 	Created feedbackMsg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedbackMsg', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+7.0484 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+7.0640 	EXP 	instructFig: autoDraw = True
+7.8669 	DATA 	Keypress: space
+7.8781 	EXP 	Imported MID_trials.xlsx as conditions, 5 conditions, 5 params
+7.8786 	EXP 	Created sequence: random, trialTypes=5, nReps=10, seed=None
+7.8791 	EXP 	New trial (rep=0, index=0): OrderedDict([('cue', 'images/WinBig.BMP'), ('probe', 'images/WinProbe.BMP'), ('feedbackText', 'You won $5.00'), ('condition', 'Win'), ('corrResp', 'space')])
+7.9145 	EXP 	instructFig: autoDraw = False
+7.9145 	EXP 	cueImage: image = 'images/WinBig.BMP'
+7.9145 	EXP 	cueImage: autoDraw = True
+9.9137 	EXP 	cueImage: autoDraw = False
+9.9137 	EXP 	Target: image = 'images/WinProbe.BMP'
+9.9137 	EXP 	Fixation: autoDraw = True
+11.6309 	EXP 	Fixation: autoDraw = False
+11.6477 	EXP 	Target: autoDraw = True
+11.8633 	EXP 	Target: autoDraw = False
+11.8633 	EXP 	Fixation: autoDraw = False
+11.8633 	EXP 	Target: autoDraw = False
+11.8633 	EXP 	feedbackMsg: text = 'No win or loss'
+11.8633 	EXP 	feedbackMsg: autoDraw = True
+12.1666 	DATA 	Keypress: space
+13.6303 	EXP 	New trial (rep=0, index=1): OrderedDict([('cue', 'images/LoseBig.BMP'), ('probe', 'images/LoseProbe.BMP'), ('feedbackText', 'You lost $5.00'), ('condition', 'Lose'), ('corrResp', None)])
+13.6471 	EXP 	feedbackMsg: autoDraw = False
+13.6471 	EXP 	feedbackMsg: autoDraw = False
+13.6471 	EXP 	cueImage: image = 'images/LoseBig.BMP'
+13.6471 	EXP 	cueImage: autoDraw = True
+15.6469 	EXP 	cueImage: autoDraw = False
+15.6469 	EXP 	Target: image = 'images/LoseProbe.BMP'
+15.6469 	EXP 	Fixation: autoDraw = True
+18.2291 	EXP 	Fixation: autoDraw = False
+18.2464 	EXP 	Target: autoDraw = True
+18.5291 	EXP 	Target: autoDraw = False
+18.5291 	EXP 	Fixation: autoDraw = False
+18.5291 	EXP 	Target: autoDraw = False
+18.5291 	EXP 	feedbackMsg: text = 'No win or loss'
+18.5291 	EXP 	feedbackMsg: autoDraw = True
+20.2132 	EXP 	New trial (rep=0, index=2): OrderedDict([('cue', 'images/LoseSmall.BMP'), ('probe', 'images/LoseProbe.BMP'), ('feedbackText', 'You lost $0.20'), ('condition', 'Lose'), ('corrResp', None)])
+20.2290 	EXP 	feedbackMsg: autoDraw = False
+20.2290 	EXP 	feedbackMsg: autoDraw = False
+20.2290 	EXP 	cueImage: image = 'images/LoseSmall.BMP'
+20.2290 	EXP 	cueImage: autoDraw = True
+22.2291 	EXP 	cueImage: autoDraw = False
+22.2291 	EXP 	cueImage: autoDraw = False
+22.2291 	EXP 	Target: image = 'images/LoseProbe.BMP'
+22.2291 	EXP 	Fixation: autoDraw = True
+24.5461 	EXP 	Fixation: autoDraw = False
+24.5626 	EXP 	Target: autoDraw = True
+24.8143 	DATA 	Keypress: space
+24.8349 	EXP 	Fixation: autoDraw = False
+24.8349 	EXP 	Target: autoDraw = False
+24.8349 	EXP 	feedbackMsg: text = 'You lost $0.20'
+24.8349 	EXP 	feedbackMsg: autoDraw = True
+26.4807 	EXP 	New trial (rep=0, index=3): OrderedDict([('cue', 'images/Neutral.BMP'), ('probe', 'images/NeutralProbe.BMP'), ('feedbackText', 'No win or loss'), ('condition', 'Neu'), ('corrResp', 'space')])
+26.4962 	EXP 	feedbackMsg: autoDraw = False
+26.4962 	EXP 	feedbackMsg: autoDraw = False
+26.4962 	EXP 	cueImage: image = 'images/Neutral.BMP'
+26.4962 	EXP 	cueImage: autoDraw = True
+28.4950 	EXP 	cueImage: autoDraw = False
+28.4950 	EXP 	cueImage: autoDraw = False
+28.4950 	EXP 	Target: image = 'images/NeutralProbe.BMP'
+28.4950 	EXP 	Fixation: autoDraw = True
+30.1782 	EXP 	Fixation: autoDraw = False
+30.1958 	EXP 	Target: autoDraw = True
+30.4632 	DATA 	Keypress: space
+30.4790 	EXP 	Fixation: autoDraw = False
+30.4790 	EXP 	Target: autoDraw = False
+30.4790 	EXP 	feedbackMsg: text = 'No win or loss'
+30.4790 	EXP 	feedbackMsg: autoDraw = True
+32.0957 	EXP 	New trial (rep=0, index=4): OrderedDict([('cue', 'images/WinSmall.BMP'), ('probe', 'images/WinProbe.BMP'), ('feedbackText', 'You won $0.20'), ('condition', 'Win'), ('corrResp', 'space')])
+32.1118 	EXP 	feedbackMsg: autoDraw = False
+32.1118 	EXP 	feedbackMsg: autoDraw = False
+32.1118 	EXP 	cueImage: image = 'images/WinSmall.BMP'
+32.1118 	EXP 	cueImage: autoDraw = True
+34.1109 	EXP 	cueImage: autoDraw = False
+34.1109 	EXP 	cueImage: autoDraw = False
+34.1109 	EXP 	Target: image = 'images/WinProbe.BMP'
+34.1109 	EXP 	Fixation: autoDraw = True
+36.5947 	EXP 	Fixation: autoDraw = False
+36.5947 	EXP 	Target: autoDraw = True
+36.8808 	DATA 	Keypress: space
+36.8947 	EXP 	Fixation: autoDraw = False
+36.8947 	EXP 	Target: autoDraw = False
+36.8947 	EXP 	feedbackMsg: text = 'You won $0.20'
+36.8947 	EXP 	feedbackMsg: autoDraw = True
+38.4951 	EXP 	New trial (rep=1, index=0): OrderedDict([('cue', 'images/Neutral.BMP'), ('probe', 'images/NeutralProbe.BMP'), ('feedbackText', 'No win or loss'), ('condition', 'Neu'), ('corrResp', 'space')])
+38.5113 	EXP 	feedbackMsg: autoDraw = False
+38.5113 	EXP 	feedbackMsg: autoDraw = False
+38.5113 	EXP 	cueImage: image = 'images/Neutral.BMP'
+38.5113 	EXP 	cueImage: autoDraw = True
+40.0961 	DATA 	Keypress: escape
+40.3793 	EXP 	window1: mouseVisible = True
