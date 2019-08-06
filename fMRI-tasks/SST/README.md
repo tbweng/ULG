@@ -8,4 +8,4 @@
 
 total fixation = 167 sec
 
-total time = 349 sec = 5 min 49 sec
+**total scan time = 349 sec = 5 min 49 sec**
