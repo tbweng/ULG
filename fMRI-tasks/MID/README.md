@@ -12,4 +12,4 @@ End fixation = 5 sec
 
 Display earnings = 5 sec
 
-**Total time = 327 seconds (5 min 27 sec)**
+**Total scan time = 327 seconds = 5 min 27 sec**
