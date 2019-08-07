@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.1.5),
-    on Tue Aug  6 12:38:23 2019
+    on Wed Aug  7 12:30:32 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -44,7 +44,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/utbrainstudy/Downloads/MIDtask/MID.py',
+    originPath='/Users/utbrainstudy/ULG/fMRI-tasks/MID/MID.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -57,7 +57,7 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 
 # Setup the Window
 win = visual.Window(
-    size=[1920, 1080], fullscr=True, screen=0, 
+    size=[1440, 900], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -116,6 +116,7 @@ TrialOrders = {
 11: ["TimeVersion11", "TimeVersion7"],
 12: ["TimeVersion4", "TimeVersion3"],
 }
+
 
 # Initialize components for Routine "cue"
 cueClock = core.Clock()
@@ -196,7 +197,7 @@ OverallRT=''
 waitClock = core.Clock()
 polygon = visual.ShapeStim(
     win=win, name='polygon', vertices='cross',
-    size=(0.5, 0.5),
+    size=(0.05, 0.05),
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
@@ -217,7 +218,7 @@ globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
 # set up handler to look after randomisation of conditions etc
-run = data.TrialHandler(nReps=0, method='sequential', 
+run = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='run')
@@ -707,7 +708,7 @@ for thisRun in run:
                 win.timeOnFlip(probeResp, 'tStopRefresh')  # time at next scr refresh
                 probeResp.status = FINISHED
             if probeResp.status == STARTED:
-                theseKeys = probeResp.getKeys(keyList=['1', '2', 'space'], waitRelease=False)
+                theseKeys = probeResp.getKeys(keyList=['1'], waitRelease=False)
                 if len(theseKeys):
                     theseKeys = theseKeys[0]  # at least one key was pressed
                     
@@ -717,7 +718,7 @@ for thisRun in run:
                     probeResp.keys = theseKeys.name  # just the last key pressed
                     probeResp.rt = theseKeys.rt
                     # was this 'correct'?
-                    if (probeResp.keys == str('space')) or (probeResp.keys == 'space'):
+                    if (probeResp.keys == str('1')) or (probeResp.keys == '1'):
                         probeResp.corr = 1
                     else:
                         probeResp.corr = 0
@@ -762,7 +763,7 @@ for thisRun in run:
         if probeResp.keys in ['', [], None]:  # No response was made
             probeResp.keys = None
             # was no response the correct answer?!
-            if str('space').lower() == 'none':
+            if str('1').lower() == 'none':
                probeResp.corr = 1;  # correct non-response
             else:
                probeResp.corr = 0;  # failed to respond (incorrectly)
@@ -864,7 +865,7 @@ for thisRun in run:
         if fixationResp.keys != None:
             respCheck = "You pressed too soon!"
             probeResp.corr == 0 # override probe response since subject pressed too soon
-        elif probeResp.keys == 'space':
+        elif probeResp.keys == '1':
             respCheck = "Correct Response!"
             
         else:
@@ -1027,7 +1028,7 @@ for thisRun in run:
     
     thisExp.nextEntry()
     
-# completed 0 repeats of 'run'
+# completed 1 repeats of 'run'
 
 
 # ------Prepare to start Routine "wait"-------

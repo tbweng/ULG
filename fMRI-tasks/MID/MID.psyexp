@@ -21,7 +21,7 @@
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="height" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="[1920, 1080]" valType="code"/>
+    <Param name="Window size (pixels)" updates="None" val="[1440, 900]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
@@ -72,8 +72,8 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
       <KeyboardComponent name="probeResp">
-        <Param name="allowedKeys" updates="constant" val="'1','2','space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="space" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'1'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="1" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
@@ -182,7 +182,7 @@
         <Param name="Begin Experiment" updates="constant" val="msg=''&amp;#10;respCheck=''&amp;#10;msgEarnings =''&amp;#10;TrackEarnings = 0&amp;#10;&amp;#10;# &quot;TrialCondition&quot;: [TrialType, TrialEarning_corr, TrialEarning_incorr, TrialEarning_msg, CorrectMessage, IncorrectMessage, CueImage, ProbeImage]&amp;#10;cond_dict = {&amp;#10;    &quot;LgReward&quot;: [1, 5, 0, 5, &quot;You won&quot;, &quot;You did not win&quot;, 'WinProbe.bmp', 'WinBig.bmp'],&amp;#10;    &quot;SmallReward&quot;: [2, .2, 0, .2, &quot;You won&quot;, &quot;You did not win&quot;, 'WinProbe.bmp', 'WinSmall.bmp'],&amp;#10;    &quot;LgPun&quot;: [4, 0, -5, 5, &quot;You did not lose&quot;, &quot;You lost&quot;, 'LoseProbe.bmp', 'LoseBig.bmp'],&amp;#10;    &quot;SmallPun&quot;: [5, 0, -.2, .2, &quot;You did not lose&quot;, &quot;You lost&quot;, 'LoseProbe.bmp', 'LoseSmall.bmp'],&amp;#10;    &quot;Triangle&quot;: [3, 0, 0, 0, &quot;You did not win or lose anything!&quot;, &quot;You did not win or lose anything!&quot;, 'NeutralProbe.bmp', 'Neutral.bmp'],&amp;#10;}" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if fixationResp.keys != None:&amp;#10;    respCheck = &quot;You pressed too soon!&quot;&amp;#10;    probeResp.corr == 0 # override probe response since subject pressed too soon&amp;#10;elif probeResp.keys == 'space':&amp;#10;    respCheck = &quot;Correct Response!&quot;&amp;#10;    &amp;#10;else:&amp;#10;    respCheck = &quot;You pressed too slow!&quot;&amp;#10;&amp;#10;&amp;#10;if Condition == &quot;Triangle&quot;:&amp;#10;    msg = cond_dict[Condition][4]&amp;#10;    TrialEarning = 0&amp;#10;elif probeResp.corr == 1:&amp;#10;    msg = cond_dict[Condition][4] + &quot; $%.2f!&quot; % cond_dict[Condition][3]&amp;#10;    TrialEarning = cond_dict[Condition][1]&amp;#10;else:&amp;#10;    msg = cond_dict[Condition][5] + &quot; $%.2f!&quot; % cond_dict[Condition][3]&amp;#10;    TrialEarning = cond_dict[Condition][2]&amp;#10;&amp;#10;TrackEarnings = TrackEarnings + TrialEarning&amp;#10;msgEarnings = &quot;Total Earnings: $%.2f!&quot; % TrackEarnings&amp;#10;&amp;#10;thisExp.addData('msg', msg)&amp;#10;thisExp.addData('TrackEarnings', TrackEarnings)" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if fixationResp.keys != None:&amp;#10;    respCheck = &quot;You pressed too soon!&quot;&amp;#10;    probeResp.corr == 0 # override probe response since subject pressed too soon&amp;#10;elif probeResp.keys == '1':&amp;#10;    respCheck = &quot;Correct Response!&quot;&amp;#10;    &amp;#10;else:&amp;#10;    respCheck = &quot;You pressed too slow!&quot;&amp;#10;&amp;#10;&amp;#10;if Condition == &quot;Triangle&quot;:&amp;#10;    msg = cond_dict[Condition][4]&amp;#10;    TrialEarning = 0&amp;#10;elif probeResp.corr == 1:&amp;#10;    msg = cond_dict[Condition][4] + &quot; $%.2f!&quot; % cond_dict[Condition][3]&amp;#10;    TrialEarning = cond_dict[Condition][1]&amp;#10;else:&amp;#10;    msg = cond_dict[Condition][5] + &quot; $%.2f!&quot; % cond_dict[Condition][3]&amp;#10;    TrialEarning = cond_dict[Condition][2]&amp;#10;&amp;#10;TrackEarnings = TrackEarnings + TrialEarning&amp;#10;msgEarnings = &quot;Total Earnings: $%.2f!&quot; % TrackEarnings&amp;#10;&amp;#10;thisExp.addData('msg', msg)&amp;#10;thisExp.addData('TrackEarnings', TrackEarnings)" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -276,7 +276,7 @@
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="constant" val="cross" valType="str"/>
-        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.05, 0.05)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -372,7 +372,7 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
       <KeyboardComponent name="fixationResp">
-        <Param name="allowedKeys" updates="constant" val="'1','2','space'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="['1','2','space']" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -417,7 +417,7 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
       <CodeComponent name="TrialOrder">
-        <Param name="Begin Experiment" updates="constant" val="TrialOrders = {&amp;#10;1: [&quot;TimeVersion5&quot;, &quot;TimeVersion16&quot;],&amp;#10;2: [&quot;TimeVersion13&quot;, &quot;TimeVersion1&quot;],&amp;#10;3: [&quot;TimeVersion9&quot;, &quot;TimeVersion14&quot;],&amp;#10;4: [&quot;TimeVersion15&quot;, &quot;TimeVersion12&quot;],&amp;#10;5: [&quot;TimeVersion6&quot;, &quot;TimeVersion5&quot;],&amp;#10;6: [&quot;TimeVersion8&quot;, &quot;TimeVersion11&quot;],&amp;#10;7: [&quot;TimeVersion2&quot;, &quot;TimeVersion9&quot;],&amp;#10;8: [&quot;TimeVersion3&quot;, &quot;TimeVersion8&quot;],&amp;#10;9: [&quot;TimeVersion10&quot;, &quot;TimeVersion2&quot;],&amp;#10;10: [&quot;TimeVersion7&quot;, &quot;TimeVersion13&quot;],&amp;#10;11: [&quot;TimeVersion11&quot;, &quot;TimeVersion7&quot;],&amp;#10;12: [&quot;TimeVersion4&quot;, &quot;TimeVersion3&quot;],&amp;#10;}" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="TrialOrders = {&amp;#10;1: [&quot;TimeVersion5&quot;, &quot;TimeVersion16&quot;],&amp;#10;2: [&quot;TimeVersion13&quot;, &quot;TimeVersion1&quot;],&amp;#10;3: [&quot;TimeVersion9&quot;, &quot;TimeVersion14&quot;],&amp;#10;4: [&quot;TimeVersion15&quot;, &quot;TimeVersion12&quot;],&amp;#10;5: [&quot;TimeVersion6&quot;, &quot;TimeVersion5&quot;],&amp;#10;6: [&quot;TimeVersion8&quot;, &quot;TimeVersion11&quot;],&amp;#10;7: [&quot;TimeVersion2&quot;, &quot;TimeVersion9&quot;],&amp;#10;8: [&quot;TimeVersion3&quot;, &quot;TimeVersion8&quot;],&amp;#10;9: [&quot;TimeVersion10&quot;, &quot;TimeVersion2&quot;],&amp;#10;10: [&quot;TimeVersion7&quot;, &quot;TimeVersion13&quot;],&amp;#10;11: [&quot;TimeVersion11&quot;, &quot;TimeVersion7&quot;],&amp;#10;12: [&quot;TimeVersion4&quot;, &quot;TimeVersion3&quot;],&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
@@ -459,7 +459,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="0" valType="code"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="name" updates="None" val="run" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
