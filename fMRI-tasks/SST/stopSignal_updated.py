@@ -33,7 +33,7 @@ expName = 'stopSignal'  # from the Builder filename that created this script
 
 test_dlg = gui.Dlg(title='Stop Signal Task')
 test_dlg.addField('Participant ID')
-test_dlg.addField('Trial Order', choices=['1','2','3','4','5','6','7','8','9','10','11','12'])
+test_dlg.addField('Trial Order', choices=['1','2','3','4','5','6','7','8','9','10','11','12','practice'])
 test_dlg.addField('Handedness', choices=['R','L'])
 input_data = test_dlg.show()
 expInfo = {'participant': input_data[0], 'trial_order': input_data[1], 'handedness': input_data[2]}
@@ -50,7 +50,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/md35727/Downloads/stopSignal.py',
+    originPath='/Users/utbrainstudy/ULG/fMRI-tasks/SST/stopSignal_updated.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -111,7 +111,7 @@ scanTriggerClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
     text='Waiting for scanner trigger...',
     font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=2, ori=0,
+    pos=(0, 0), height=0.05, wrapWidth=2, ori=0,
     color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);
@@ -266,7 +266,10 @@ for thisRun in runs:
     t = 0
     scanTriggerClock.reset()  # clock
     frameN = -1
-    continueRoutine = True
+    if(expInfo['trial_order'] != 'practice'):
+        continueRoutine = True
+    else:
+        continueRoutine = False
     # update component parameters for each repeat
     scanTriggerKey = event.BuilderKeyResponse()
     # keep track of which components have finished
@@ -333,10 +336,14 @@ for thisRun in runs:
 
 
     # set up handler to look after randomisation of conditions etc
-    if(runs.nRemaining == 1):
-        trial_order = 'sst_trial_order_'+expInfo['trial_order']+'A.csv'
-    elif(runs.nRemaining == 0):
-        trial_order = 'sst_trial_order_'+expInfo['trial_order']+'B.csv'
+    if(expInfo['trial_order'] == 'practice'):
+        trial_order = 'sst_trial_order_practice.csv'
+    else:  
+        if(runs.nRemaining == 1):
+            trial_order = 'sst_trial_order_'+expInfo['trial_order']+'A.csv'
+        elif(runs.nRemaining == 0):
+            trial_order = 'sst_trial_order_'+expInfo['trial_order']+'B.csv'
+        
     trials = data.TrialHandler(nReps=1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions(trial_order),
