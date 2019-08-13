@@ -111,7 +111,7 @@ scanTriggerClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
     text='Waiting for scanner trigger...',
     font='Arial',
-    pos=(0, 0), height=0.05, wrapWidth=2, ori=0,
+    pos=(0, 0), height=0.1, wrapWidth=2, ori=0,
     color='white', colorSpace='rgb', opacity=1,
     languageStyle='LTR',
     depth=0.0);

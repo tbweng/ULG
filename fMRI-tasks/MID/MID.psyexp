@@ -182,7 +182,7 @@
         <Param name="Begin Experiment" updates="constant" val="msg=''&amp;#10;respCheck=''&amp;#10;msgEarnings =''&amp;#10;TrackEarnings = 0&amp;#10;&amp;#10;# &quot;TrialCondition&quot;: [TrialType, TrialEarning_corr, TrialEarning_incorr, TrialEarning_msg, CorrectMessage, IncorrectMessage, CueImage, ProbeImage]&amp;#10;cond_dict = {&amp;#10;    &quot;LgReward&quot;: [1, 5, 0, 5, &quot;You won&quot;, &quot;You did not win&quot;, 'WinProbe.bmp', 'WinBig.bmp'],&amp;#10;    &quot;SmallReward&quot;: [2, .2, 0, .2, &quot;You won&quot;, &quot;You did not win&quot;, 'WinProbe.bmp', 'WinSmall.bmp'],&amp;#10;    &quot;LgPun&quot;: [4, 0, -5, 5, &quot;You did not lose&quot;, &quot;You lost&quot;, 'LoseProbe.bmp', 'LoseBig.bmp'],&amp;#10;    &quot;SmallPun&quot;: [5, 0, -.2, .2, &quot;You did not lose&quot;, &quot;You lost&quot;, 'LoseProbe.bmp', 'LoseSmall.bmp'],&amp;#10;    &quot;Triangle&quot;: [3, 0, 0, 0, &quot;You did not win or lose anything!&quot;, &quot;You did not win or lose anything!&quot;, 'NeutralProbe.bmp', 'Neutral.bmp'],&amp;#10;}" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if fixationResp.keys != None:&amp;#10;    respCheck = &quot;You pressed too soon!&quot;&amp;#10;    probeResp.corr == 0 # override probe response since subject pressed too soon&amp;#10;elif probeResp.keys == '1':&amp;#10;    respCheck = &quot;Correct Response!&quot;&amp;#10;    &amp;#10;else:&amp;#10;    respCheck = &quot;You pressed too slow!&quot;&amp;#10;&amp;#10;&amp;#10;if Condition == &quot;Triangle&quot;:&amp;#10;    msg = cond_dict[Condition][4]&amp;#10;    TrialEarning = 0&amp;#10;elif probeResp.corr == 1:&amp;#10;    msg = cond_dict[Condition][4] + &quot; $%.2f!&quot; % cond_dict[Condition][3]&amp;#10;    TrialEarning = cond_dict[Condition][1]&amp;#10;else:&amp;#10;    msg = cond_dict[Condition][5] + &quot; $%.2f!&quot; % cond_dict[Condition][3]&amp;#10;    TrialEarning = cond_dict[Condition][2]&amp;#10;&amp;#10;TrackEarnings = TrackEarnings + TrialEarning&amp;#10;msgEarnings = &quot;Total Earnings: $%.2f!&quot; % TrackEarnings&amp;#10;&amp;#10;thisExp.addData('msg', msg)&amp;#10;thisExp.addData('TrackEarnings', TrackEarnings)" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if fixationResp.keys != None:&amp;#10;    respCheck = &quot;You pressed too soon!&quot;&amp;#10;    probeResp.corr == 0 # override probe response since subject pressed too soon&amp;#10;    probeResp.rt == 0 # override probe response since subject pressed too soon&amp;#10;elif probeResp.keys == '1':&amp;#10;    respCheck = &quot;Correct Response!&quot;&amp;#10;    &amp;#10;else:&amp;#10;    respCheck = &quot;You pressed too slow!&quot;&amp;#10;&amp;#10;&amp;#10;if Condition == &quot;Triangle&quot;:&amp;#10;    msg = cond_dict[Condition][4]&amp;#10;    TrialEarning = 0&amp;#10;elif probeResp.corr == 1:&amp;#10;    msg = cond_dict[Condition][4] + &quot; $%.2f!&quot; % cond_dict[Condition][3]&amp;#10;    TrialEarning = cond_dict[Condition][1]&amp;#10;else:&amp;#10;    msg = cond_dict[Condition][5] + &quot; $%.2f!&quot; % cond_dict[Condition][3]&amp;#10;    TrialEarning = cond_dict[Condition][2]&amp;#10;&amp;#10;TrackEarnings = TrackEarnings + TrialEarning&amp;#10;msgEarnings = &quot;Total Earnings: $%.2f!&quot; % TrackEarnings&amp;#10;&amp;#10;thisExp.addData('msg', msg)&amp;#10;thisExp.addData('TrackEarnings', TrackEarnings)" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -223,7 +223,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="msgEarnings = &quot;You earned a total of: $%.2f!&quot; % TrackEarnings&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="msgEarnings = &quot;You earned a total of: $%.2f!&quot; % TrackEarnings&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -252,39 +252,12 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3.0" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="$msgEarnings" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-    </Routine>
-    <Routine name="wait">
-      <PolygonComponent name="polygon">
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
-        <Param name="nVertices" updates="constant" val="4" valType="int"/>
-        <Param name="name" updates="None" val="polygon" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="shape" updates="constant" val="cross" valType="str"/>
-        <Param name="size" updates="constant" val="(0.05, 0.05)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="5" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-      </PolygonComponent>
     </Routine>
     <Routine name="scanTrigger">
       <TextComponent name="text_2">
@@ -450,6 +423,50 @@
         <Param name="name" updates="None" val="code_4" valType="code"/>
       </CodeComponent>
     </Routine>
+    <Routine name="endFix">
+      <PolygonComponent name="polygon">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="polygon" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(0.05, 0.05)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="outputVars">
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="fname_earnings = subID + '_' + runNum + '_Earnings.txt'&amp;#10;f = open( fname_earnings, 'w' )&amp;#10;f.write( TrackEarnings )&amp;#10;f.close()&amp;#10;&amp;#10;fname_RT= subID + '_' + runNum + '_RT.txt'&amp;#10;f = open( fname_RT, 'w' )&amp;#10;f.write( probeDur )&amp;#10;f.close()&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+    </Routine>
   </Routines>
   <Flow>
     <LoopInitiator loopType="TrialHandler" name="run">
@@ -483,8 +500,9 @@
     <Routine name="feedback"/>
     <Routine name="calcRT"/>
     <LoopTerminator name="trials"/>
+    <Routine name="outputVars"/>
     <LoopTerminator name="run"/>
-    <Routine name="wait"/>
+    <Routine name="endFix"/>
     <Routine name="DisplayMoney"/>
   </Flow>
 </PsychoPy2experiment>
