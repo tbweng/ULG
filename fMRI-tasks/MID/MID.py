@@ -672,7 +672,6 @@ for thisTrial in trials:
 
     # ------Prepare to start Routine "trial"-------
     t = 0
-    trialClock.reset()  # clock
     frameN = -1
     continueRoutine = True
     # update component parameters for each repeat
@@ -690,6 +689,8 @@ for thisTrial in trials:
         thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
+
+    trialClock.reset()  # clock
 
     # -------Start Routine "trial"-------
     while continueRoutine:
@@ -897,7 +898,7 @@ for thisTrial in trials:
     elif probeResp.corr == 1:
         msg = cond_dict[Condition][4] + " $%.2f!" % cond_dict[Condition][3]
         TrialEarning = cond_dict[Condition][1]
-    else:
+    elif probeResp.corr == 0:
         msg = cond_dict[Condition][5] + " $%.2f!" % cond_dict[Condition][3]
         TrialEarning = cond_dict[Condition][2]
 
@@ -907,8 +908,10 @@ for thisTrial in trials:
     thisExp.addData('msg', msg)
     thisExp.addData('TrackEarnings', TrackEarnings)
     feedbackMsg.setText(respCheck + '\n\n' + msg)
+    feedback_resp = keyboard.Keyboard()
+
     # keep track of which components have finished
-    feedbackComponents = [feedbackMsg]
+    feedbackComponents = [feedbackMsg, feedback_resp]
     for thisComponent in feedbackComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -941,6 +944,34 @@ for thisTrial in trials:
             feedbackMsg.frameNStop = frameN  # exact frame index
             win.timeOnFlip(feedbackMsg, 'tStopRefresh')  # time at next scr refresh
             feedbackMsg.setAutoDraw(False)
+            
+        # *feedback_resp* updates
+        if t >= 0.0 and feedback_resp.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            feedback_resp.tStart = t  # not accounting for scr refresh
+            feedback_resp.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(feedback_resp, 'tStartRefresh')  # time at next scr refresh
+            feedback_resp.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(feedback_resp.clock.reset)  # t=0 on next screen flip
+            feedback_resp.clearEvents(eventType='keyboard')
+        frameRemains = 0.0 + feedbackDur- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if feedback_resp.status == STARTED and t >= frameRemains:
+            # keep track of stop time/frame for later
+            feedback_resp.tStop = t  # not accounting for scr refresh
+            feedback_resp.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(feedback_resp, 'tStopRefresh')  # time at next scr refresh
+            feedback_resp.status = FINISHED
+        if feedback_resp.status == STARTED:
+            theseKeys = feedback_resp.getKeys(keyList=['1', '2'], waitRelease=False)
+            if len(theseKeys):
+                theseKeys = theseKeys[0]  # at least one key was pressed
+                
+                # check for quit:
+                if "escape" == theseKeys:
+                    endExpNow = True
+                feedback_resp.keys = theseKeys.name  # just the last key pressed
+                feedback_resp.rt = theseKeys.rt
 
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -980,6 +1011,14 @@ for thisTrial in trials:
     print("Trial Type: ", TrialType, ", UserPercentAcc: ", UserPercentAcc, ", Acc: ", Acc, ", prevAcc: ", prevAcc, ", probeAcc: ", probeResp.corr, "meanrt :", meanrt, ", NonNeutralTrialsNum", NonNeutralTrialsNum, ", Trials: ", Trials, ", probeResp.rt: ", probeResp.rt, ", AdjUserRT: ", AdjUserRT, ", probeDur: ", probeDur)
 
 
+    # check responses
+    if feedback_resp.keys in ['', [], None]:  # No response was made
+        feedback_resp.keys = None
+    trials.addData('feedback_resp.keys',feedback_resp.keys)
+    if feedback_resp.keys != None:  # we had a response
+        trials.addData('feedback_resp.rt', feedback_resp.rt)
+
+    
     # the Routine "feedback" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
 
@@ -989,20 +1028,14 @@ for thisTrial in trials:
     frameN = -1
     continueRoutine = True
     # update component parameters for each repeat
-    # Not sure purpose of OverallRT
-    """
-    if probeResp.keys is not None:
+    
+    # keep track of RT even if 
+    if probeResp.keys is not None: 
         OverallRT = probeResp.rt
+    elif feedback_resp.keys is not None:
+        OverallRT = probeDur + feedback_resp.rt
 
-    elif len(TextDisplay1.RESP) > 0 Then
-
-     OverallRT = c.GetAttrib("ProbeTime") + TextDisplay1.RT
-
-    ElseIf Len(Feedback.RESP) > 0 Then
-
-     C.SetAttrib "OverallRT", c.GetAttrib("ProbeTime") + TextDisplay1.Duration + Feedback.RT
-    """
-    # keep track of which components have finished
+# keep track of which components have finished
     calcRTComponents = []
     for thisComponent in calcRTComponents:
         thisComponent.tStart = None
@@ -1036,10 +1069,11 @@ for thisTrial in trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
 
-    # -------Ending Routine "calcRT"-------
+       # -------Ending Routine "calcRT"-------
     for thisComponent in calcRTComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
+    thisExp.addData('OverallRT', OverallRT)
     # the Routine "calcRT" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
