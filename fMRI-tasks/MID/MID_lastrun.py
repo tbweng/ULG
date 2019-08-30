@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.1.5),
-    on Wed Aug  7 12:21:19 2019
+    on Mon Aug 12 11:56:13 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -193,11 +193,14 @@ feedbackMsg = visual.TextStim(win=win, name='feedbackMsg',
 calcRTClock = core.Clock()
 OverallRT=''
 
-# Initialize components for Routine "wait"
-waitClock = core.Clock()
+# Initialize components for Routine "outputVars"
+outputVarsClock = core.Clock()
+
+# Initialize components for Routine "endFix"
+endFixClock = core.Clock()
 polygon = visual.ShapeStim(
     win=win, name='polygon', vertices='cross',
-    size=(0.5, 0.5),
+    size=(0.05, 0.05),
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
@@ -865,6 +868,7 @@ for thisRun in run:
         if fixationResp.keys != None:
             respCheck = "You pressed too soon!"
             probeResp.corr == 0 # override probe response since subject pressed too soon
+            probeResp.rt == 0 # override probe response since subject pressed too soon
         elif probeResp.keys == '1':
             respCheck = "Correct Response!"
             
@@ -1026,21 +1030,79 @@ for thisRun in run:
         
     # completed 1 repeats of 'trials'
     
+    
+    # ------Prepare to start Routine "outputVars"-------
+    t = 0
+    outputVarsClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    fname_earnings = subID + '_' + runNum + '_Earnings.txt'
+    f = open( fname_earnings, 'w' )
+    f.write( TrackEarnings )
+    f.close()
+    
+    fname_RT= subID + '_' + runNum + '_RT.txt'
+    f = open( fname_RT, 'w' )
+    f.write( probeDur )
+    f.close()
+    
+    
+    # keep track of which components have finished
+    outputVarsComponents = []
+    for thisComponent in outputVarsComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "outputVars"-------
+    while continueRoutine:
+        # get current time
+        t = outputVarsClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in outputVarsComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "outputVars"-------
+    for thisComponent in outputVarsComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # the Routine "outputVars" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 1 repeats of 'run'
 
 
-# ------Prepare to start Routine "wait"-------
+# ------Prepare to start Routine "endFix"-------
 t = 0
-waitClock.reset()  # clock
+endFixClock.reset()  # clock
 frameN = -1
 continueRoutine = True
 routineTimer.add(5.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
-waitComponents = [polygon]
-for thisComponent in waitComponents:
+endFixComponents = [polygon]
+for thisComponent in endFixComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
     thisComponent.tStartRefresh = None
@@ -1048,10 +1110,10 @@ for thisComponent in waitComponents:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
-# -------Start Routine "wait"-------
+# -------Start Routine "endFix"-------
 while continueRoutine and routineTimer.getTime() > 0:
     # get current time
-    t = waitClock.getTime()
+    t = endFixClock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
@@ -1078,7 +1140,7 @@ while continueRoutine and routineTimer.getTime() > 0:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in waitComponents:
+    for thisComponent in endFixComponents:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -1087,8 +1149,8 @@ while continueRoutine and routineTimer.getTime() > 0:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "wait"-------
-for thisComponent in waitComponents:
+# -------Ending Routine "endFix"-------
+for thisComponent in endFixComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 thisExp.addData('polygon.started', polygon.tStartRefresh)
@@ -1099,9 +1161,10 @@ t = 0
 DisplayMoneyClock.reset()  # clock
 frameN = -1
 continueRoutine = True
-routineTimer.add(1.000000)
+routineTimer.add(3.000000)
 # update component parameters for each repeat
 msgEarnings = "You earned a total of: $%.2f!" % TrackEarnings
+
 
 # keep track of which components have finished
 DisplayMoneyComponents = [text]
@@ -1127,7 +1190,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         text.frameNStart = frameN  # exact frame index
         win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
         text.setAutoDraw(True)
-    frameRemains = 0.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = 0.0 + 3.0- win.monitorFramePeriod * 0.75  # most of one frame period left
     if text.status == STARTED and t >= frameRemains:
         # keep track of stop time/frame for later
         text.tStop = t  # not accounting for scr refresh

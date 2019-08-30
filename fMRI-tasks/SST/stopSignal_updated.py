@@ -327,7 +327,7 @@ for thisTrial in trials:
             arrow_key.tStart = t
             arrow_key.frameNStart = frameN  # exact frame index
             arrow_key.setAutoDraw(True)
-        frameRemains = 0.0 + right_left_arrow_duration- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = arrow_key.tStart + right_left_arrow_duration- win.monitorFramePeriod * 0.75  # most of one frame period left
         if arrow_key.status == STARTED and t >= frameRemains:
             arrow_key.setAutoDraw(False)
 
@@ -349,7 +349,7 @@ for thisTrial in trials:
             # keyboard checking is just starting
             win.callOnFlip(key_response.clock.reset)  # t=0 on next screen flip
             event.clearEvents(eventType='keyboard')
-        frameRemains = 0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = arrow_key.tStart + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
         if key_response.status == STARTED and t >= frameRemains:
             key_response.status = FINISHED
         if key_response.status == STARTED:
@@ -472,7 +472,7 @@ for thisTrial in trials:
             fixation_cross.tStart = t
             fixation_cross.frameNStart = frameN  # exact frame index
             fixation_cross.setAutoDraw(True)
-        frameRemains = 0 + iti_duration+leftover_fixation- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = fixation_cross.tStart + iti_duration+leftover_fixation- win.monitorFramePeriod * 0.75  # most of one frame period left
         if fixation_cross.status == STARTED and t >= frameRemains:
             fixation_cross.setAutoDraw(False)
 

@@ -25,11 +25,11 @@ import sys
 
 ## FLAGS (for debugging) 
 SHOW_PDIGM=0       # display all fixation dots (requires peer_calibration.png)
-LBLS_WRITE=0       # write coordinates of fixation dots to file
+LBLS_WRITE=1       # write coordinates of fixation dots to file
 
 ## DEFINE
 nSamples = 27      # CAN NOT BE CHANGED WITHOUT OTHER MODIFICATIONS !
-sampleDuration = 4 # duration of each sample being displayed in seconds
+sampleDuration = .4 # duration of each sample being displayed in seconds
 
 pdigm_image='peer_calibration.png'
 
@@ -37,8 +37,19 @@ if LBLS_WRITE == 1:
   lbls_ver=open('lbls_peer_ver.1D', 'w');
   lbls_hor=open('lbls_peer_hor.1D', 'w');
 
+# VisionEgg.config.VISIONEGG_FULLSCREEN = 1
 # screen = get_default_screen()
-screen = VisionEgg.Core.Screen(size=(1440,900))
+# Macbook display (for testing)
+# screen = VisionEgg.Core.Screen(size=(1920,1200))
+# screen = VisionEgg.Core.Screen(size=(1440,900))
+
+# BIC Scanner Display
+screen = VisionEgg.Core.Screen(size=(1920,1080))
+
+# VisionEgg.config.VISIONEGG_SCREEN_W = 1920
+# VisionEgg.config.VISIONEGG_SCREEN_H = 1200
+
+
 screen.parameters.bgcolor = (0,0,0)
 
 scrn_x=screen.size[0];
@@ -215,8 +226,13 @@ pos_y.insert(tmp_o,tmp_y)
 order.append(tmp_o)
 
 if LBLS_WRITE == 1:
+  # lbls_ver.write("%6.2f\n" %(float(scrn_y*tmp_y)));
+  # lbls_hor.write("%6.2f\n" %(float(scrn_x*tmp_x)));
   lbls_ver.write("%6.2f\n" %(float(scrn_y*tmp_y)));
   lbls_hor.write("%6.2f\n" %(float(scrn_x*tmp_x)));
+
+print(str(scrn_x * tmp_x) + ', ' + str(scrn_y * tmp_y))
+
 
 # main function
 def getState(t):
@@ -241,7 +257,9 @@ def getState(t):
         pos_y.insert(tmp_o,tmp_y)
         order.append(tmp_o)
         
-        #print tmp_o, tmp_x
+        # print tmp_o, tmp_x
+        print(str(scrn_x * tmp_x) + ', ' + str(scrn_y * tmp_y))
+
         if LBLS_WRITE == 1:
           lbls_ver.write("%6.2f\n" %(float(scrn_y*tmp_y)));
           lbls_hor.write("%6.2f\n" %(float(scrn_x*tmp_x)));

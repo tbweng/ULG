@@ -437,7 +437,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         PrepFixation.frameNStart = frameN  # exact frame index
         win.timeOnFlip(PrepFixation, 'tStartRefresh')  # time at next scr refresh
         PrepFixation.setAutoDraw(True)
-    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = PrepFixation.tStart + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
     if PrepFixation.status == STARTED and t >= frameRemains:
         # keep track of stop time/frame for later
         PrepFixation.tStop = t  # not accounting for scr refresh
@@ -536,7 +536,7 @@ for thisTrial in trials:
             cueImage.frameNStart = frameN  # exact frame index
             win.timeOnFlip(cueImage, 'tStartRefresh')  # time at next scr refresh
             cueImage.setAutoDraw(True)
-        frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = cueImage.tStart + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
         if cueImage.status == STARTED and t >= frameRemains:
             # keep track of stop time/frame for later
             cueImage.tStop = t  # not accounting for scr refresh
@@ -599,7 +599,7 @@ for thisTrial in trials:
             fixation.frameNStart = frameN  # exact frame index
             win.timeOnFlip(fixation, 'tStartRefresh')  # time at next scr refresh
             fixation.setAutoDraw(True)
-        frameRemains = 0.0 + FixationDur/1000- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = fixation.tStart + FixationDur/1000- win.monitorFramePeriod * 0.75  # most of one frame period left
         if fixation.status == STARTED and t >= frameRemains:
             # keep track of stop time/frame for later
             fixation.tStop = t  # not accounting for scr refresh
@@ -617,7 +617,7 @@ for thisTrial in trials:
             # keyboard checking is just starting
             win.callOnFlip(fixationResp.clock.reset)  # t=0 on next screen flip
             fixationResp.clearEvents(eventType='keyboard')
-        frameRemains = 0.0 + FixationDur/1000- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = fixationResp.tStart + FixationDur/1000- win.monitorFramePeriod * 0.75  # most of one frame period left
         if fixationResp.status == STARTED and t >= frameRemains:
             # keep track of stop time/frame for later
             fixationResp.tStop = t  # not accounting for scr refresh
@@ -706,7 +706,7 @@ for thisTrial in trials:
             Target.frameNStart = frameN  # exact frame index
             win.timeOnFlip(Target, 'tStartRefresh')  # time at next scr refresh
             Target.setAutoDraw(True)
-        frameRemains = 0.0 + probeDur- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = Target.tStart + probeDur- win.monitorFramePeriod * 0.75  # most of one frame period left
         if Target.status == STARTED and t >= frameRemains:
             # keep track of stop time/frame for later
             Target.tStop = t  # not accounting for scr refresh
@@ -724,7 +724,7 @@ for thisTrial in trials:
             # keyboard checking is just starting
             win.callOnFlip(probeResp.clock.reset)  # t=0 on next screen flip
             probeResp.clearEvents(eventType='keyboard')
-        frameRemains = 0.0 + probeDur- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = probeResp.tStart + probeDur- win.monitorFramePeriod * 0.75  # most of one frame period left
         if probeResp.status == STARTED and t >= frameRemains:
             # keep track of stop time/frame for later
             probeResp.tStop = t  # not accounting for scr refresh
@@ -937,7 +937,7 @@ for thisTrial in trials:
             feedbackMsg.frameNStart = frameN  # exact frame index
             win.timeOnFlip(feedbackMsg, 'tStartRefresh')  # time at next scr refresh
             feedbackMsg.setAutoDraw(True)
-        frameRemains = 0.0 + feedbackDur- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = feedbackMsg.tStart + feedbackDur- win.monitorFramePeriod * 0.75  # most of one frame period left
         if feedbackMsg.status == STARTED and t >= frameRemains:
             # keep track of stop time/frame for later
             feedbackMsg.tStop = t  # not accounting for scr refresh
@@ -955,7 +955,7 @@ for thisTrial in trials:
             # keyboard checking is just starting
             win.callOnFlip(feedback_resp.clock.reset)  # t=0 on next screen flip
             feedback_resp.clearEvents(eventType='keyboard')
-        frameRemains = 0.0 + feedbackDur- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = feedback_resp.tStart + feedbackDur- win.monitorFramePeriod * 0.75  # most of one frame period left
         if feedback_resp.status == STARTED and t >= frameRemains:
             # keep track of stop time/frame for later
             feedback_resp.tStop = t  # not accounting for scr refresh
@@ -1187,7 +1187,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         polygon.frameNStart = frameN  # exact frame index
         win.timeOnFlip(polygon, 'tStartRefresh')  # time at next scr refresh
         polygon.setAutoDraw(True)
-    frameRemains = 0.0 + 5- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = polygon.tStart + 5- win.monitorFramePeriod * 0.75  # most of one frame period left
     if polygon.status == STARTED and t >= frameRemains:
         # keep track of stop time/frame for later
         polygon.tStop = t  # not accounting for scr refresh
@@ -1254,7 +1254,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         text.frameNStart = frameN  # exact frame index
         win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
         text.setAutoDraw(True)
-    frameRemains = 0.0 + 3.0 - win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = text.tStart + 3.0 - win.monitorFramePeriod * 0.75  # most of one frame period left
     if text.status == STARTED and t >= frameRemains:
         # keep track of stop time/frame for later
         text.tStop = t  # not accounting for scr refresh
