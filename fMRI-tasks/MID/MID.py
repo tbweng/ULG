@@ -73,13 +73,14 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 
 # Setup the Window
 win = visual.Window(
-    size=[1440, 900], fullscr=True, screen=0, 
+    size=[1920, 1080], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
+print('frame rate {0}'.format(win.getActualFrameRate()))
 if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
@@ -708,6 +709,7 @@ for thisTrial in trials:
             Target.setAutoDraw(True)
         frameRemains = Target.tStart + probeDur- win.monitorFramePeriod * 0.75  # most of one frame period left
         if Target.status == STARTED and t >= frameRemains:
+            print('target {0} {1} > {2} ({3})'.format(frameN, t, frameRemains, win.monitorFramePeriod))
             # keep track of stop time/frame for later
             Target.tStop = t  # not accounting for scr refresh
             Target.frameNStop = frameN  # exact frame index
@@ -726,6 +728,8 @@ for thisTrial in trials:
             probeResp.clearEvents(eventType='keyboard')
         frameRemains = probeResp.tStart + probeDur- win.monitorFramePeriod * 0.75  # most of one frame period left
         if probeResp.status == STARTED and t >= frameRemains:
+            print('probe {0} {1} > {2}'.format(frameN, t, frameRemains))
+
             # keep track of stop time/frame for later
             probeResp.tStop = t  # not accounting for scr refresh
             probeResp.frameNStop = frameN  # exact frame index
