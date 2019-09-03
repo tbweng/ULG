@@ -1,0 +1,2521 @@
+8.4588 	WARNING 	User requested fullscreen with size [1440  900], but screen is actually [1920, 1080]. Using actual size
+9.0265 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1350b5c18>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1351eb208>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.0266 	EXP 	window1: recordFrameIntervals = False
+9.1924 	EXP 	window1: recordFrameIntervals = True
+9.3748 	EXP 	window1: recordFrameIntervals = False
+9.8042 	EXP 	Created right_handed_instructions = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='right_handed_instructions', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.7, 2. ]), texRes=128, units='norm', win=Window(...))
+9.8115 	EXP 	Created left_handed_instructions = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sst_images/Instructions_Scanner_LeftHanded.bmp', interpolate=True, mask=None, maskParams=None, name='left_handed_instructions', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.7, 2. ]), texRes=128, units='norm', win=Window(...))
+9.8132 	EXP 	Created arrow_key = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='arrow_key', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.8, 2. ]), texRes=128, units='norm', win=Window(...))
+9.8147 	EXP 	Created stop_arrow = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stop_arrow', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.7, 2. ]), texRes=128, units='norm', win=Window(...))
+9.8810 	EXP 	Created fixation_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='fixation_cross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([0., 0., 0.]), text='default text', units='norm', win=Window(...), wrapWidth=1)
+9.8841 	EXP 	Created final_fixation_cross = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='final_fixation_cross', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='norm', win=Window(...), wrapWidth=1)
+9.8937 	EXP 	right_handed_instructions: autoDraw = True
+25.8815 	DATA 	Keypress: 5
+25.9155 	EXP 	Imported sst_trial_order_2A.csv as conditions, 180 conditions, 6 params
+25.9161 	EXP 	Created sequence: sequential, trialTypes=180, nReps=1, seed=None
+25.9165 	EXP 	New trial (rep=0, index=0): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 713), ('run_end_fixation', None)])
+25.9448 	EXP 	right_handed_instructions: autoDraw = False
+25.9448 	EXP 	left_handed_instructions: autoDraw = False
+25.9448 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+25.9448 	EXP 	stop_arrow: image = None
+25.9448 	EXP 	arrow_key: autoDraw = True
+26.6122 	DATA 	Keypress: 1
+26.6268 	EXP 	arrow_key: autoDraw = False
+26.6268 	EXP 	stop_arrow: autoDraw = False
+26.6268 	EXP 	fixation_cross: text = '+'
+26.6268 	EXP 	fixation_cross: autoDraw = True
+26.6612 	DATA 	Keypress: 5
+27.4467 	DATA 	Keypress: 5
+27.6605 	EXP 	New trial (rep=0, index=1): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 767), ('run_end_fixation', None)])
+27.6937 	EXP 	fixation_cross: autoDraw = False
+27.6937 	EXP 	fixation_cross: autoDraw = False
+27.6937 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+27.6937 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+27.6937 	EXP 	arrow_key: autoDraw = True
+27.7436 	EXP 	arrow_key: autoDraw = False
+27.7601 	EXP 	stop_arrow: autoDraw = True
+28.0601 	EXP 	stop_arrow: autoDraw = False
+28.0601 	EXP 	arrow_key: autoDraw = False
+28.0601 	EXP 	stop_arrow: autoDraw = False
+28.0601 	EXP 	fixation_cross: text = '+'
+28.0601 	EXP 	fixation_cross: autoDraw = True
+28.2308 	DATA 	Keypress: 5
+28.9942 	DATA 	Keypress: 5
+29.4616 	EXP 	New trial (rep=0, index=2): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 928), ('run_end_fixation', None)])
+29.4931 	EXP 	fixation_cross: autoDraw = False
+29.4931 	EXP 	fixation_cross: autoDraw = False
+29.4931 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+29.4931 	EXP 	stop_arrow: image = None
+29.4931 	EXP 	arrow_key: autoDraw = True
+29.7786 	DATA 	Keypress: 5
+30.0136 	DATA 	Keypress: 2
+30.0274 	EXP 	arrow_key: autoDraw = False
+30.0274 	EXP 	stop_arrow: autoDraw = False
+30.0274 	EXP 	fixation_cross: text = '+'
+30.0274 	EXP 	fixation_cross: autoDraw = True
+30.5636 	DATA 	Keypress: 5
+31.3283 	DATA 	Keypress: 5
+31.4286 	EXP 	New trial (rep=0, index=3): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 735), ('run_end_fixation', None)])
+31.4601 	EXP 	fixation_cross: autoDraw = False
+31.4601 	EXP 	fixation_cross: autoDraw = False
+31.4601 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+31.4601 	EXP 	stop_arrow: image = None
+31.4601 	EXP 	arrow_key: autoDraw = True
+31.9610 	DATA 	Keypress: 2
+31.9765 	EXP 	arrow_key: autoDraw = False
+31.9765 	EXP 	stop_arrow: autoDraw = False
+31.9765 	EXP 	fixation_cross: text = '+'
+31.9765 	EXP 	fixation_cross: autoDraw = True
+32.1133 	DATA 	Keypress: 5
+32.8972 	DATA 	Keypress: 5
+33.1949 	EXP 	New trial (rep=0, index=4): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1380), ('run_end_fixation', None)])
+33.2269 	EXP 	fixation_cross: autoDraw = False
+33.2269 	EXP 	fixation_cross: autoDraw = False
+33.2269 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+33.2269 	EXP 	stop_arrow: image = None
+33.2269 	EXP 	arrow_key: autoDraw = True
+33.6614 	DATA 	Keypress: 5
+33.7122 	DATA 	Keypress: 1
+33.7433 	EXP 	arrow_key: autoDraw = False
+33.7433 	EXP 	stop_arrow: autoDraw = False
+33.7433 	EXP 	fixation_cross: text = '+'
+33.7433 	EXP 	fixation_cross: autoDraw = True
+34.4478 	DATA 	Keypress: 5
+35.2308 	DATA 	Keypress: 5
+35.6112 	EXP 	New trial (rep=0, index=5): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 769), ('run_end_fixation', None)])
+35.6428 	EXP 	fixation_cross: autoDraw = False
+35.6428 	EXP 	fixation_cross: autoDraw = False
+35.6428 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+35.6428 	EXP 	stop_arrow: image = None
+35.6428 	EXP 	arrow_key: autoDraw = True
+35.9958 	DATA 	Keypress: 5
+36.1808 	DATA 	Keypress: 1
+36.1937 	EXP 	arrow_key: autoDraw = False
+36.1937 	EXP 	stop_arrow: autoDraw = False
+36.1937 	EXP 	fixation_cross: text = '+'
+36.1937 	EXP 	fixation_cross: autoDraw = True
+36.7803 	DATA 	Keypress: 5
+37.4118 	EXP 	New trial (rep=0, index=6): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 884), ('run_end_fixation', None)])
+37.4601 	EXP 	fixation_cross: autoDraw = False
+37.4601 	EXP 	fixation_cross: autoDraw = False
+37.4601 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+37.4601 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+37.4601 	EXP 	arrow_key: autoDraw = True
+37.5602 	EXP 	arrow_key: autoDraw = False
+37.5638 	DATA 	Keypress: 5
+37.5768 	EXP 	stop_arrow: autoDraw = True
+37.8766 	EXP 	stop_arrow: autoDraw = False
+37.8766 	EXP 	arrow_key: autoDraw = False
+37.8766 	EXP 	stop_arrow: autoDraw = False
+37.8766 	EXP 	fixation_cross: text = '+'
+37.8766 	EXP 	fixation_cross: autoDraw = True
+38.3299 	DATA 	Keypress: 5
+39.1139 	DATA 	Keypress: 5
+39.3442 	EXP 	New trial (rep=0, index=7): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 732), ('run_end_fixation', None)])
+39.3767 	EXP 	fixation_cross: autoDraw = False
+39.3767 	EXP 	fixation_cross: autoDraw = False
+39.3767 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+39.3767 	EXP 	stop_arrow: image = None
+39.3767 	EXP 	arrow_key: autoDraw = True
+39.7810 	DATA 	Keypress: 2
+39.7943 	EXP 	arrow_key: autoDraw = False
+39.7943 	EXP 	stop_arrow: autoDraw = False
+39.7943 	EXP 	fixation_cross: text = '+'
+39.7943 	EXP 	fixation_cross: autoDraw = True
+39.8977 	DATA 	Keypress: 5
+40.6635 	DATA 	Keypress: 5
+41.1123 	EXP 	New trial (rep=0, index=8): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 847), ('run_end_fixation', None)])
+41.1441 	EXP 	fixation_cross: autoDraw = False
+41.1441 	EXP 	fixation_cross: autoDraw = False
+41.1441 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+41.1441 	EXP 	stop_arrow: image = None
+41.1441 	EXP 	arrow_key: autoDraw = True
+41.4453 	DATA 	Keypress: 5
+41.7292 	DATA 	Keypress: 1
+41.7435 	EXP 	arrow_key: autoDraw = False
+41.7435 	EXP 	stop_arrow: autoDraw = False
+41.7435 	EXP 	fixation_cross: text = '+'
+41.7435 	EXP 	fixation_cross: autoDraw = True
+42.2305 	DATA 	Keypress: 5
+42.9974 	DATA 	Keypress: 5
+42.9981 	EXP 	New trial (rep=0, index=9): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 1278), ('run_end_fixation', None)])
+43.0442 	EXP 	fixation_cross: autoDraw = False
+43.0442 	EXP 	fixation_cross: autoDraw = False
+43.0442 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+43.0442 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+43.0442 	EXP 	arrow_key: autoDraw = True
+43.1946 	EXP 	arrow_key: autoDraw = False
+43.2105 	EXP 	stop_arrow: autoDraw = True
+43.5277 	EXP 	stop_arrow: autoDraw = False
+43.5277 	EXP 	arrow_key: autoDraw = False
+43.5277 	EXP 	stop_arrow: autoDraw = False
+43.5277 	EXP 	fixation_cross: text = '+'
+43.5277 	EXP 	fixation_cross: autoDraw = True
+43.7816 	DATA 	Keypress: 5
+44.5650 	DATA 	Keypress: 5
+45.3296 	DATA 	Keypress: 5
+45.3457 	EXP 	New trial (rep=0, index=10): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 701), ('run_end_fixation', None)])
+45.3779 	EXP 	fixation_cross: autoDraw = False
+45.3779 	EXP 	fixation_cross: autoDraw = False
+45.3779 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+45.3779 	EXP 	stop_arrow: image = None
+45.3779 	EXP 	arrow_key: autoDraw = True
+45.7649 	DATA 	Keypress: 2
+45.7781 	EXP 	arrow_key: autoDraw = False
+45.7781 	EXP 	stop_arrow: autoDraw = False
+45.7781 	EXP 	fixation_cross: text = '+'
+45.7781 	EXP 	fixation_cross: autoDraw = True
+46.1129 	DATA 	Keypress: 5
+46.8984 	DATA 	Keypress: 5
+47.0792 	EXP 	New trial (rep=0, index=11): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1480), ('run_end_fixation', None)])
+47.1110 	EXP 	fixation_cross: autoDraw = False
+47.1110 	EXP 	fixation_cross: autoDraw = False
+47.1110 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+47.1110 	EXP 	stop_arrow: image = None
+47.1110 	EXP 	arrow_key: autoDraw = True
+47.6508 	DATA 	Keypress: 2
+47.6607 	EXP 	arrow_key: autoDraw = False
+47.6607 	EXP 	stop_arrow: autoDraw = False
+47.6607 	EXP 	fixation_cross: text = '+'
+47.6607 	EXP 	fixation_cross: autoDraw = True
+47.6788 	DATA 	Keypress: 5
+48.4467 	DATA 	Keypress: 5
+49.2303 	DATA 	Keypress: 5
+49.5963 	EXP 	New trial (rep=0, index=12): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 935), ('run_end_fixation', None)])
+49.6279 	EXP 	fixation_cross: autoDraw = False
+49.6279 	EXP 	fixation_cross: autoDraw = False
+49.6279 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+49.6279 	EXP 	stop_arrow: image = None
+49.6279 	EXP 	arrow_key: autoDraw = True
+50.0148 	DATA 	Keypress: 5
+50.1123 	DATA 	Keypress: 1
+50.1284 	EXP 	arrow_key: autoDraw = False
+50.1284 	EXP 	stop_arrow: autoDraw = False
+50.1284 	EXP 	fixation_cross: text = '+'
+50.1284 	EXP 	fixation_cross: autoDraw = True
+50.7807 	DATA 	Keypress: 5
+51.5633 	DATA 	Keypress: 5
+51.5640 	EXP 	New trial (rep=0, index=13): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1533), ('run_end_fixation', None)])
+51.5945 	EXP 	fixation_cross: autoDraw = False
+51.5945 	EXP 	fixation_cross: autoDraw = False
+51.5945 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+51.5945 	EXP 	stop_arrow: image = None
+51.5945 	EXP 	arrow_key: autoDraw = True
+52.1302 	DATA 	Keypress: 2
+52.1446 	EXP 	arrow_key: autoDraw = False
+52.1446 	EXP 	stop_arrow: autoDraw = False
+52.1446 	EXP 	fixation_cross: text = '+'
+52.1446 	EXP 	fixation_cross: autoDraw = True
+52.3461 	DATA 	Keypress: 5
+53.1129 	DATA 	Keypress: 5
+53.8986 	DATA 	Keypress: 5
+54.1297 	EXP 	New trial (rep=0, index=14): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 747), ('run_end_fixation', None)])
+54.1618 	EXP 	fixation_cross: autoDraw = False
+54.1618 	EXP 	fixation_cross: autoDraw = False
+54.1618 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+54.1618 	EXP 	stop_arrow: image = None
+54.1618 	EXP 	arrow_key: autoDraw = True
+54.5303 	DATA 	Keypress: 1
+54.5449 	EXP 	arrow_key: autoDraw = False
+54.5449 	EXP 	stop_arrow: autoDraw = False
+54.5449 	EXP 	fixation_cross: text = '+'
+54.5449 	EXP 	fixation_cross: autoDraw = True
+54.6820 	DATA 	Keypress: 5
+55.4468 	DATA 	Keypress: 5
+55.9132 	EXP 	New trial (rep=0, index=15): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1758), ('run_end_fixation', None)])
+55.9444 	EXP 	fixation_cross: autoDraw = False
+55.9444 	EXP 	fixation_cross: autoDraw = False
+55.9444 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+55.9444 	EXP 	stop_arrow: image = None
+55.9444 	EXP 	arrow_key: autoDraw = True
+56.2323 	DATA 	Keypress: 5
+56.5142 	DATA 	Keypress: 1
+56.5287 	EXP 	arrow_key: autoDraw = False
+56.5287 	EXP 	stop_arrow: autoDraw = False
+56.5287 	EXP 	fixation_cross: text = '+'
+56.5287 	EXP 	fixation_cross: autoDraw = True
+57.0148 	DATA 	Keypress: 5
+57.7809 	DATA 	Keypress: 5
+58.5651 	DATA 	Keypress: 5
+58.6966 	EXP 	New trial (rep=0, index=16): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 818), ('run_end_fixation', None)])
+58.7288 	EXP 	fixation_cross: autoDraw = False
+58.7288 	EXP 	fixation_cross: autoDraw = False
+58.7288 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+58.7288 	EXP 	stop_arrow: image = None
+58.7288 	EXP 	arrow_key: autoDraw = True
+59.1490 	DATA 	Keypress: 1
+59.1615 	EXP 	arrow_key: autoDraw = False
+59.1615 	EXP 	stop_arrow: autoDraw = False
+59.1615 	EXP 	fixation_cross: text = '+'
+59.1615 	EXP 	fixation_cross: autoDraw = True
+59.3480 	DATA 	Keypress: 5
+60.1146 	DATA 	Keypress: 5
+60.5469 	EXP 	New trial (rep=0, index=17): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 833), ('run_end_fixation', None)])
+60.5786 	EXP 	fixation_cross: autoDraw = False
+60.5786 	EXP 	fixation_cross: autoDraw = False
+60.5786 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+60.5786 	EXP 	stop_arrow: image = None
+60.5786 	EXP 	arrow_key: autoDraw = True
+60.8986 	DATA 	Keypress: 5
+61.1645 	DATA 	Keypress: 2
+61.1791 	EXP 	arrow_key: autoDraw = False
+61.1791 	EXP 	stop_arrow: autoDraw = False
+61.1791 	EXP 	fixation_cross: text = '+'
+61.1791 	EXP 	fixation_cross: autoDraw = True
+61.6809 	DATA 	Keypress: 5
+62.4124 	EXP 	New trial (rep=0, index=18): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 1248), ('run_end_fixation', None)])
+62.4448 	EXP 	fixation_cross: autoDraw = False
+62.4448 	EXP 	fixation_cross: autoDraw = False
+62.4448 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+62.4448 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+62.4448 	EXP 	arrow_key: autoDraw = True
+62.4466 	DATA 	Keypress: 5
+62.6449 	EXP 	arrow_key: autoDraw = False
+62.6617 	EXP 	stop_arrow: autoDraw = True
+62.9622 	EXP 	stop_arrow: autoDraw = False
+62.9622 	EXP 	arrow_key: autoDraw = False
+62.9622 	EXP 	stop_arrow: autoDraw = False
+62.9622 	EXP 	fixation_cross: text = '+'
+62.9622 	EXP 	fixation_cross: autoDraw = True
+62.9655 	DATA 	Keypress: 2
+63.2325 	DATA 	Keypress: 5
+64.0163 	DATA 	Keypress: 5
+64.6971 	EXP 	New trial (rep=0, index=19): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1081), ('run_end_fixation', None)])
+64.7290 	EXP 	fixation_cross: autoDraw = False
+64.7290 	EXP 	fixation_cross: autoDraw = False
+64.7290 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+64.7290 	EXP 	stop_arrow: image = None
+64.7290 	EXP 	arrow_key: autoDraw = True
+64.7818 	DATA 	Keypress: 5
+65.0828 	DATA 	Keypress: 1
+65.0956 	EXP 	arrow_key: autoDraw = False
+65.0956 	EXP 	stop_arrow: autoDraw = False
+65.0956 	EXP 	fixation_cross: text = '+'
+65.0956 	EXP 	fixation_cross: autoDraw = True
+65.5644 	DATA 	Keypress: 5
+66.3496 	DATA 	Keypress: 5
+66.8139 	EXP 	New trial (rep=0, index=20): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 872), ('run_end_fixation', None)])
+66.8461 	EXP 	fixation_cross: autoDraw = False
+66.8461 	EXP 	fixation_cross: autoDraw = False
+66.8461 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+66.8461 	EXP 	stop_arrow: image = None
+66.8461 	EXP 	arrow_key: autoDraw = True
+67.1147 	DATA 	Keypress: 5
+67.3147 	DATA 	Keypress: 1
+67.3291 	EXP 	arrow_key: autoDraw = False
+67.3291 	EXP 	stop_arrow: autoDraw = False
+67.3291 	EXP 	fixation_cross: text = '+'
+67.3291 	EXP 	fixation_cross: autoDraw = True
+67.8978 	DATA 	Keypress: 5
+68.6826 	DATA 	Keypress: 5
+68.7138 	EXP 	New trial (rep=0, index=21): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 820), ('run_end_fixation', None)])
+68.7453 	EXP 	fixation_cross: autoDraw = False
+68.7453 	EXP 	fixation_cross: autoDraw = False
+68.7453 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+68.7453 	EXP 	stop_arrow: image = None
+68.7453 	EXP 	arrow_key: autoDraw = True
+69.2331 	DATA 	Keypress: 2
+69.2464 	EXP 	arrow_key: autoDraw = False
+69.2464 	EXP 	stop_arrow: autoDraw = False
+69.2464 	EXP 	fixation_cross: text = '+'
+69.2464 	EXP 	fixation_cross: autoDraw = True
+69.4488 	DATA 	Keypress: 5
+70.2322 	DATA 	Keypress: 5
+70.5641 	EXP 	New trial (rep=0, index=22): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 702), ('run_end_fixation', None)])
+70.5959 	EXP 	fixation_cross: autoDraw = False
+70.5959 	EXP 	fixation_cross: autoDraw = False
+70.5959 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+70.5959 	EXP 	stop_arrow: image = None
+70.5959 	EXP 	arrow_key: autoDraw = True
+71.0161 	DATA 	Keypress: 5
+71.0329 	DATA 	Keypress: 1
+71.0461 	EXP 	arrow_key: autoDraw = False
+71.0461 	EXP 	stop_arrow: autoDraw = False
+71.0461 	EXP 	fixation_cross: text = '+'
+71.0461 	EXP 	fixation_cross: autoDraw = True
+71.7831 	DATA 	Keypress: 5
+72.2976 	EXP 	New trial (rep=0, index=23): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 833), ('run_end_fixation', None)])
+72.3297 	EXP 	fixation_cross: autoDraw = False
+72.3297 	EXP 	fixation_cross: autoDraw = False
+72.3297 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+72.3297 	EXP 	stop_arrow: image = None
+72.3297 	EXP 	arrow_key: autoDraw = True
+72.5644 	DATA 	Keypress: 5
+72.7475 	DATA 	Keypress: 2
+72.7629 	EXP 	arrow_key: autoDraw = False
+72.7629 	EXP 	stop_arrow: autoDraw = False
+72.7629 	EXP 	fixation_cross: text = '+'
+72.7629 	EXP 	fixation_cross: autoDraw = True
+73.3499 	DATA 	Keypress: 5
+74.1333 	DATA 	Keypress: 5
+74.1643 	EXP 	New trial (rep=0, index=24): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 795), ('run_end_fixation', None)])
+74.1957 	EXP 	fixation_cross: autoDraw = False
+74.1957 	EXP 	fixation_cross: autoDraw = False
+74.1957 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+74.1957 	EXP 	stop_arrow: image = None
+74.1957 	EXP 	arrow_key: autoDraw = True
+74.5652 	DATA 	Keypress: 1
+74.5800 	EXP 	arrow_key: autoDraw = False
+74.5800 	EXP 	stop_arrow: autoDraw = False
+74.5800 	EXP 	fixation_cross: text = '+'
+74.5800 	EXP 	fixation_cross: autoDraw = True
+74.8981 	DATA 	Keypress: 5
+75.6831 	DATA 	Keypress: 5
+75.9811 	EXP 	New trial (rep=0, index=25): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 846), ('run_end_fixation', None)])
+76.0128 	EXP 	fixation_cross: autoDraw = False
+76.0128 	EXP 	fixation_cross: autoDraw = False
+76.0128 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+76.0128 	EXP 	stop_arrow: image = None
+76.0128 	EXP 	arrow_key: autoDraw = True
+76.3661 	DATA 	Keypress: 2
+76.3804 	EXP 	arrow_key: autoDraw = False
+76.3804 	EXP 	stop_arrow: autoDraw = False
+76.3804 	EXP 	fixation_cross: text = '+'
+76.3804 	EXP 	fixation_cross: autoDraw = True
+76.4669 	DATA 	Keypress: 5
+77.2314 	DATA 	Keypress: 5
+77.8647 	EXP 	New trial (rep=0, index=26): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 707), ('run_end_fixation', None)])
+77.8964 	EXP 	fixation_cross: autoDraw = False
+77.8964 	EXP 	fixation_cross: autoDraw = False
+77.8964 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+77.8964 	EXP 	stop_arrow: image = None
+77.8964 	EXP 	arrow_key: autoDraw = True
+78.0164 	DATA 	Keypress: 5
+78.4149 	DATA 	Keypress: 2
+78.4303 	EXP 	arrow_key: autoDraw = False
+78.4303 	EXP 	stop_arrow: autoDraw = False
+78.4303 	EXP 	fixation_cross: text = '+'
+78.4303 	EXP 	fixation_cross: autoDraw = True
+78.8001 	DATA 	Keypress: 5
+79.5656 	DATA 	Keypress: 5
+79.5987 	EXP 	New trial (rep=0, index=27): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 811), ('run_end_fixation', None)])
+79.6301 	EXP 	fixation_cross: autoDraw = False
+79.6301 	EXP 	fixation_cross: autoDraw = False
+79.6301 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+79.6301 	EXP 	stop_arrow: image = None
+79.6301 	EXP 	arrow_key: autoDraw = True
+80.0822 	DATA 	Keypress: 1
+80.0970 	EXP 	arrow_key: autoDraw = False
+80.0970 	EXP 	stop_arrow: autoDraw = False
+80.0970 	EXP 	fixation_cross: text = '+'
+80.0970 	EXP 	fixation_cross: autoDraw = True
+80.3502 	DATA 	Keypress: 5
+81.1338 	DATA 	Keypress: 5
+81.4313 	EXP 	New trial (rep=0, index=28): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 1022), ('run_end_fixation', None)])
+81.4800 	EXP 	fixation_cross: autoDraw = False
+81.4800 	EXP 	fixation_cross: autoDraw = False
+81.4800 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+81.4800 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+81.4800 	EXP 	arrow_key: autoDraw = True
+81.7305 	EXP 	arrow_key: autoDraw = False
+81.7470 	EXP 	stop_arrow: autoDraw = True
+81.8158 	DATA 	Keypress: 2
+81.8302 	EXP 	arrow_key: autoDraw = False
+81.8302 	EXP 	stop_arrow: autoDraw = False
+81.8302 	EXP 	fixation_cross: text = '+'
+81.8302 	EXP 	fixation_cross: autoDraw = True
+81.8994 	DATA 	Keypress: 5
+82.6814 	DATA 	Keypress: 5
+83.4671 	DATA 	Keypress: 5
+83.4979 	EXP 	New trial (rep=0, index=29): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 804), ('run_end_fixation', None)])
+83.5304 	EXP 	fixation_cross: autoDraw = False
+83.5304 	EXP 	fixation_cross: autoDraw = False
+83.5304 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+83.5304 	EXP 	stop_arrow: image = None
+83.5304 	EXP 	arrow_key: autoDraw = True
+84.0654 	DATA 	Keypress: 2
+84.0809 	EXP 	arrow_key: autoDraw = False
+84.0809 	EXP 	stop_arrow: autoDraw = False
+84.0809 	EXP 	fixation_cross: text = '+'
+84.0809 	EXP 	fixation_cross: autoDraw = True
+84.2320 	DATA 	Keypress: 5
+85.0165 	DATA 	Keypress: 5
+85.3317 	EXP 	New trial (rep=0, index=30): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 741), ('run_end_fixation', None)])
+85.3637 	EXP 	fixation_cross: autoDraw = False
+85.3637 	EXP 	fixation_cross: autoDraw = False
+85.3637 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+85.3637 	EXP 	stop_arrow: image = None
+85.3637 	EXP 	arrow_key: autoDraw = True
+85.8003 	DATA 	Keypress: 5
+85.8506 	DATA 	Keypress: 2
+85.8640 	EXP 	arrow_key: autoDraw = False
+85.8640 	EXP 	stop_arrow: autoDraw = False
+85.8640 	EXP 	fixation_cross: text = '+'
+85.8640 	EXP 	fixation_cross: autoDraw = True
+86.5664 	DATA 	Keypress: 5
+87.0986 	EXP 	New trial (rep=0, index=31): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 889), ('run_end_fixation', None)])
+87.1220 	EXP 	fixation_cross: autoDraw = False
+87.1220 	EXP 	fixation_cross: autoDraw = False
+87.1220 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+87.1220 	EXP 	stop_arrow: image = None
+87.1220 	EXP 	arrow_key: autoDraw = True
+87.3493 	DATA 	Keypress: 5
+87.6994 	DATA 	Keypress: 1
+87.7144 	EXP 	arrow_key: autoDraw = False
+87.7144 	EXP 	stop_arrow: autoDraw = False
+87.7144 	EXP 	fixation_cross: text = '+'
+87.7144 	EXP 	fixation_cross: autoDraw = True
+88.1345 	DATA 	Keypress: 5
+88.9000 	DATA 	Keypress: 5
+89.0153 	EXP 	New trial (rep=0, index=32): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 765), ('run_end_fixation', None)])
+89.0466 	EXP 	fixation_cross: autoDraw = False
+89.0466 	EXP 	fixation_cross: autoDraw = False
+89.0466 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+89.0466 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+89.0466 	EXP 	arrow_key: autoDraw = True
+89.2475 	EXP 	arrow_key: autoDraw = False
+89.2630 	EXP 	stop_arrow: autoDraw = True
+89.5811 	EXP 	stop_arrow: autoDraw = False
+89.5811 	EXP 	arrow_key: autoDraw = False
+89.5811 	EXP 	stop_arrow: autoDraw = False
+89.5811 	EXP 	fixation_cross: text = '+'
+89.5811 	EXP 	fixation_cross: autoDraw = True
+89.6829 	DATA 	Keypress: 5
+90.4668 	DATA 	Keypress: 5
+90.8321 	EXP 	New trial (rep=0, index=33): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1191), ('run_end_fixation', None)])
+90.8639 	EXP 	fixation_cross: autoDraw = False
+90.8639 	EXP 	fixation_cross: autoDraw = False
+90.8639 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+90.8639 	EXP 	stop_arrow: image = None
+90.8639 	EXP 	arrow_key: autoDraw = True
+91.2504 	DATA 	Keypress: 5
+91.2659 	DATA 	Keypress: 2
+91.2805 	EXP 	arrow_key: autoDraw = False
+91.2805 	EXP 	stop_arrow: autoDraw = False
+91.2805 	EXP 	fixation_cross: text = '+'
+91.2805 	EXP 	fixation_cross: autoDraw = True
+92.0157 	DATA 	Keypress: 5
+92.7989 	DATA 	Keypress: 5
+93.0480 	EXP 	New trial (rep=0, index=34): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1158), ('run_end_fixation', None)])
+93.0805 	EXP 	fixation_cross: autoDraw = False
+93.0805 	EXP 	fixation_cross: autoDraw = False
+93.0805 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+93.0805 	EXP 	stop_arrow: image = None
+93.0805 	EXP 	arrow_key: autoDraw = True
+93.4344 	DATA 	Keypress: 1
+93.4480 	EXP 	arrow_key: autoDraw = False
+93.4480 	EXP 	stop_arrow: autoDraw = False
+93.4480 	EXP 	fixation_cross: text = '+'
+93.4480 	EXP 	fixation_cross: autoDraw = True
+93.5677 	DATA 	Keypress: 5
+94.3496 	DATA 	Keypress: 5
+95.1340 	DATA 	Keypress: 5
+95.2326 	EXP 	New trial (rep=0, index=35): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 847), ('run_end_fixation', None)])
+95.2740 	EXP 	fixation_cross: autoDraw = False
+95.2740 	EXP 	fixation_cross: autoDraw = False
+95.2740 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+95.2740 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+95.2740 	EXP 	arrow_key: autoDraw = True
+95.5312 	EXP 	arrow_key: autoDraw = False
+95.5473 	EXP 	stop_arrow: autoDraw = True
+95.6001 	DATA 	Keypress: 2
+95.6144 	EXP 	arrow_key: autoDraw = False
+95.6144 	EXP 	stop_arrow: autoDraw = False
+95.6144 	EXP 	fixation_cross: text = '+'
+95.6144 	EXP 	fixation_cross: autoDraw = True
+95.9179 	DATA 	Keypress: 5
+96.6836 	DATA 	Keypress: 5
+97.1158 	EXP 	New trial (rep=0, index=36): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1121), ('run_end_fixation', None)])
+97.1401 	EXP 	fixation_cross: autoDraw = False
+97.1401 	EXP 	fixation_cross: autoDraw = False
+97.1401 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+97.1401 	EXP 	stop_arrow: image = None
+97.1401 	EXP 	arrow_key: autoDraw = True
+97.4669 	DATA 	Keypress: 5
+97.6343 	DATA 	Keypress: 1
+97.6479 	EXP 	arrow_key: autoDraw = False
+97.6479 	EXP 	stop_arrow: autoDraw = False
+97.6479 	EXP 	fixation_cross: text = '+'
+97.6479 	EXP 	fixation_cross: autoDraw = True
+98.2503 	DATA 	Keypress: 5
+99.0154 	DATA 	Keypress: 5
+99.2661 	EXP 	New trial (rep=0, index=37): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 1008), ('run_end_fixation', None)])
+99.3070 	EXP 	fixation_cross: autoDraw = False
+99.3070 	EXP 	fixation_cross: autoDraw = False
+99.3070 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+99.3070 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+99.3070 	EXP 	arrow_key: autoDraw = True
+99.5150 	EXP 	arrow_key: autoDraw = False
+99.5312 	EXP 	stop_arrow: autoDraw = True
+99.8001 	DATA 	Keypress: 5
+99.8486 	EXP 	stop_arrow: autoDraw = False
+99.8486 	EXP 	arrow_key: autoDraw = False
+99.8486 	EXP 	stop_arrow: autoDraw = False
+99.8486 	EXP 	fixation_cross: text = '+'
+99.8486 	EXP 	fixation_cross: autoDraw = True
+100.5850 	DATA 	Keypress: 5
+101.3325 	EXP 	New trial (rep=0, index=38): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 728), ('run_end_fixation', None)])
+101.3514 	DATA 	Keypress: 5
+101.3644 	EXP 	fixation_cross: autoDraw = False
+101.3644 	EXP 	fixation_cross: autoDraw = False
+101.3644 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+101.3644 	EXP 	stop_arrow: image = None
+101.3644 	EXP 	arrow_key: autoDraw = True
+101.9345 	DATA 	Keypress: 2
+101.9484 	EXP 	arrow_key: autoDraw = False
+101.9484 	EXP 	stop_arrow: autoDraw = False
+101.9484 	EXP 	fixation_cross: text = '+'
+101.9484 	EXP 	fixation_cross: autoDraw = True
+102.1349 	DATA 	Keypress: 5
+102.9186 	DATA 	Keypress: 5
+103.0992 	EXP 	New trial (rep=0, index=39): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 812), ('run_end_fixation', None)])
+103.1224 	EXP 	fixation_cross: autoDraw = False
+103.1224 	EXP 	fixation_cross: autoDraw = False
+103.1224 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+103.1224 	EXP 	stop_arrow: image = None
+103.1224 	EXP 	arrow_key: autoDraw = True
+103.6841 	DATA 	Keypress: 5
+103.7515 	DATA 	Keypress: 2
+103.7816 	EXP 	arrow_key: autoDraw = False
+103.7816 	EXP 	stop_arrow: autoDraw = False
+103.7816 	EXP 	fixation_cross: text = '+'
+103.7816 	EXP 	fixation_cross: autoDraw = True
+104.4666 	DATA 	Keypress: 5
+104.9328 	EXP 	New trial (rep=0, index=40): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 836), ('run_end_fixation', None)])
+104.9648 	EXP 	fixation_cross: autoDraw = False
+104.9648 	EXP 	fixation_cross: autoDraw = False
+104.9648 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+104.9648 	EXP 	stop_arrow: image = None
+104.9648 	EXP 	arrow_key: autoDraw = True
+105.2519 	DATA 	Keypress: 5
+105.5674 	DATA 	Keypress: 1
+105.5813 	EXP 	arrow_key: autoDraw = False
+105.5813 	EXP 	stop_arrow: autoDraw = False
+105.5813 	EXP 	fixation_cross: text = '+'
+105.5813 	EXP 	fixation_cross: autoDraw = True
+106.0178 	DATA 	Keypress: 5
+106.8008 	DATA 	Keypress: 5
+106.8016 	EXP 	New trial (rep=0, index=41): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 894), ('run_end_fixation', None)])
+106.8252 	EXP 	fixation_cross: autoDraw = False
+106.8252 	EXP 	fixation_cross: autoDraw = False
+106.8252 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+106.8252 	EXP 	stop_arrow: image = None
+106.8252 	EXP 	arrow_key: autoDraw = True
+107.2996 	DATA 	Keypress: 1
+107.3156 	EXP 	arrow_key: autoDraw = False
+107.3156 	EXP 	stop_arrow: autoDraw = False
+107.3156 	EXP 	fixation_cross: text = '+'
+107.3156 	EXP 	fixation_cross: autoDraw = True
+107.5855 	DATA 	Keypress: 5
+108.3507 	DATA 	Keypress: 5
+108.7166 	EXP 	New trial (rep=0, index=42): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 714), ('run_end_fixation', None)])
+108.7571 	EXP 	fixation_cross: autoDraw = False
+108.7571 	EXP 	fixation_cross: autoDraw = False
+108.7571 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+108.7571 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+108.7571 	EXP 	arrow_key: autoDraw = True
+109.0153 	EXP 	arrow_key: autoDraw = False
+109.0320 	EXP 	stop_arrow: autoDraw = True
+109.1338 	DATA 	Keypress: 5
+109.2018 	DATA 	Keypress: 1
+109.2154 	EXP 	arrow_key: autoDraw = False
+109.2154 	EXP 	stop_arrow: autoDraw = False
+109.2154 	EXP 	fixation_cross: text = '+'
+109.2154 	EXP 	fixation_cross: autoDraw = True
+109.9183 	DATA 	Keypress: 5
+110.4670 	EXP 	New trial (rep=0, index=43): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 719), ('run_end_fixation', None)])
+110.4983 	EXP 	fixation_cross: autoDraw = False
+110.4983 	EXP 	fixation_cross: autoDraw = False
+110.4983 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+110.4983 	EXP 	stop_arrow: image = None
+110.4983 	EXP 	arrow_key: autoDraw = True
+110.6848 	DATA 	Keypress: 5
+110.9672 	DATA 	Keypress: 2
+110.9825 	EXP 	arrow_key: autoDraw = False
+110.9825 	EXP 	stop_arrow: autoDraw = False
+110.9825 	EXP 	fixation_cross: text = '+'
+110.9825 	EXP 	fixation_cross: autoDraw = True
+111.4675 	DATA 	Keypress: 5
+112.2160 	EXP 	New trial (rep=0, index=44): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 707), ('run_end_fixation', None)])
+112.2413 	EXP 	fixation_cross: autoDraw = False
+112.2413 	EXP 	fixation_cross: autoDraw = False
+112.2413 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+112.2413 	EXP 	stop_arrow: image = None
+112.2413 	EXP 	arrow_key: autoDraw = True
+112.2437 	DATA 	Keypress: 5
+112.8022 	DATA 	Keypress: 1
+112.8158 	EXP 	arrow_key: autoDraw = False
+112.8158 	EXP 	stop_arrow: autoDraw = False
+112.8158 	EXP 	fixation_cross: text = '+'
+112.8158 	EXP 	fixation_cross: autoDraw = True
+113.0190 	DATA 	Keypress: 5
+113.8006 	DATA 	Keypress: 5
+113.9504 	EXP 	New trial (rep=0, index=45): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 787), ('run_end_fixation', None)])
+113.9813 	EXP 	fixation_cross: autoDraw = False
+113.9813 	EXP 	fixation_cross: autoDraw = False
+113.9813 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+113.9813 	EXP 	stop_arrow: image = None
+113.9813 	EXP 	arrow_key: autoDraw = True
+114.5676 	DATA 	Keypress: 1
+114.5828 	EXP 	arrow_key: autoDraw = False
+114.5828 	EXP 	stop_arrow: autoDraw = False
+114.5828 	EXP 	fixation_cross: text = '+'
+114.5828 	EXP 	fixation_cross: autoDraw = True
+114.5864 	DATA 	Keypress: 5
+115.3693 	DATA 	Keypress: 5
+115.7672 	EXP 	New trial (rep=0, index=46): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 767), ('run_end_fixation', None)])
+115.7991 	EXP 	fixation_cross: autoDraw = False
+115.7991 	EXP 	fixation_cross: autoDraw = False
+115.7991 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+115.7991 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+115.7991 	EXP 	arrow_key: autoDraw = True
+115.9985 	EXP 	arrow_key: autoDraw = False
+116.0154 	EXP 	stop_arrow: autoDraw = True
+116.1348 	DATA 	Keypress: 5
+116.2680 	DATA 	Keypress: 2
+116.2828 	EXP 	arrow_key: autoDraw = False
+116.2828 	EXP 	stop_arrow: autoDraw = False
+116.2828 	EXP 	fixation_cross: text = '+'
+116.2828 	EXP 	fixation_cross: autoDraw = True
+116.9196 	DATA 	Keypress: 5
+117.5671 	EXP 	New trial (rep=0, index=47): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 783), ('run_end_fixation', None)])
+117.6079 	EXP 	fixation_cross: autoDraw = False
+117.6079 	EXP 	fixation_cross: autoDraw = False
+117.6079 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+117.6079 	EXP 	stop_arrow: image = None
+117.6079 	EXP 	arrow_key: autoDraw = True
+117.7025 	DATA 	Keypress: 5
+118.1859 	DATA 	Keypress: 2
+118.1993 	EXP 	arrow_key: autoDraw = False
+118.1993 	EXP 	stop_arrow: autoDraw = False
+118.1993 	EXP 	fixation_cross: text = '+'
+118.1993 	EXP 	fixation_cross: autoDraw = True
+118.4673 	DATA 	Keypress: 5
+119.2517 	DATA 	Keypress: 5
+119.3842 	EXP 	New trial (rep=0, index=48): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 743), ('run_end_fixation', None)])
+119.4096 	EXP 	fixation_cross: autoDraw = False
+119.4096 	EXP 	fixation_cross: autoDraw = False
+119.4096 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+119.4096 	EXP 	stop_arrow: image = None
+119.4096 	EXP 	arrow_key: autoDraw = True
+119.8848 	DATA 	Keypress: 2
+119.8991 	EXP 	arrow_key: autoDraw = False
+119.8991 	EXP 	stop_arrow: autoDraw = False
+119.8991 	EXP 	fixation_cross: text = '+'
+119.8991 	EXP 	fixation_cross: autoDraw = True
+120.0357 	DATA 	Keypress: 5
+120.8006 	DATA 	Keypress: 5
+121.1500 	EXP 	New trial (rep=0, index=49): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 752), ('run_end_fixation', None)])
+121.1749 	EXP 	fixation_cross: autoDraw = False
+121.1749 	EXP 	fixation_cross: autoDraw = False
+121.1749 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+121.1749 	EXP 	stop_arrow: image = None
+121.1749 	EXP 	arrow_key: autoDraw = True
+121.5180 	DATA 	Keypress: 2
+121.5331 	EXP 	arrow_key: autoDraw = False
+121.5331 	EXP 	stop_arrow: autoDraw = False
+121.5331 	EXP 	fixation_cross: text = '+'
+121.5331 	EXP 	fixation_cross: autoDraw = True
+121.5849 	DATA 	Keypress: 5
+122.3685 	DATA 	Keypress: 5
+122.9176 	EXP 	New trial (rep=0, index=50): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 1219), ('run_end_fixation', None)])
+122.9604 	EXP 	fixation_cross: autoDraw = False
+122.9604 	EXP 	fixation_cross: autoDraw = False
+122.9604 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+122.9604 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+122.9604 	EXP 	arrow_key: autoDraw = True
+123.1167 	EXP 	arrow_key: autoDraw = False
+123.1329 	EXP 	stop_arrow: autoDraw = True
+123.1354 	DATA 	Keypress: 5
+123.3339 	DATA 	Keypress: 2
+123.3488 	EXP 	arrow_key: autoDraw = False
+123.3488 	EXP 	stop_arrow: autoDraw = False
+123.3488 	EXP 	fixation_cross: text = '+'
+123.3488 	EXP 	fixation_cross: autoDraw = True
+123.9198 	DATA 	Keypress: 5
+124.7031 	DATA 	Keypress: 5
+125.1846 	EXP 	New trial (rep=0, index=51): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1510), ('run_end_fixation', None)])
+125.2093 	EXP 	fixation_cross: autoDraw = False
+125.2093 	EXP 	fixation_cross: autoDraw = False
+125.2093 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+125.2093 	EXP 	stop_arrow: image = None
+125.2093 	EXP 	arrow_key: autoDraw = True
+125.4685 	DATA 	Keypress: 5
+125.7029 	DATA 	Keypress: 1
+125.7166 	EXP 	arrow_key: autoDraw = False
+125.7166 	EXP 	stop_arrow: autoDraw = False
+125.7166 	EXP 	fixation_cross: text = '+'
+125.7166 	EXP 	fixation_cross: autoDraw = True
+126.2527 	DATA 	Keypress: 5
+127.0367 	DATA 	Keypress: 5
+127.7178 	EXP 	New trial (rep=0, index=52): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1441), ('run_end_fixation', None)])
+127.7426 	EXP 	fixation_cross: autoDraw = False
+127.7426 	EXP 	fixation_cross: autoDraw = False
+127.7426 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+127.7426 	EXP 	stop_arrow: image = None
+127.7426 	EXP 	arrow_key: autoDraw = True
+127.8023 	DATA 	Keypress: 5
+128.3842 	DATA 	Keypress: 1
+128.4001 	EXP 	arrow_key: autoDraw = False
+128.4001 	EXP 	stop_arrow: autoDraw = False
+128.4001 	EXP 	fixation_cross: text = '+'
+128.4001 	EXP 	fixation_cross: autoDraw = True
+128.5854 	DATA 	Keypress: 5
+129.3699 	DATA 	Keypress: 5
+130.1357 	DATA 	Keypress: 5
+130.1846 	EXP 	New trial (rep=0, index=53): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 774), ('run_end_fixation', None)])
+130.2098 	EXP 	fixation_cross: autoDraw = False
+130.2098 	EXP 	fixation_cross: autoDraw = False
+130.2098 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+130.2098 	EXP 	stop_arrow: image = None
+130.2098 	EXP 	arrow_key: autoDraw = True
+130.6512 	DATA 	Keypress: 1
+130.6670 	EXP 	arrow_key: autoDraw = False
+130.6670 	EXP 	stop_arrow: autoDraw = False
+130.6670 	EXP 	fixation_cross: text = '+'
+130.6670 	EXP 	fixation_cross: autoDraw = True
+130.9187 	DATA 	Keypress: 5
+131.7021 	DATA 	Keypress: 5
+131.9849 	EXP 	New trial (rep=0, index=54): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1033), ('run_end_fixation', None)])
+132.0095 	EXP 	fixation_cross: autoDraw = False
+132.0095 	EXP 	fixation_cross: autoDraw = False
+132.0095 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+132.0095 	EXP 	stop_arrow: image = None
+132.0095 	EXP 	arrow_key: autoDraw = True
+132.4702 	DATA 	Keypress: 5
+132.7184 	DATA 	Keypress: 2
+132.7342 	EXP 	arrow_key: autoDraw = False
+132.7342 	EXP 	stop_arrow: autoDraw = False
+132.7342 	EXP 	fixation_cross: text = '+'
+132.7342 	EXP 	fixation_cross: autoDraw = True
+133.2517 	DATA 	Keypress: 5
+134.0372 	DATA 	Keypress: 5
+134.0380 	EXP 	New trial (rep=0, index=55): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 868), ('run_end_fixation', None)])
+134.0830 	EXP 	fixation_cross: autoDraw = False
+134.0830 	EXP 	fixation_cross: autoDraw = False
+134.0830 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+134.0830 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+134.0830 	EXP 	arrow_key: autoDraw = True
+134.1837 	EXP 	arrow_key: autoDraw = False
+134.2002 	EXP 	stop_arrow: autoDraw = True
+134.5001 	EXP 	stop_arrow: autoDraw = False
+134.5001 	EXP 	arrow_key: autoDraw = False
+134.5001 	EXP 	stop_arrow: autoDraw = False
+134.5001 	EXP 	fixation_cross: text = '+'
+134.5001 	EXP 	fixation_cross: autoDraw = True
+134.8197 	DATA 	Keypress: 5
+135.5856 	DATA 	Keypress: 5
+135.9520 	EXP 	New trial (rep=0, index=56): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 836), ('run_end_fixation', None)])
+135.9769 	EXP 	fixation_cross: autoDraw = False
+135.9769 	EXP 	fixation_cross: autoDraw = False
+135.9769 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+135.9769 	EXP 	stop_arrow: image = None
+135.9769 	EXP 	arrow_key: autoDraw = True
+136.3701 	DATA 	Keypress: 5
+136.5539 	DATA 	Keypress: 2
+136.5672 	EXP 	arrow_key: autoDraw = False
+136.5672 	EXP 	stop_arrow: autoDraw = False
+136.5672 	EXP 	fixation_cross: text = '+'
+136.5672 	EXP 	fixation_cross: autoDraw = True
+137.1544 	DATA 	Keypress: 5
+137.8183 	EXP 	New trial (rep=0, index=57): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 713), ('run_end_fixation', None)])
+137.8445 	EXP 	fixation_cross: autoDraw = False
+137.8445 	EXP 	fixation_cross: autoDraw = False
+137.8445 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+137.8445 	EXP 	stop_arrow: image = None
+137.8445 	EXP 	arrow_key: autoDraw = True
+137.9184 	DATA 	Keypress: 5
+138.3540 	DATA 	Keypress: 1
+138.3674 	EXP 	arrow_key: autoDraw = False
+138.3674 	EXP 	stop_arrow: autoDraw = False
+138.3674 	EXP 	fixation_cross: text = '+'
+138.3674 	EXP 	fixation_cross: autoDraw = True
+138.7031 	DATA 	Keypress: 5
+139.4875 	DATA 	Keypress: 5
+139.5518 	EXP 	New trial (rep=0, index=58): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 707), ('run_end_fixation', None)])
+139.5782 	EXP 	fixation_cross: autoDraw = False
+139.5782 	EXP 	fixation_cross: autoDraw = False
+139.5782 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+139.5782 	EXP 	stop_arrow: image = None
+139.5782 	EXP 	arrow_key: autoDraw = True
+140.2032 	DATA 	Keypress: 1
+140.2176 	EXP 	arrow_key: autoDraw = False
+140.2176 	EXP 	stop_arrow: autoDraw = False
+140.2176 	EXP 	fixation_cross: text = '+'
+140.2176 	EXP 	fixation_cross: autoDraw = True
+140.2522 	DATA 	Keypress: 5
+141.0371 	DATA 	Keypress: 5
+141.2852 	EXP 	New trial (rep=0, index=59): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 878), ('run_end_fixation', None)])
+141.3116 	EXP 	fixation_cross: autoDraw = False
+141.3116 	EXP 	fixation_cross: autoDraw = False
+141.3116 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+141.3116 	EXP 	stop_arrow: image = None
+141.3116 	EXP 	arrow_key: autoDraw = True
+141.7870 	DATA 	Keypress: 1
+141.8095 	DATA 	Keypress: 5
+141.8167 	EXP 	arrow_key: autoDraw = False
+141.8167 	EXP 	stop_arrow: autoDraw = False
+141.8167 	EXP 	fixation_cross: text = '+'
+141.8167 	EXP 	fixation_cross: autoDraw = True
+142.5854 	DATA 	Keypress: 5
+143.1857 	EXP 	New trial (rep=0, index=60): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 851), ('run_end_fixation', None)])
+143.2109 	EXP 	fixation_cross: autoDraw = False
+143.2109 	EXP 	fixation_cross: autoDraw = False
+143.2109 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+143.2109 	EXP 	stop_arrow: image = None
+143.2109 	EXP 	arrow_key: autoDraw = True
+143.3706 	DATA 	Keypress: 5
+143.6853 	DATA 	Keypress: 2
+143.7010 	EXP 	arrow_key: autoDraw = False
+143.7010 	EXP 	stop_arrow: autoDraw = False
+143.7010 	EXP 	fixation_cross: text = '+'
+143.7010 	EXP 	fixation_cross: autoDraw = True
+144.1540 	DATA 	Keypress: 5
+144.9203 	DATA 	Keypress: 5
+145.0523 	EXP 	New trial (rep=0, index=61): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1008), ('run_end_fixation', None)])
+145.0786 	EXP 	fixation_cross: autoDraw = False
+145.0786 	EXP 	fixation_cross: autoDraw = False
+145.0786 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+145.0786 	EXP 	stop_arrow: image = None
+145.0786 	EXP 	arrow_key: autoDraw = True
+145.5542 	DATA 	Keypress: 1
+145.5847 	EXP 	arrow_key: autoDraw = False
+145.5847 	EXP 	stop_arrow: autoDraw = False
+145.5847 	EXP 	fixation_cross: text = '+'
+145.5847 	EXP 	fixation_cross: autoDraw = True
+145.7035 	DATA 	Keypress: 5
+146.4882 	DATA 	Keypress: 5
+147.0858 	EXP 	New trial (rep=0, index=62): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1763), ('run_end_fixation', None)])
+147.1141 	EXP 	fixation_cross: autoDraw = False
+147.1141 	EXP 	fixation_cross: autoDraw = False
+147.1141 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+147.1141 	EXP 	stop_arrow: image = None
+147.1141 	EXP 	arrow_key: autoDraw = True
+147.2534 	DATA 	Keypress: 5
+147.5692 	DATA 	Keypress: 1
+147.5850 	EXP 	arrow_key: autoDraw = False
+147.5850 	EXP 	stop_arrow: autoDraw = False
+147.5850 	EXP 	fixation_cross: text = '+'
+147.5850 	EXP 	fixation_cross: autoDraw = True
+148.0361 	DATA 	Keypress: 5
+148.8216 	DATA 	Keypress: 5
+149.5870 	DATA 	Keypress: 5
+149.8692 	EXP 	New trial (rep=0, index=63): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 714), ('run_end_fixation', None)])
+149.8968 	EXP 	fixation_cross: autoDraw = False
+149.8968 	EXP 	fixation_cross: autoDraw = False
+149.8968 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+149.8968 	EXP 	stop_arrow: image = None
+149.8968 	EXP 	arrow_key: autoDraw = True
+150.3703 	DATA 	Keypress: 5
+150.3720 	DATA 	Keypress: 2
+150.3844 	EXP 	arrow_key: autoDraw = False
+150.3844 	EXP 	stop_arrow: autoDraw = False
+150.3844 	EXP 	fixation_cross: text = '+'
+150.3844 	EXP 	fixation_cross: autoDraw = True
+151.1550 	DATA 	Keypress: 5
+151.6027 	EXP 	New trial (rep=0, index=64): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1009), ('run_end_fixation', None)])
+151.6288 	EXP 	fixation_cross: autoDraw = False
+151.6288 	EXP 	fixation_cross: autoDraw = False
+151.6288 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+151.6288 	EXP 	stop_arrow: image = None
+151.6288 	EXP 	arrow_key: autoDraw = True
+151.9212 	DATA 	Keypress: 5
+152.1048 	DATA 	Keypress: 2
+152.1185 	EXP 	arrow_key: autoDraw = False
+152.1185 	EXP 	stop_arrow: autoDraw = False
+152.1185 	EXP 	fixation_cross: text = '+'
+152.1185 	EXP 	fixation_cross: autoDraw = True
+152.7038 	DATA 	Keypress: 5
+153.4889 	DATA 	Keypress: 5
+153.6361 	EXP 	New trial (rep=0, index=65): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1274), ('run_end_fixation', None)])
+153.6628 	EXP 	fixation_cross: autoDraw = False
+153.6628 	EXP 	fixation_cross: autoDraw = False
+153.6628 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+153.6628 	EXP 	stop_arrow: image = None
+153.6628 	EXP 	arrow_key: autoDraw = True
+154.1525 	DATA 	Keypress: 1
+154.1678 	EXP 	arrow_key: autoDraw = False
+154.1678 	EXP 	stop_arrow: autoDraw = False
+154.1678 	EXP 	fixation_cross: text = '+'
+154.1678 	EXP 	fixation_cross: autoDraw = True
+154.2549 	DATA 	Keypress: 5
+155.0368 	DATA 	Keypress: 5
+155.8221 	DATA 	Keypress: 5
+155.9365 	EXP 	New trial (rep=0, index=66): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 787), ('run_end_fixation', None)])
+155.9680 	EXP 	fixation_cross: autoDraw = False
+155.9680 	EXP 	fixation_cross: autoDraw = False
+155.9680 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+155.9680 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+155.9680 	EXP 	arrow_key: autoDraw = True
+156.1184 	EXP 	arrow_key: autoDraw = False
+156.1353 	EXP 	stop_arrow: autoDraw = True
+156.4396 	DATA 	Keypress: 2
+156.4512 	EXP 	stop_arrow: autoDraw = False
+156.4512 	EXP 	arrow_key: autoDraw = False
+156.4512 	EXP 	stop_arrow: autoDraw = False
+156.4512 	EXP 	fixation_cross: text = '+'
+156.4512 	EXP 	fixation_cross: autoDraw = True
+156.6041 	DATA 	Keypress: 5
+157.3708 	DATA 	Keypress: 5
+157.7697 	EXP 	New trial (rep=0, index=67): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1357), ('run_end_fixation', None)])
+157.7962 	EXP 	fixation_cross: autoDraw = False
+157.7962 	EXP 	fixation_cross: autoDraw = False
+157.7962 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+157.7962 	EXP 	stop_arrow: image = None
+157.7962 	EXP 	arrow_key: autoDraw = True
+158.1550 	DATA 	Keypress: 5
+158.7216 	DATA 	Keypress: 2
+158.7351 	EXP 	arrow_key: autoDraw = False
+158.7351 	EXP 	stop_arrow: autoDraw = False
+158.7351 	EXP 	fixation_cross: text = '+'
+158.7351 	EXP 	fixation_cross: autoDraw = True
+158.9374 	DATA 	Keypress: 5
+159.7032 	DATA 	Keypress: 5
+160.1534 	EXP 	New trial (rep=0, index=68): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 707), ('run_end_fixation', None)])
+160.1807 	EXP 	fixation_cross: autoDraw = False
+160.1807 	EXP 	fixation_cross: autoDraw = False
+160.1807 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+160.1807 	EXP 	stop_arrow: image = None
+160.1807 	EXP 	arrow_key: autoDraw = True
+160.4886 	DATA 	Keypress: 5
+160.6217 	DATA 	Keypress: 1
+160.6358 	EXP 	arrow_key: autoDraw = False
+160.6358 	EXP 	stop_arrow: autoDraw = False
+160.6358 	EXP 	fixation_cross: text = '+'
+160.6358 	EXP 	fixation_cross: autoDraw = True
+161.2721 	DATA 	Keypress: 5
+161.8867 	EXP 	New trial (rep=0, index=69): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 735), ('run_end_fixation', None)])
+161.9139 	EXP 	fixation_cross: autoDraw = False
+161.9139 	EXP 	fixation_cross: autoDraw = False
+161.9139 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+161.9139 	EXP 	stop_arrow: image = None
+161.9139 	EXP 	arrow_key: autoDraw = True
+162.0369 	DATA 	Keypress: 5
+162.3388 	DATA 	Keypress: 2
+162.3522 	EXP 	arrow_key: autoDraw = False
+162.3522 	EXP 	stop_arrow: autoDraw = False
+162.3522 	EXP 	fixation_cross: text = '+'
+162.3522 	EXP 	fixation_cross: autoDraw = True
+162.8211 	DATA 	Keypress: 5
+163.6055 	DATA 	Keypress: 5
+163.6537 	EXP 	New trial (rep=0, index=70): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 707), ('run_end_fixation', None)])
+163.6972 	EXP 	fixation_cross: autoDraw = False
+163.6972 	EXP 	fixation_cross: autoDraw = False
+163.6972 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+163.6972 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+163.6972 	EXP 	arrow_key: autoDraw = True
+163.8977 	EXP 	arrow_key: autoDraw = False
+163.9134 	EXP 	stop_arrow: autoDraw = True
+164.2184 	EXP 	stop_arrow: autoDraw = False
+164.2184 	EXP 	arrow_key: autoDraw = False
+164.2184 	EXP 	stop_arrow: autoDraw = False
+164.2184 	EXP 	fixation_cross: text = '+'
+164.2184 	EXP 	fixation_cross: autoDraw = True
+164.3705 	DATA 	Keypress: 5
+165.1563 	DATA 	Keypress: 5
+165.4036 	EXP 	New trial (rep=0, index=71): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 796), ('run_end_fixation', None)])
+165.4315 	EXP 	fixation_cross: autoDraw = False
+165.4315 	EXP 	fixation_cross: autoDraw = False
+165.4315 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+165.4315 	EXP 	stop_arrow: image = None
+165.4315 	EXP 	arrow_key: autoDraw = True
+165.8558 	DATA 	Keypress: 2
+165.8689 	EXP 	arrow_key: autoDraw = False
+165.8689 	EXP 	stop_arrow: autoDraw = False
+165.8689 	EXP 	fixation_cross: text = '+'
+165.8689 	EXP 	fixation_cross: autoDraw = True
+165.9389 	DATA 	Keypress: 5
+166.7047 	DATA 	Keypress: 5
+167.2203 	EXP 	New trial (rep=0, index=72): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 798), ('run_end_fixation', None)])
+167.2479 	EXP 	fixation_cross: autoDraw = False
+167.2479 	EXP 	fixation_cross: autoDraw = False
+167.2479 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+167.2479 	EXP 	stop_arrow: image = None
+167.2479 	EXP 	arrow_key: autoDraw = True
+167.4877 	DATA 	Keypress: 5
+167.8560 	DATA 	Keypress: 1
+167.8691 	EXP 	arrow_key: autoDraw = False
+167.8691 	EXP 	stop_arrow: autoDraw = False
+167.8691 	EXP 	fixation_cross: text = '+'
+167.8691 	EXP 	fixation_cross: autoDraw = True
+168.2726 	DATA 	Keypress: 5
+169.0383 	DATA 	Keypress: 5
+169.0390 	EXP 	New trial (rep=0, index=73): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 705), ('run_end_fixation', None)])
+169.0652 	EXP 	fixation_cross: autoDraw = False
+169.0652 	EXP 	fixation_cross: autoDraw = False
+169.0652 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+169.0652 	EXP 	stop_arrow: image = None
+169.0652 	EXP 	arrow_key: autoDraw = True
+169.6040 	DATA 	Keypress: 2
+169.6194 	EXP 	arrow_key: autoDraw = False
+169.6194 	EXP 	stop_arrow: autoDraw = False
+169.6194 	EXP 	fixation_cross: text = '+'
+169.6194 	EXP 	fixation_cross: autoDraw = True
+169.8217 	DATA 	Keypress: 5
+170.6062 	DATA 	Keypress: 5
+170.7706 	EXP 	New trial (rep=0, index=74): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 802), ('run_end_fixation', None)])
+170.7986 	EXP 	fixation_cross: autoDraw = False
+170.7986 	EXP 	fixation_cross: autoDraw = False
+170.7986 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+170.7986 	EXP 	stop_arrow: image = None
+170.7986 	EXP 	arrow_key: autoDraw = True
+171.1895 	DATA 	Keypress: 1
+171.2026 	EXP 	arrow_key: autoDraw = False
+171.2026 	EXP 	stop_arrow: autoDraw = False
+171.2026 	EXP 	fixation_cross: text = '+'
+171.2026 	EXP 	fixation_cross: autoDraw = True
+171.3720 	DATA 	Keypress: 5
+172.1547 	DATA 	Keypress: 5
+172.6029 	EXP 	New trial (rep=0, index=75): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 1871), ('run_end_fixation', None)])
+172.6318 	EXP 	fixation_cross: autoDraw = False
+172.6318 	EXP 	fixation_cross: autoDraw = False
+172.6318 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+172.6318 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+172.6318 	EXP 	arrow_key: autoDraw = True
+172.8863 	EXP 	arrow_key: autoDraw = False
+172.9019 	EXP 	stop_arrow: autoDraw = True
+172.9394 	DATA 	Keypress: 5
+173.0229 	DATA 	Keypress: 2
+173.0356 	EXP 	arrow_key: autoDraw = False
+173.0356 	EXP 	stop_arrow: autoDraw = False
+173.0356 	EXP 	fixation_cross: text = '+'
+173.0356 	EXP 	fixation_cross: autoDraw = True
+173.7062 	DATA 	Keypress: 5
+174.4883 	DATA 	Keypress: 5
+175.2728 	DATA 	Keypress: 5
+175.5043 	EXP 	New trial (rep=0, index=76): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 912), ('run_end_fixation', None)])
+175.5321 	EXP 	fixation_cross: autoDraw = False
+175.5321 	EXP 	fixation_cross: autoDraw = False
+175.5321 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+175.5321 	EXP 	stop_arrow: image = None
+175.5321 	EXP 	arrow_key: autoDraw = True
+176.0525 	DATA 	Keypress: 5
+176.1012 	DATA 	Keypress: 2
+176.1160 	EXP 	arrow_key: autoDraw = False
+176.1160 	EXP 	stop_arrow: autoDraw = False
+176.1160 	EXP 	fixation_cross: text = '+'
+176.1160 	EXP 	fixation_cross: autoDraw = True
+176.8216 	DATA 	Keypress: 5
+177.4375 	EXP 	New trial (rep=0, index=77): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 752), ('run_end_fixation', None)])
+177.4656 	EXP 	fixation_cross: autoDraw = False
+177.4656 	EXP 	fixation_cross: autoDraw = False
+177.4656 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+177.4656 	EXP 	stop_arrow: image = None
+177.4656 	EXP 	arrow_key: autoDraw = True
+177.6027 	DATA 	Keypress: 5
+177.8864 	DATA 	Keypress: 1
+177.8999 	EXP 	arrow_key: autoDraw = False
+177.8999 	EXP 	stop_arrow: autoDraw = False
+177.8999 	EXP 	fixation_cross: text = '+'
+177.8999 	EXP 	fixation_cross: autoDraw = True
+178.3855 	DATA 	Keypress: 5
+179.1517 	DATA 	Keypress: 5
+179.2173 	EXP 	New trial (rep=0, index=78): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 868), ('run_end_fixation', None)])
+179.2492 	EXP 	fixation_cross: autoDraw = False
+179.2492 	EXP 	fixation_cross: autoDraw = False
+179.2492 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+179.2492 	EXP 	stop_arrow: image = None
+179.2492 	EXP 	arrow_key: autoDraw = True
+179.6530 	DATA 	Keypress: 2
+179.6662 	EXP 	arrow_key: autoDraw = False
+179.6662 	EXP 	stop_arrow: autoDraw = False
+179.6662 	EXP 	fixation_cross: text = '+'
+179.6662 	EXP 	fixation_cross: autoDraw = True
+179.9349 	DATA 	Keypress: 5
+180.7195 	DATA 	Keypress: 5
+181.1186 	EXP 	New trial (rep=0, index=79): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 719), ('run_end_fixation', None)])
+181.1660 	EXP 	fixation_cross: autoDraw = False
+181.1660 	EXP 	fixation_cross: autoDraw = False
+181.1660 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+181.1660 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+181.1660 	EXP 	arrow_key: autoDraw = True
+181.3664 	EXP 	arrow_key: autoDraw = False
+181.3831 	EXP 	stop_arrow: autoDraw = True
+181.4860 	DATA 	Keypress: 5
+181.5363 	DATA 	Keypress: 1
+181.5504 	EXP 	arrow_key: autoDraw = False
+181.5504 	EXP 	stop_arrow: autoDraw = False
+181.5504 	EXP 	fixation_cross: text = '+'
+181.5504 	EXP 	fixation_cross: autoDraw = True
+182.2683 	DATA 	Keypress: 5
+182.8844 	EXP 	New trial (rep=0, index=80): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 789), ('run_end_fixation', None)])
+182.9165 	EXP 	fixation_cross: autoDraw = False
+182.9165 	EXP 	fixation_cross: autoDraw = False
+182.9165 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+182.9165 	EXP 	stop_arrow: image = None
+182.9165 	EXP 	arrow_key: autoDraw = True
+183.0533 	DATA 	Keypress: 5
+183.5855 	DATA 	Keypress: 2
+183.6171 	EXP 	arrow_key: autoDraw = False
+183.6171 	EXP 	stop_arrow: autoDraw = False
+183.6171 	EXP 	fixation_cross: text = '+'
+183.6171 	EXP 	fixation_cross: autoDraw = True
+183.8361 	DATA 	Keypress: 5
+184.6062 	DATA 	Keypress: 5
+184.7048 	EXP 	New trial (rep=0, index=81): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 745), ('run_end_fixation', None)])
+184.7336 	EXP 	fixation_cross: autoDraw = False
+184.7336 	EXP 	fixation_cross: autoDraw = False
+184.7336 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+184.7336 	EXP 	stop_arrow: image = None
+184.7336 	EXP 	arrow_key: autoDraw = True
+185.3865 	DATA 	Keypress: 5
+185.4364 	DATA 	Keypress: 1
+185.4504 	EXP 	arrow_key: autoDraw = False
+185.4504 	EXP 	stop_arrow: autoDraw = False
+185.4504 	EXP 	fixation_cross: text = '+'
+185.4504 	EXP 	fixation_cross: autoDraw = True
+186.1710 	DATA 	Keypress: 5
+186.4847 	EXP 	New trial (rep=0, index=82): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 796), ('run_end_fixation', None)])
+186.5168 	EXP 	fixation_cross: autoDraw = False
+186.5168 	EXP 	fixation_cross: autoDraw = False
+186.5168 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+186.5168 	EXP 	stop_arrow: image = None
+186.5168 	EXP 	arrow_key: autoDraw = True
+186.9356 	DATA 	Keypress: 5
+187.0350 	DATA 	Keypress: 1
+187.0509 	EXP 	arrow_key: autoDraw = False
+187.0509 	EXP 	stop_arrow: autoDraw = False
+187.0509 	EXP 	fixation_cross: text = '+'
+187.0509 	EXP 	fixation_cross: autoDraw = True
+187.7199 	DATA 	Keypress: 5
+188.3050 	EXP 	New trial (rep=0, index=83): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1025), ('run_end_fixation', None)])
+188.3339 	EXP 	fixation_cross: autoDraw = False
+188.3339 	EXP 	fixation_cross: autoDraw = False
+188.3339 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+188.3339 	EXP 	stop_arrow: image = None
+188.3339 	EXP 	arrow_key: autoDraw = True
+188.5038 	DATA 	Keypress: 5
+189.0401 	DATA 	Keypress: 2
+189.0541 	EXP 	arrow_key: autoDraw = False
+189.0541 	EXP 	stop_arrow: autoDraw = False
+189.0541 	EXP 	fixation_cross: text = '+'
+189.0541 	EXP 	fixation_cross: autoDraw = True
+189.2729 	DATA 	Keypress: 5
+190.0571 	DATA 	Keypress: 5
+190.3552 	EXP 	New trial (rep=0, index=84): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 737), ('run_end_fixation', None)])
+190.4009 	EXP 	fixation_cross: autoDraw = False
+190.4009 	EXP 	fixation_cross: autoDraw = False
+190.4009 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+190.4009 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+190.4009 	EXP 	arrow_key: autoDraw = True
+190.5537 	EXP 	arrow_key: autoDraw = False
+190.5706 	EXP 	stop_arrow: autoDraw = True
+190.8228 	DATA 	Keypress: 5
+190.8874 	EXP 	stop_arrow: autoDraw = False
+190.8874 	EXP 	arrow_key: autoDraw = False
+190.8874 	EXP 	stop_arrow: autoDraw = False
+190.8874 	EXP 	fixation_cross: text = '+'
+190.8874 	EXP 	fixation_cross: autoDraw = True
+191.6061 	DATA 	Keypress: 5
+192.1552 	EXP 	New trial (rep=0, index=85): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 915), ('run_end_fixation', None)])
+192.1842 	EXP 	fixation_cross: autoDraw = False
+192.1842 	EXP 	fixation_cross: autoDraw = False
+192.1842 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+192.1842 	EXP 	stop_arrow: image = None
+192.1842 	EXP 	arrow_key: autoDraw = True
+192.3906 	DATA 	Keypress: 5
+192.6404 	DATA 	Keypress: 2
+192.6541 	EXP 	arrow_key: autoDraw = False
+192.6541 	EXP 	stop_arrow: autoDraw = False
+192.6541 	EXP 	fixation_cross: text = '+'
+192.6541 	EXP 	fixation_cross: autoDraw = True
+193.1568 	DATA 	Keypress: 5
+193.9394 	DATA 	Keypress: 5
+194.1043 	EXP 	New trial (rep=0, index=86): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 882), ('run_end_fixation', None)])
+194.1344 	EXP 	fixation_cross: autoDraw = False
+194.1344 	EXP 	fixation_cross: autoDraw = False
+194.1344 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+194.1344 	EXP 	stop_arrow: image = None
+194.1344 	EXP 	arrow_key: autoDraw = True
+194.7236 	DATA 	Keypress: 5
+194.7903 	DATA 	Keypress: 2
+194.8038 	EXP 	arrow_key: autoDraw = False
+194.8038 	EXP 	stop_arrow: autoDraw = False
+194.8038 	EXP 	fixation_cross: text = '+'
+194.8038 	EXP 	fixation_cross: autoDraw = True
+195.4898 	DATA 	Keypress: 5
+196.0223 	EXP 	New trial (rep=0, index=87): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 704), ('run_end_fixation', None)])
+196.0512 	EXP 	fixation_cross: autoDraw = False
+196.0512 	EXP 	fixation_cross: autoDraw = False
+196.0512 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+196.0512 	EXP 	stop_arrow: image = None
+196.0512 	EXP 	arrow_key: autoDraw = True
+196.2726 	DATA 	Keypress: 5
+196.5742 	DATA 	Keypress: 1
+196.5879 	EXP 	arrow_key: autoDraw = False
+196.5879 	EXP 	stop_arrow: autoDraw = False
+196.5879 	EXP 	fixation_cross: text = '+'
+196.5879 	EXP 	fixation_cross: autoDraw = True
+197.0562 	DATA 	Keypress: 5
+197.7547 	EXP 	New trial (rep=0, index=88): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 707), ('run_end_fixation', None)])
+197.8020 	EXP 	fixation_cross: autoDraw = False
+197.8020 	EXP 	fixation_cross: autoDraw = False
+197.8020 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+197.8020 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+197.8020 	EXP 	arrow_key: autoDraw = True
+197.8397 	DATA 	Keypress: 5
+198.0045 	EXP 	arrow_key: autoDraw = False
+198.0211 	EXP 	stop_arrow: autoDraw = True
+198.3250 	DATA 	Keypress: 1
+198.3370 	EXP 	stop_arrow: autoDraw = False
+198.3370 	EXP 	arrow_key: autoDraw = False
+198.3370 	EXP 	stop_arrow: autoDraw = False
+198.3370 	EXP 	fixation_cross: text = '+'
+198.3370 	EXP 	fixation_cross: autoDraw = True
+198.6065 	DATA 	Keypress: 5
+199.3915 	DATA 	Keypress: 5
+199.5224 	EXP 	New trial (rep=0, index=89): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1357), ('run_end_fixation', None)])
+199.5525 	EXP 	fixation_cross: autoDraw = False
+199.5525 	EXP 	fixation_cross: autoDraw = False
+199.5525 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+199.5525 	EXP 	stop_arrow: image = None
+199.5525 	EXP 	arrow_key: autoDraw = True
+200.1411 	DATA 	Keypress: 1
+200.1547 	EXP 	arrow_key: autoDraw = False
+200.1547 	EXP 	stop_arrow: autoDraw = False
+200.1547 	EXP 	fixation_cross: text = '+'
+200.1547 	EXP 	fixation_cross: autoDraw = True
+200.1742 	DATA 	Keypress: 5
+200.9394 	DATA 	Keypress: 5
+201.7234 	DATA 	Keypress: 5
+201.9059 	EXP 	New trial (rep=0, index=90): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 740), ('run_end_fixation', None)])
+201.9358 	EXP 	fixation_cross: autoDraw = False
+201.9358 	EXP 	fixation_cross: autoDraw = False
+201.9358 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+201.9358 	EXP 	stop_arrow: image = None
+201.9358 	EXP 	arrow_key: autoDraw = True
+202.4413 	DATA 	Keypress: 2
+202.4548 	EXP 	arrow_key: autoDraw = False
+202.4548 	EXP 	stop_arrow: autoDraw = False
+202.4548 	EXP 	fixation_cross: text = '+'
+202.4548 	EXP 	fixation_cross: autoDraw = True
+202.5083 	DATA 	Keypress: 5
+203.2726 	DATA 	Keypress: 5
+203.6711 	EXP 	New trial (rep=0, index=91): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1198), ('run_end_fixation', None)])
+203.7021 	EXP 	fixation_cross: autoDraw = False
+203.7021 	EXP 	fixation_cross: autoDraw = False
+203.7021 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+203.7021 	EXP 	stop_arrow: image = None
+203.7021 	EXP 	arrow_key: autoDraw = True
+204.0579 	DATA 	Keypress: 5
+204.1404 	DATA 	Keypress: 1
+204.1551 	EXP 	arrow_key: autoDraw = False
+204.1551 	EXP 	stop_arrow: autoDraw = False
+204.1551 	EXP 	fixation_cross: text = '+'
+204.1551 	EXP 	fixation_cross: autoDraw = True
+204.8414 	DATA 	Keypress: 5
+205.6061 	DATA 	Keypress: 5
+205.9063 	EXP 	New trial (rep=0, index=92): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1899), ('run_end_fixation', None)])
+205.9360 	EXP 	fixation_cross: autoDraw = False
+205.9360 	EXP 	fixation_cross: autoDraw = False
+205.9360 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+205.9360 	EXP 	stop_arrow: image = None
+205.9360 	EXP 	arrow_key: autoDraw = True
+206.3902 	DATA 	Keypress: 5
+206.4067 	DATA 	Keypress: 2
+206.4220 	EXP 	arrow_key: autoDraw = False
+206.4220 	EXP 	stop_arrow: autoDraw = False
+206.4220 	EXP 	fixation_cross: text = '+'
+206.4220 	EXP 	fixation_cross: autoDraw = True
+207.1750 	DATA 	Keypress: 5
+207.9402 	DATA 	Keypress: 5
+208.7249 	DATA 	Keypress: 5
+208.8396 	EXP 	New trial (rep=0, index=93): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1871), ('run_end_fixation', None)])
+208.8700 	EXP 	fixation_cross: autoDraw = False
+208.8700 	EXP 	fixation_cross: autoDraw = False
+208.8700 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+208.8700 	EXP 	stop_arrow: image = None
+208.8700 	EXP 	arrow_key: autoDraw = True
+209.3239 	DATA 	Keypress: 1
+209.3385 	EXP 	arrow_key: autoDraw = False
+209.3385 	EXP 	stop_arrow: autoDraw = False
+209.3385 	EXP 	fixation_cross: text = '+'
+209.3385 	EXP 	fixation_cross: autoDraw = True
+209.5077 	DATA 	Keypress: 5
+210.2745 	DATA 	Keypress: 5
+211.0570 	DATA 	Keypress: 5
+211.7389 	EXP 	New trial (rep=0, index=94): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1095), ('run_end_fixation', None)])
+211.7702 	EXP 	fixation_cross: autoDraw = False
+211.7702 	EXP 	fixation_cross: autoDraw = False
+211.7702 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+211.7702 	EXP 	stop_arrow: image = None
+211.7702 	EXP 	arrow_key: autoDraw = True
+211.8419 	DATA 	Keypress: 5
+212.1735 	DATA 	Keypress: 2
+212.1881 	EXP 	arrow_key: autoDraw = False
+212.1881 	EXP 	stop_arrow: autoDraw = False
+212.1881 	EXP 	fixation_cross: text = '+'
+212.1881 	EXP 	fixation_cross: autoDraw = True
+212.6069 	DATA 	Keypress: 5
+213.3913 	DATA 	Keypress: 5
+213.8564 	EXP 	New trial (rep=0, index=95): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 790), ('run_end_fixation', None)])
+213.8878 	EXP 	fixation_cross: autoDraw = False
+213.8878 	EXP 	fixation_cross: autoDraw = False
+213.8878 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+213.8878 	EXP 	stop_arrow: image = None
+213.8878 	EXP 	arrow_key: autoDraw = True
+214.1753 	DATA 	Keypress: 5
+214.3914 	DATA 	Keypress: 1
+214.4052 	EXP 	arrow_key: autoDraw = False
+214.4052 	EXP 	stop_arrow: autoDraw = False
+214.4052 	EXP 	fixation_cross: text = '+'
+214.4052 	EXP 	fixation_cross: autoDraw = True
+214.9408 	DATA 	Keypress: 5
+215.6733 	EXP 	New trial (rep=0, index=96): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1633), ('run_end_fixation', None)])
+215.7048 	EXP 	fixation_cross: autoDraw = False
+215.7048 	EXP 	fixation_cross: autoDraw = False
+215.7048 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+215.7048 	EXP 	stop_arrow: image = None
+215.7048 	EXP 	arrow_key: autoDraw = True
+215.7235 	DATA 	Keypress: 5
+216.2423 	DATA 	Keypress: 1
+216.2553 	EXP 	arrow_key: autoDraw = False
+216.2553 	EXP 	stop_arrow: autoDraw = False
+216.2553 	EXP 	fixation_cross: text = '+'
+216.2553 	EXP 	fixation_cross: autoDraw = True
+216.5075 	DATA 	Keypress: 5
+217.2752 	DATA 	Keypress: 5
+218.0576 	DATA 	Keypress: 5
+218.3404 	EXP 	New trial (rep=0, index=97): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 791), ('run_end_fixation', None)])
+218.3715 	EXP 	fixation_cross: autoDraw = False
+218.3715 	EXP 	fixation_cross: autoDraw = False
+218.3715 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+218.3715 	EXP 	stop_arrow: image = None
+218.3715 	EXP 	arrow_key: autoDraw = True
+218.8422 	DATA 	Keypress: 5
+218.8745 	DATA 	Keypress: 1
+218.8893 	EXP 	arrow_key: autoDraw = False
+218.8893 	EXP 	stop_arrow: autoDraw = False
+218.8893 	EXP 	fixation_cross: text = '+'
+218.8893 	EXP 	fixation_cross: autoDraw = True
+219.6264 	DATA 	Keypress: 5
+220.1561 	EXP 	New trial (rep=0, index=98): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 750), ('run_end_fixation', None)])
+220.1877 	EXP 	fixation_cross: autoDraw = False
+220.1877 	EXP 	fixation_cross: autoDraw = False
+220.1877 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+220.1877 	EXP 	stop_arrow: image = None
+220.1877 	EXP 	arrow_key: autoDraw = True
+220.3918 	DATA 	Keypress: 5
+220.8236 	DATA 	Keypress: 2
+220.8394 	EXP 	arrow_key: autoDraw = False
+220.8394 	EXP 	stop_arrow: autoDraw = False
+220.8394 	EXP 	fixation_cross: text = '+'
+220.8394 	EXP 	fixation_cross: autoDraw = True
+221.1749 	DATA 	Keypress: 5
+221.9406 	EXP 	New trial (rep=0, index=99): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 893), ('run_end_fixation', None)])
+221.9661 	DATA 	Keypress: 5
+221.9883 	EXP 	fixation_cross: autoDraw = False
+221.9883 	EXP 	fixation_cross: autoDraw = False
+221.9883 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+221.9883 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+221.9883 	EXP 	arrow_key: autoDraw = True
+222.2217 	EXP 	arrow_key: autoDraw = False
+222.2383 	EXP 	stop_arrow: autoDraw = True
+222.5387 	EXP 	stop_arrow: autoDraw = False
+222.5387 	EXP 	arrow_key: autoDraw = False
+222.5387 	EXP 	stop_arrow: autoDraw = False
+222.5387 	EXP 	fixation_cross: text = '+'
+222.5387 	EXP 	fixation_cross: autoDraw = True
+222.7238 	DATA 	Keypress: 5
+223.5096 	DATA 	Keypress: 5
+223.8574 	EXP 	New trial (rep=0, index=100): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 748), ('run_end_fixation', None)])
+223.8888 	EXP 	fixation_cross: autoDraw = False
+223.8888 	EXP 	fixation_cross: autoDraw = False
+223.8888 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+223.8888 	EXP 	stop_arrow: image = None
+223.8888 	EXP 	arrow_key: autoDraw = True
+224.2750 	DATA 	Keypress: 1
+224.2769 	DATA 	Keypress: 5
+224.2893 	EXP 	arrow_key: autoDraw = False
+224.2893 	EXP 	stop_arrow: autoDraw = False
+224.2893 	EXP 	fixation_cross: text = '+'
+224.2893 	EXP 	fixation_cross: autoDraw = True
+225.0571 	DATA 	Keypress: 5
+225.6400 	EXP 	New trial (rep=0, index=101): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1219), ('run_end_fixation', None)])
+225.6723 	EXP 	fixation_cross: autoDraw = False
+225.6723 	EXP 	fixation_cross: autoDraw = False
+225.6723 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+225.6723 	EXP 	stop_arrow: image = None
+225.6723 	EXP 	arrow_key: autoDraw = True
+225.8420 	DATA 	Keypress: 5
+226.2256 	DATA 	Keypress: 2
+226.2398 	EXP 	arrow_key: autoDraw = False
+226.2398 	EXP 	stop_arrow: autoDraw = False
+226.2398 	EXP 	fixation_cross: text = '+'
+226.2398 	EXP 	fixation_cross: autoDraw = True
+226.6251 	DATA 	Keypress: 5
+227.3910 	DATA 	Keypress: 5
+227.8899 	EXP 	New trial (rep=0, index=102): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 938), ('run_end_fixation', None)])
+227.9220 	EXP 	fixation_cross: autoDraw = False
+227.9220 	EXP 	fixation_cross: autoDraw = False
+227.9220 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+227.9220 	EXP 	stop_arrow: image = None
+227.9220 	EXP 	arrow_key: autoDraw = True
+228.1763 	DATA 	Keypress: 5
+228.4094 	DATA 	Keypress: 2
+228.4233 	EXP 	arrow_key: autoDraw = False
+228.4233 	EXP 	stop_arrow: autoDraw = False
+228.4233 	EXP 	fixation_cross: text = '+'
+228.4233 	EXP 	fixation_cross: autoDraw = True
+228.9588 	DATA 	Keypress: 5
+229.7246 	DATA 	Keypress: 5
+229.8566 	EXP 	New trial (rep=0, index=103): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 706), ('run_end_fixation', None)])
+229.8889 	EXP 	fixation_cross: autoDraw = False
+229.8889 	EXP 	fixation_cross: autoDraw = False
+229.8889 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+229.8889 	EXP 	stop_arrow: image = None
+229.8889 	EXP 	arrow_key: autoDraw = True
+230.5090 	DATA 	Keypress: 5
+230.6425 	DATA 	Keypress: 1
+230.6566 	EXP 	arrow_key: autoDraw = False
+230.6566 	EXP 	stop_arrow: autoDraw = False
+230.6566 	EXP 	fixation_cross: text = '+'
+230.6566 	EXP 	fixation_cross: autoDraw = True
+231.2938 	DATA 	Keypress: 5
+231.5912 	EXP 	New trial (rep=0, index=104): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 740), ('run_end_fixation', None)])
+231.6398 	EXP 	fixation_cross: autoDraw = False
+231.6398 	EXP 	fixation_cross: autoDraw = False
+231.6398 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+231.6398 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+231.6398 	EXP 	arrow_key: autoDraw = True
+231.9400 	EXP 	arrow_key: autoDraw = False
+231.9567 	EXP 	stop_arrow: autoDraw = True
+232.0586 	DATA 	Keypress: 5
+232.2733 	EXP 	stop_arrow: autoDraw = False
+232.2733 	EXP 	arrow_key: autoDraw = False
+232.2733 	EXP 	stop_arrow: autoDraw = False
+232.2733 	EXP 	fixation_cross: text = '+'
+232.2733 	EXP 	fixation_cross: autoDraw = True
+232.8410 	DATA 	Keypress: 5
+233.3913 	EXP 	New trial (rep=0, index=105): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1313), ('run_end_fixation', None)])
+233.4233 	EXP 	fixation_cross: autoDraw = False
+233.4233 	EXP 	fixation_cross: autoDraw = False
+233.4233 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+233.4233 	EXP 	stop_arrow: image = None
+233.4233 	EXP 	arrow_key: autoDraw = True
+233.6265 	DATA 	Keypress: 5
+233.8261 	DATA 	Keypress: 2
+233.8404 	EXP 	arrow_key: autoDraw = False
+233.8404 	EXP 	stop_arrow: autoDraw = False
+233.8404 	EXP 	fixation_cross: text = '+'
+233.8404 	EXP 	fixation_cross: autoDraw = True
+234.3928 	DATA 	Keypress: 5
+235.1755 	DATA 	Keypress: 5
+235.7412 	EXP 	New trial (rep=0, index=106): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 869), ('run_end_fixation', None)])
+235.7730 	EXP 	fixation_cross: autoDraw = False
+235.7730 	EXP 	fixation_cross: autoDraw = False
+235.7730 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+235.7730 	EXP 	stop_arrow: image = None
+235.7730 	EXP 	arrow_key: autoDraw = True
+235.9604 	DATA 	Keypress: 5
+236.2435 	DATA 	Keypress: 2
+236.2572 	EXP 	arrow_key: autoDraw = False
+236.2572 	EXP 	stop_arrow: autoDraw = False
+236.2572 	EXP 	fixation_cross: text = '+'
+236.2572 	EXP 	fixation_cross: autoDraw = True
+236.7261 	DATA 	Keypress: 5
+237.5088 	DATA 	Keypress: 5
+237.6418 	EXP 	New trial (rep=0, index=107): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 862), ('run_end_fixation', None)])
+237.6563 	EXP 	fixation_cross: autoDraw = False
+237.6563 	EXP 	fixation_cross: autoDraw = False
+237.6563 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+237.6563 	EXP 	stop_arrow: image = None
+237.6563 	EXP 	arrow_key: autoDraw = True
+238.2939 	DATA 	Keypress: 5
+238.4266 	DATA 	Keypress: 1
+238.4392 	EXP 	arrow_key: autoDraw = False
+238.4392 	EXP 	stop_arrow: autoDraw = False
+238.4392 	EXP 	fixation_cross: text = '+'
+238.4392 	EXP 	fixation_cross: autoDraw = True
+239.0600 	DATA 	Keypress: 5
+239.5238 	EXP 	New trial (rep=0, index=108): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 894), ('run_end_fixation', None)])
+239.5570 	EXP 	fixation_cross: autoDraw = False
+239.5570 	EXP 	fixation_cross: autoDraw = False
+239.5570 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+239.5570 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+239.5570 	EXP 	arrow_key: autoDraw = True
+239.8427 	DATA 	Keypress: 5
+239.9070 	EXP 	arrow_key: autoDraw = False
+239.9238 	EXP 	stop_arrow: autoDraw = True
+240.2238 	EXP 	stop_arrow: autoDraw = False
+240.2238 	EXP 	arrow_key: autoDraw = False
+240.2238 	EXP 	stop_arrow: autoDraw = False
+240.2238 	EXP 	fixation_cross: text = '+'
+240.2238 	EXP 	fixation_cross: autoDraw = True
+240.6266 	DATA 	Keypress: 5
+241.3940 	DATA 	Keypress: 5
+241.4584 	EXP 	New trial (rep=0, index=109): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1016), ('run_end_fixation', None)])
+241.4906 	EXP 	fixation_cross: autoDraw = False
+241.4906 	EXP 	fixation_cross: autoDraw = False
+241.4906 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+241.4906 	EXP 	stop_arrow: image = None
+241.4906 	EXP 	arrow_key: autoDraw = True
+242.1756 	DATA 	Keypress: 5
+242.2090 	DATA 	Keypress: 1
+242.2242 	EXP 	arrow_key: autoDraw = False
+242.2242 	EXP 	stop_arrow: autoDraw = False
+242.2242 	EXP 	fixation_cross: text = '+'
+242.2242 	EXP 	fixation_cross: autoDraw = True
+242.9610 	DATA 	Keypress: 5
+243.5086 	EXP 	New trial (rep=0, index=110): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 929), ('run_end_fixation', None)])
+243.5402 	EXP 	fixation_cross: autoDraw = False
+243.5402 	EXP 	fixation_cross: autoDraw = False
+243.5402 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+243.5402 	EXP 	stop_arrow: image = None
+243.5402 	EXP 	arrow_key: autoDraw = True
+243.7442 	DATA 	Keypress: 5
+244.0920 	DATA 	Keypress: 2
+244.1078 	EXP 	arrow_key: autoDraw = False
+244.1078 	EXP 	stop_arrow: autoDraw = False
+244.1078 	EXP 	fixation_cross: text = '+'
+244.1078 	EXP 	fixation_cross: autoDraw = True
+244.5090 	DATA 	Keypress: 5
+245.2918 	DATA 	Keypress: 5
+245.4748 	EXP 	New trial (rep=0, index=111): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 758), ('run_end_fixation', None)])
+245.5241 	EXP 	fixation_cross: autoDraw = False
+245.5241 	EXP 	fixation_cross: autoDraw = False
+245.5241 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+245.5241 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+245.5241 	EXP 	arrow_key: autoDraw = True
+245.9246 	EXP 	arrow_key: autoDraw = False
+245.9410 	EXP 	stop_arrow: autoDraw = True
+246.0771 	DATA 	Keypress: 5
+246.1921 	DATA 	Keypress: 2
+246.2071 	EXP 	arrow_key: autoDraw = False
+246.2071 	EXP 	stop_arrow: autoDraw = False
+246.2071 	EXP 	fixation_cross: text = '+'
+246.2071 	EXP 	fixation_cross: autoDraw = True
+246.8425 	DATA 	Keypress: 5
+247.2757 	EXP 	New trial (rep=0, index=112): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1181), ('run_end_fixation', None)])
+247.3075 	EXP 	fixation_cross: autoDraw = False
+247.3075 	EXP 	fixation_cross: autoDraw = False
+247.3075 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+247.3075 	EXP 	stop_arrow: image = None
+247.3075 	EXP 	arrow_key: autoDraw = True
+247.6280 	DATA 	Keypress: 5
+247.7430 	DATA 	Keypress: 2
+247.7581 	EXP 	arrow_key: autoDraw = False
+247.7581 	EXP 	stop_arrow: autoDraw = False
+247.7581 	EXP 	fixation_cross: text = '+'
+247.7581 	EXP 	fixation_cross: autoDraw = True
+248.4097 	DATA 	Keypress: 5
+249.1766 	DATA 	Keypress: 5
+249.4925 	EXP 	New trial (rep=0, index=113): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 747), ('run_end_fixation', None)])
+249.5238 	EXP 	fixation_cross: autoDraw = False
+249.5238 	EXP 	fixation_cross: autoDraw = False
+249.5238 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+249.5238 	EXP 	stop_arrow: image = None
+249.5238 	EXP 	arrow_key: autoDraw = True
+249.9280 	DATA 	Keypress: 1
+249.9414 	EXP 	arrow_key: autoDraw = False
+249.9414 	EXP 	stop_arrow: autoDraw = False
+249.9414 	EXP 	fixation_cross: text = '+'
+249.9414 	EXP 	fixation_cross: autoDraw = True
+249.9609 	DATA 	Keypress: 5
+250.7445 	DATA 	Keypress: 5
+251.2756 	EXP 	New trial (rep=0, index=114): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 742), ('run_end_fixation', None)])
+251.3076 	EXP 	fixation_cross: autoDraw = False
+251.3076 	EXP 	fixation_cross: autoDraw = False
+251.3076 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+251.3076 	EXP 	stop_arrow: image = None
+251.3076 	EXP 	arrow_key: autoDraw = True
+251.5102 	DATA 	Keypress: 5
+251.7446 	DATA 	Keypress: 2
+251.7578 	EXP 	arrow_key: autoDraw = False
+251.7578 	EXP 	stop_arrow: autoDraw = False
+251.7578 	EXP 	fixation_cross: text = '+'
+251.7578 	EXP 	fixation_cross: autoDraw = True
+252.2936 	DATA 	Keypress: 5
+253.0426 	EXP 	New trial (rep=0, index=115): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 813), ('run_end_fixation', None)])
+253.0818 	DATA 	Keypress: 5
+253.0907 	EXP 	fixation_cross: autoDraw = False
+253.0907 	EXP 	fixation_cross: autoDraw = False
+253.0907 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+253.0907 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+253.0907 	EXP 	arrow_key: autoDraw = True
+253.4414 	EXP 	arrow_key: autoDraw = False
+253.4583 	EXP 	stop_arrow: autoDraw = True
+253.4943 	DATA 	Keypress: 1
+253.5081 	EXP 	arrow_key: autoDraw = False
+253.5081 	EXP 	stop_arrow: autoDraw = False
+253.5081 	EXP 	fixation_cross: text = '+'
+253.5081 	EXP 	fixation_cross: autoDraw = True
+253.8438 	DATA 	Keypress: 5
+254.6284 	DATA 	Keypress: 5
+254.9092 	EXP 	New trial (rep=0, index=116): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 702), ('run_end_fixation', None)])
+254.9413 	EXP 	fixation_cross: autoDraw = False
+254.9413 	EXP 	fixation_cross: autoDraw = False
+254.9413 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+254.9413 	EXP 	stop_arrow: image = None
+254.9413 	EXP 	arrow_key: autoDraw = True
+255.4092 	DATA 	Keypress: 5
+255.4929 	DATA 	Keypress: 1
+255.5082 	EXP 	arrow_key: autoDraw = False
+255.5082 	EXP 	stop_arrow: autoDraw = False
+255.5082 	EXP 	fixation_cross: text = '+'
+255.5082 	EXP 	fixation_cross: autoDraw = True
+256.1772 	DATA 	Keypress: 5
+256.6430 	EXP 	New trial (rep=0, index=117): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 922), ('run_end_fixation', None)])
+256.6744 	EXP 	fixation_cross: autoDraw = False
+256.6744 	EXP 	fixation_cross: autoDraw = False
+256.6744 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+256.6744 	EXP 	stop_arrow: image = None
+256.6744 	EXP 	arrow_key: autoDraw = True
+256.9604 	DATA 	Keypress: 5
+257.0615 	DATA 	Keypress: 2
+257.0752 	EXP 	arrow_key: autoDraw = False
+257.0752 	EXP 	stop_arrow: autoDraw = False
+257.0752 	EXP 	fixation_cross: text = '+'
+257.0752 	EXP 	fixation_cross: autoDraw = True
+257.7444 	DATA 	Keypress: 5
+258.5105 	DATA 	Keypress: 5
+258.5930 	EXP 	New trial (rep=0, index=118): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 959), ('run_end_fixation', None)])
+258.6239 	EXP 	fixation_cross: autoDraw = False
+258.6239 	EXP 	fixation_cross: autoDraw = False
+258.6239 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+258.6239 	EXP 	stop_arrow: image = None
+258.6239 	EXP 	arrow_key: autoDraw = True
+259.0107 	DATA 	Keypress: 1
+259.0248 	EXP 	arrow_key: autoDraw = False
+259.0248 	EXP 	stop_arrow: autoDraw = False
+259.0248 	EXP 	fixation_cross: text = '+'
+259.0248 	EXP 	fixation_cross: autoDraw = True
+259.2941 	DATA 	Keypress: 5
+260.0784 	DATA 	Keypress: 5
+260.5769 	EXP 	New trial (rep=0, index=119): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 758), ('run_end_fixation', None)])
+260.6245 	EXP 	fixation_cross: autoDraw = False
+260.6245 	EXP 	fixation_cross: autoDraw = False
+260.6245 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+260.6245 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+260.6245 	EXP 	arrow_key: autoDraw = True
+260.8451 	DATA 	Keypress: 5
+260.9251 	EXP 	arrow_key: autoDraw = False
+260.9419 	EXP 	stop_arrow: autoDraw = True
+260.9775 	DATA 	Keypress: 2
+260.9920 	EXP 	arrow_key: autoDraw = False
+260.9920 	EXP 	stop_arrow: autoDraw = False
+260.9920 	EXP 	fixation_cross: text = '+'
+260.9920 	EXP 	fixation_cross: autoDraw = True
+261.6267 	DATA 	Keypress: 5
+262.3766 	EXP 	New trial (rep=0, index=120): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 760), ('run_end_fixation', None)])
+262.4078 	EXP 	fixation_cross: autoDraw = False
+262.4078 	EXP 	fixation_cross: autoDraw = False
+262.4078 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+262.4078 	EXP 	stop_arrow: image = None
+262.4078 	EXP 	arrow_key: autoDraw = True
+262.4111 	DATA 	Keypress: 5
+262.9942 	DATA 	Keypress: 2
+263.0086 	EXP 	arrow_key: autoDraw = False
+263.0086 	EXP 	stop_arrow: autoDraw = False
+263.0086 	EXP 	fixation_cross: text = '+'
+263.0086 	EXP 	fixation_cross: autoDraw = True
+263.1791 	DATA 	Keypress: 5
+263.9603 	DATA 	Keypress: 5
+264.1591 	EXP 	New trial (rep=0, index=121): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 702), ('run_end_fixation', None)])
+264.1911 	EXP 	fixation_cross: autoDraw = False
+264.1911 	EXP 	fixation_cross: autoDraw = False
+264.1911 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+264.1911 	EXP 	stop_arrow: image = None
+264.1911 	EXP 	arrow_key: autoDraw = True
+264.6956 	DATA 	Keypress: 1
+264.7087 	EXP 	arrow_key: autoDraw = False
+264.7087 	EXP 	stop_arrow: autoDraw = False
+264.7087 	EXP 	fixation_cross: text = '+'
+264.7087 	EXP 	fixation_cross: autoDraw = True
+264.7459 	DATA 	Keypress: 5
+265.5269 	DATA 	Keypress: 5
+265.8925 	EXP 	New trial (rep=0, index=122): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 879), ('run_end_fixation', None)])
+265.9253 	EXP 	fixation_cross: autoDraw = False
+265.9253 	EXP 	fixation_cross: autoDraw = False
+265.9253 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+265.9253 	EXP 	stop_arrow: image = None
+265.9253 	EXP 	arrow_key: autoDraw = True
+266.2947 	DATA 	Keypress: 5
+266.4613 	DATA 	Keypress: 2
+266.4757 	EXP 	arrow_key: autoDraw = False
+266.4757 	EXP 	stop_arrow: autoDraw = False
+266.4757 	EXP 	fixation_cross: text = '+'
+266.4757 	EXP 	fixation_cross: autoDraw = True
+267.0784 	DATA 	Keypress: 5
+267.8101 	EXP 	New trial (rep=0, index=123): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 701), ('run_end_fixation', None)])
+267.8418 	EXP 	fixation_cross: autoDraw = False
+267.8418 	EXP 	fixation_cross: autoDraw = False
+267.8418 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+267.8418 	EXP 	stop_arrow: image = None
+267.8418 	EXP 	arrow_key: autoDraw = True
+267.8622 	DATA 	Keypress: 5
+268.2789 	DATA 	Keypress: 1
+268.2925 	EXP 	arrow_key: autoDraw = False
+268.2925 	EXP 	stop_arrow: autoDraw = False
+268.2925 	EXP 	fixation_cross: text = '+'
+268.2925 	EXP 	fixation_cross: autoDraw = True
+268.6262 	DATA 	Keypress: 5
+269.4125 	DATA 	Keypress: 5
+269.5434 	EXP 	New trial (rep=0, index=124): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 779), ('run_end_fixation', None)])
+269.5754 	EXP 	fixation_cross: autoDraw = False
+269.5754 	EXP 	fixation_cross: autoDraw = False
+269.5754 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+269.5754 	EXP 	stop_arrow: image = None
+269.5754 	EXP 	arrow_key: autoDraw = True
+269.9624 	DATA 	Keypress: 2
+269.9755 	EXP 	arrow_key: autoDraw = False
+269.9755 	EXP 	stop_arrow: autoDraw = False
+269.9755 	EXP 	fixation_cross: text = '+'
+269.9755 	EXP 	fixation_cross: autoDraw = True
+270.1958 	DATA 	Keypress: 5
+270.9613 	DATA 	Keypress: 5
+271.3597 	EXP 	New trial (rep=0, index=125): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 737), ('run_end_fixation', None)])
+271.3794 	EXP 	fixation_cross: autoDraw = False
+271.3794 	EXP 	fixation_cross: autoDraw = False
+271.3794 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+271.3794 	EXP 	stop_arrow: image = None
+271.3794 	EXP 	arrow_key: autoDraw = True
+271.7442 	DATA 	Keypress: 5
+271.7614 	DATA 	Keypress: 1
+271.7760 	EXP 	arrow_key: autoDraw = False
+271.7760 	EXP 	stop_arrow: autoDraw = False
+271.7760 	EXP 	fixation_cross: text = '+'
+271.7760 	EXP 	fixation_cross: autoDraw = True
+272.5286 	DATA 	Keypress: 5
+273.1104 	EXP 	New trial (rep=0, index=126): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 782), ('run_end_fixation', None)])
+273.1424 	EXP 	fixation_cross: autoDraw = False
+273.1424 	EXP 	fixation_cross: autoDraw = False
+273.1424 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+273.1424 	EXP 	stop_arrow: image = None
+273.1424 	EXP 	arrow_key: autoDraw = True
+273.2948 	DATA 	Keypress: 5
+273.5797 	DATA 	Keypress: 2
+273.5926 	EXP 	arrow_key: autoDraw = False
+273.5926 	EXP 	stop_arrow: autoDraw = False
+273.5926 	EXP 	fixation_cross: text = '+'
+273.5926 	EXP 	fixation_cross: autoDraw = True
+274.0776 	DATA 	Keypress: 5
+274.8627 	DATA 	Keypress: 5
+274.9272 	EXP 	New trial (rep=0, index=127): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 890), ('run_end_fixation', None)])
+274.9589 	EXP 	fixation_cross: autoDraw = False
+274.9589 	EXP 	fixation_cross: autoDraw = False
+274.9589 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+274.9589 	EXP 	stop_arrow: image = None
+274.9589 	EXP 	arrow_key: autoDraw = True
+275.5458 	DATA 	Keypress: 2
+275.5600 	EXP 	arrow_key: autoDraw = False
+275.5600 	EXP 	stop_arrow: autoDraw = False
+275.5600 	EXP 	fixation_cross: text = '+'
+275.5600 	EXP 	fixation_cross: autoDraw = True
+275.6285 	DATA 	Keypress: 5
+276.4118 	DATA 	Keypress: 5
+276.8444 	EXP 	New trial (rep=0, index=128): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 707), ('run_end_fixation', None)])
+276.8754 	EXP 	fixation_cross: autoDraw = False
+276.8754 	EXP 	fixation_cross: autoDraw = False
+276.8754 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+276.8754 	EXP 	stop_arrow: image = None
+276.8754 	EXP 	arrow_key: autoDraw = True
+277.1963 	DATA 	Keypress: 5
+277.4445 	DATA 	Keypress: 1
+277.4595 	EXP 	arrow_key: autoDraw = False
+277.4595 	EXP 	stop_arrow: autoDraw = False
+277.4595 	EXP 	fixation_cross: text = '+'
+277.4595 	EXP 	fixation_cross: autoDraw = True
+277.9621 	DATA 	Keypress: 5
+278.5777 	EXP 	New trial (rep=0, index=129): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 755), ('run_end_fixation', None)])
+278.6088 	EXP 	fixation_cross: autoDraw = False
+278.6088 	EXP 	fixation_cross: autoDraw = False
+278.6088 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+278.6088 	EXP 	stop_arrow: image = None
+278.6088 	EXP 	arrow_key: autoDraw = True
+278.7449 	DATA 	Keypress: 5
+279.2128 	DATA 	Keypress: 1
+279.2267 	EXP 	arrow_key: autoDraw = False
+279.2267 	EXP 	stop_arrow: autoDraw = False
+279.2267 	EXP 	fixation_cross: text = '+'
+279.2267 	EXP 	fixation_cross: autoDraw = True
+279.5301 	DATA 	Keypress: 5
+280.2961 	DATA 	Keypress: 5
+280.3613 	EXP 	New trial (rep=0, index=130): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 750), ('run_end_fixation', None)])
+280.3927 	EXP 	fixation_cross: autoDraw = False
+280.3927 	EXP 	fixation_cross: autoDraw = False
+280.3927 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+280.3927 	EXP 	stop_arrow: image = None
+280.3927 	EXP 	arrow_key: autoDraw = True
+280.8456 	DATA 	Keypress: 1
+280.8598 	EXP 	arrow_key: autoDraw = False
+280.8598 	EXP 	stop_arrow: autoDraw = False
+280.8598 	EXP 	fixation_cross: text = '+'
+280.8598 	EXP 	fixation_cross: autoDraw = True
+281.0790 	DATA 	Keypress: 5
+281.8622 	DATA 	Keypress: 5
+282.1448 	EXP 	New trial (rep=0, index=131): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1732), ('run_end_fixation', None)])
+282.1764 	EXP 	fixation_cross: autoDraw = False
+282.1764 	EXP 	fixation_cross: autoDraw = False
+282.1764 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+282.1764 	EXP 	stop_arrow: image = None
+282.1764 	EXP 	arrow_key: autoDraw = True
+282.6299 	DATA 	Keypress: 5
+282.7615 	DATA 	Keypress: 2
+282.7769 	EXP 	arrow_key: autoDraw = False
+282.7769 	EXP 	stop_arrow: autoDraw = False
+282.7769 	EXP 	fixation_cross: text = '+'
+282.7769 	EXP 	fixation_cross: autoDraw = True
+283.4115 	DATA 	Keypress: 5
+284.1973 	DATA 	Keypress: 5
+284.9114 	EXP 	New trial (rep=0, index=132): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 865), ('run_end_fixation', None)])
+284.9432 	EXP 	fixation_cross: autoDraw = False
+284.9432 	EXP 	fixation_cross: autoDraw = False
+284.9432 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+284.9432 	EXP 	stop_arrow: image = None
+284.9432 	EXP 	arrow_key: autoDraw = True
+284.9804 	DATA 	Keypress: 5
+285.3459 	DATA 	Keypress: 1
+285.3602 	EXP 	arrow_key: autoDraw = False
+285.3602 	EXP 	stop_arrow: autoDraw = False
+285.3602 	EXP 	fixation_cross: text = '+'
+285.3602 	EXP 	fixation_cross: autoDraw = True
+285.7451 	DATA 	Keypress: 5
+286.5302 	DATA 	Keypress: 5
+286.8118 	EXP 	New trial (rep=0, index=133): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 722), ('run_end_fixation', None)])
+286.8429 	EXP 	fixation_cross: autoDraw = False
+286.8429 	EXP 	fixation_cross: autoDraw = False
+286.8429 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+286.8429 	EXP 	stop_arrow: image = None
+286.8429 	EXP 	arrow_key: autoDraw = True
+287.3115 	DATA 	Keypress: 5
+287.3134 	DATA 	Keypress: 2
+287.3275 	EXP 	arrow_key: autoDraw = False
+287.3275 	EXP 	stop_arrow: autoDraw = False
+287.3275 	EXP 	fixation_cross: text = '+'
+287.3275 	EXP 	fixation_cross: autoDraw = True
+288.0783 	DATA 	Keypress: 5
+288.5619 	EXP 	New trial (rep=0, index=134): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 798), ('run_end_fixation', None)])
+288.5929 	EXP 	fixation_cross: autoDraw = False
+288.5929 	EXP 	fixation_cross: autoDraw = False
+288.5929 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+288.5929 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+288.5929 	EXP 	arrow_key: autoDraw = True
+288.8441 	EXP 	arrow_key: autoDraw = False
+288.8604 	EXP 	stop_arrow: autoDraw = True
+288.8638 	DATA 	Keypress: 5
+289.1774 	EXP 	stop_arrow: autoDraw = False
+289.1774 	EXP 	arrow_key: autoDraw = False
+289.1774 	EXP 	stop_arrow: autoDraw = False
+289.1774 	EXP 	fixation_cross: text = '+'
+289.1774 	EXP 	fixation_cross: autoDraw = True
+289.6472 	DATA 	Keypress: 5
+290.4121 	DATA 	Keypress: 5
+290.4129 	EXP 	New trial (rep=0, index=135): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 893), ('run_end_fixation', None)])
+290.4433 	EXP 	fixation_cross: autoDraw = False
+290.4433 	EXP 	fixation_cross: autoDraw = False
+290.4433 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+290.4433 	EXP 	stop_arrow: image = None
+290.4433 	EXP 	arrow_key: autoDraw = True
+290.8633 	DATA 	Keypress: 1
+290.8764 	EXP 	arrow_key: autoDraw = False
+290.8764 	EXP 	stop_arrow: autoDraw = False
+290.8764 	EXP 	fixation_cross: text = '+'
+290.8764 	EXP 	fixation_cross: autoDraw = True
+291.1975 	DATA 	Keypress: 5
+291.9809 	DATA 	Keypress: 5
+292.3288 	EXP 	New trial (rep=0, index=136): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 756), ('run_end_fixation', None)])
+292.3603 	EXP 	fixation_cross: autoDraw = False
+292.3603 	EXP 	fixation_cross: autoDraw = False
+292.3603 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+292.3603 	EXP 	stop_arrow: image = None
+292.3603 	EXP 	arrow_key: autoDraw = True
+292.7460 	DATA 	Keypress: 5
+292.8464 	DATA 	Keypress: 2
+292.8609 	EXP 	arrow_key: autoDraw = False
+292.8609 	EXP 	stop_arrow: autoDraw = False
+292.8609 	EXP 	fixation_cross: text = '+'
+292.8609 	EXP 	fixation_cross: autoDraw = True
+293.5293 	DATA 	Keypress: 5
+294.1123 	EXP 	New trial (rep=0, index=137): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 804), ('run_end_fixation', None)])
+294.1434 	EXP 	fixation_cross: autoDraw = False
+294.1434 	EXP 	fixation_cross: autoDraw = False
+294.1434 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+294.1434 	EXP 	stop_arrow: image = None
+294.1434 	EXP 	arrow_key: autoDraw = True
+294.3143 	DATA 	Keypress: 5
+294.5461 	DATA 	Keypress: 1
+294.5612 	EXP 	arrow_key: autoDraw = False
+294.5612 	EXP 	stop_arrow: autoDraw = False
+294.5612 	EXP 	fixation_cross: text = '+'
+294.5612 	EXP 	fixation_cross: autoDraw = True
+295.0784 	DATA 	Keypress: 5
+295.8643 	DATA 	Keypress: 5
+295.9456 	EXP 	New trial (rep=0, index=138): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 700), ('run_end_fixation', None)])
+295.9774 	EXP 	fixation_cross: autoDraw = False
+295.9774 	EXP 	fixation_cross: autoDraw = False
+295.9774 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+295.9774 	EXP 	stop_arrow: image = None
+295.9774 	EXP 	arrow_key: autoDraw = True
+296.5296 	DATA 	Keypress: 1
+296.5446 	EXP 	arrow_key: autoDraw = False
+296.5446 	EXP 	stop_arrow: autoDraw = False
+296.5446 	EXP 	fixation_cross: text = '+'
+296.5446 	EXP 	fixation_cross: autoDraw = True
+296.6479 	DATA 	Keypress: 5
+297.4127 	DATA 	Keypress: 5
+297.6787 	EXP 	New trial (rep=0, index=139): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 752), ('run_end_fixation', None)])
+297.7107 	EXP 	fixation_cross: autoDraw = False
+297.7107 	EXP 	fixation_cross: autoDraw = False
+297.7107 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+297.7107 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+297.7107 	EXP 	arrow_key: autoDraw = True
+298.0111 	EXP 	arrow_key: autoDraw = False
+298.0278 	EXP 	stop_arrow: autoDraw = True
+298.1961 	DATA 	Keypress: 5
+298.3283 	EXP 	stop_arrow: autoDraw = False
+298.3283 	EXP 	arrow_key: autoDraw = False
+298.3283 	EXP 	stop_arrow: autoDraw = False
+298.3283 	EXP 	fixation_cross: text = '+'
+298.3283 	EXP 	fixation_cross: autoDraw = True
+298.9782 	DATA 	Keypress: 5
+299.4617 	EXP 	New trial (rep=0, index=140): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 727), ('run_end_fixation', None)])
+299.4936 	EXP 	fixation_cross: autoDraw = False
+299.4936 	EXP 	fixation_cross: autoDraw = False
+299.4936 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+299.4936 	EXP 	stop_arrow: image = None
+299.4936 	EXP 	arrow_key: autoDraw = True
+299.7617 	DATA 	Keypress: 5
+299.8626 	DATA 	Keypress: 2
+299.8772 	EXP 	arrow_key: autoDraw = False
+299.8772 	EXP 	stop_arrow: autoDraw = False
+299.8772 	EXP 	fixation_cross: text = '+'
+299.8772 	EXP 	fixation_cross: autoDraw = True
+300.5295 	DATA 	Keypress: 5
+301.2106 	EXP 	New trial (rep=0, index=141): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 736), ('run_end_fixation', None)])
+301.2438 	EXP 	fixation_cross: autoDraw = False
+301.2438 	EXP 	fixation_cross: autoDraw = False
+301.2438 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+301.2438 	EXP 	stop_arrow: image = None
+301.2438 	EXP 	arrow_key: autoDraw = True
+301.3122 	DATA 	Keypress: 5
+301.8121 	DATA 	Keypress: 2
+301.8276 	EXP 	arrow_key: autoDraw = False
+301.8276 	EXP 	stop_arrow: autoDraw = False
+301.8276 	EXP 	fixation_cross: text = '+'
+301.8276 	EXP 	fixation_cross: autoDraw = True
+302.0962 	DATA 	Keypress: 5
+302.8633 	DATA 	Keypress: 5
+302.9795 	EXP 	New trial (rep=0, index=142): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 787), ('run_end_fixation', None)])
+303.0109 	EXP 	fixation_cross: autoDraw = False
+303.0109 	EXP 	fixation_cross: autoDraw = False
+303.0109 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+303.0109 	EXP 	stop_arrow: image = None
+303.0109 	EXP 	arrow_key: autoDraw = True
+303.5643 	DATA 	Keypress: 1
+303.5786 	EXP 	arrow_key: autoDraw = False
+303.5786 	EXP 	stop_arrow: autoDraw = False
+303.5786 	EXP 	fixation_cross: text = '+'
+303.5786 	EXP 	fixation_cross: autoDraw = True
+303.6485 	DATA 	Keypress: 5
+304.4151 	DATA 	Keypress: 5
+304.7948 	EXP 	New trial (rep=0, index=143): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 758), ('run_end_fixation', None)])
+304.8281 	EXP 	fixation_cross: autoDraw = False
+304.8281 	EXP 	fixation_cross: autoDraw = False
+304.8281 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+304.8281 	EXP 	stop_arrow: image = None
+304.8281 	EXP 	arrow_key: autoDraw = True
+305.1967 	DATA 	Keypress: 5
+305.2649 	DATA 	Keypress: 2
+305.2780 	EXP 	arrow_key: autoDraw = False
+305.2780 	EXP 	stop_arrow: autoDraw = False
+305.2780 	EXP 	fixation_cross: text = '+'
+305.2780 	EXP 	fixation_cross: autoDraw = True
+305.9810 	DATA 	Keypress: 5
+306.5793 	EXP 	New trial (rep=0, index=144): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 765), ('run_end_fixation', None)])
+306.6116 	EXP 	fixation_cross: autoDraw = False
+306.6116 	EXP 	fixation_cross: autoDraw = False
+306.6116 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+306.6116 	EXP 	stop_arrow: image = None
+306.6116 	EXP 	arrow_key: autoDraw = True
+306.7653 	DATA 	Keypress: 5
+306.9819 	DATA 	Keypress: 1
+306.9950 	EXP 	arrow_key: autoDraw = False
+306.9950 	EXP 	stop_arrow: autoDraw = False
+306.9950 	EXP 	fixation_cross: text = '+'
+306.9950 	EXP 	fixation_cross: autoDraw = True
+307.5304 	DATA 	Keypress: 5
+308.3154 	DATA 	Keypress: 5
+308.3798 	EXP 	New trial (rep=0, index=145): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 717), ('run_end_fixation', None)])
+308.4116 	EXP 	fixation_cross: autoDraw = False
+308.4116 	EXP 	fixation_cross: autoDraw = False
+308.4116 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+308.4116 	EXP 	stop_arrow: image = None
+308.4116 	EXP 	arrow_key: autoDraw = True
+308.9150 	DATA 	Keypress: 1
+308.9289 	EXP 	arrow_key: autoDraw = False
+308.9289 	EXP 	stop_arrow: autoDraw = False
+308.9289 	EXP 	fixation_cross: text = '+'
+308.9289 	EXP 	fixation_cross: autoDraw = True
+309.0988 	DATA 	Keypress: 5
+309.8630 	DATA 	Keypress: 5
+310.1300 	EXP 	New trial (rep=0, index=146): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 801), ('run_end_fixation', None)])
+310.1612 	EXP 	fixation_cross: autoDraw = False
+310.1612 	EXP 	fixation_cross: autoDraw = False
+310.1612 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+310.1612 	EXP 	stop_arrow: image = None
+310.1612 	EXP 	arrow_key: autoDraw = True
+310.6483 	DATA 	Keypress: 5
+310.6814 	DATA 	Keypress: 2
+310.6951 	EXP 	arrow_key: autoDraw = False
+310.6951 	EXP 	stop_arrow: autoDraw = False
+310.6951 	EXP 	fixation_cross: text = '+'
+310.6951 	EXP 	fixation_cross: autoDraw = True
+311.4322 	DATA 	Keypress: 5
+311.9632 	EXP 	New trial (rep=0, index=147): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 884), ('run_end_fixation', None)])
+311.9946 	EXP 	fixation_cross: autoDraw = False
+311.9946 	EXP 	fixation_cross: autoDraw = False
+311.9946 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+311.9946 	EXP 	stop_arrow: image = None
+311.9946 	EXP 	arrow_key: autoDraw = True
+312.1966 	DATA 	Keypress: 5
+312.4820 	DATA 	Keypress: 1
+312.4958 	EXP 	arrow_key: autoDraw = False
+312.4958 	EXP 	stop_arrow: autoDraw = False
+312.4958 	EXP 	fixation_cross: text = '+'
+312.4958 	EXP 	fixation_cross: autoDraw = True
+312.9822 	DATA 	Keypress: 5
+313.7646 	DATA 	Keypress: 5
+313.8799 	EXP 	New trial (rep=0, index=148): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 754), ('run_end_fixation', None)])
+313.9117 	EXP 	fixation_cross: autoDraw = False
+313.9117 	EXP 	fixation_cross: autoDraw = False
+313.9117 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+313.9117 	EXP 	stop_arrow: image = None
+313.9117 	EXP 	arrow_key: autoDraw = True
+314.3821 	DATA 	Keypress: 2
+314.3953 	EXP 	arrow_key: autoDraw = False
+314.3953 	EXP 	stop_arrow: autoDraw = False
+314.3953 	EXP 	fixation_cross: text = '+'
+314.3953 	EXP 	fixation_cross: autoDraw = True
+314.5308 	DATA 	Keypress: 5
+315.3141 	DATA 	Keypress: 5
+315.6624 	EXP 	New trial (rep=0, index=149): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 927), ('run_end_fixation', None)])
+315.6958 	EXP 	fixation_cross: autoDraw = False
+315.6958 	EXP 	fixation_cross: autoDraw = False
+315.6958 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+315.6958 	EXP 	stop_arrow: image = None
+315.6958 	EXP 	arrow_key: autoDraw = True
+316.0983 	DATA 	Keypress: 5
+316.1002 	DATA 	Keypress: 1
+316.1117 	EXP 	arrow_key: autoDraw = False
+316.1117 	EXP 	stop_arrow: autoDraw = False
+316.1117 	EXP 	fixation_cross: text = '+'
+316.1117 	EXP 	fixation_cross: autoDraw = True
+316.8645 	DATA 	Keypress: 5
+317.6299 	EXP 	New trial (rep=0, index=150): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 794), ('run_end_fixation', None)])
+317.6501 	DATA 	Keypress: 5
+317.6618 	EXP 	fixation_cross: autoDraw = False
+317.6618 	EXP 	fixation_cross: autoDraw = False
+317.6618 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+317.6618 	EXP 	stop_arrow: image = None
+317.6618 	EXP 	arrow_key: autoDraw = True
+318.0827 	DATA 	Keypress: 2
+318.0957 	EXP 	arrow_key: autoDraw = False
+318.0957 	EXP 	stop_arrow: autoDraw = False
+318.0957 	EXP 	fixation_cross: text = '+'
+318.0957 	EXP 	fixation_cross: autoDraw = True
+318.4328 	DATA 	Keypress: 5
+319.1982 	DATA 	Keypress: 5
+319.4464 	EXP 	New trial (rep=0, index=151): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1381), ('run_end_fixation', None)])
+319.4779 	EXP 	fixation_cross: autoDraw = False
+319.4779 	EXP 	fixation_cross: autoDraw = False
+319.4779 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+319.4779 	EXP 	stop_arrow: image = None
+319.4779 	EXP 	arrow_key: autoDraw = True
+319.9816 	DATA 	Keypress: 5
+320.0320 	DATA 	Keypress: 2
+320.0627 	EXP 	arrow_key: autoDraw = False
+320.0627 	EXP 	stop_arrow: autoDraw = False
+320.0627 	EXP 	fixation_cross: text = '+'
+320.0627 	EXP 	fixation_cross: autoDraw = True
+320.7650 	DATA 	Keypress: 5
+321.5320 	DATA 	Keypress: 5
+321.8640 	EXP 	New trial (rep=0, index=152): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1259), ('run_end_fixation', None)])
+321.8959 	EXP 	fixation_cross: autoDraw = False
+321.8959 	EXP 	fixation_cross: autoDraw = False
+321.8959 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+321.8959 	EXP 	stop_arrow: image = None
+321.8959 	EXP 	arrow_key: autoDraw = True
+322.3147 	DATA 	Keypress: 5
+322.4158 	DATA 	Keypress: 1
+322.4289 	EXP 	arrow_key: autoDraw = False
+322.4289 	EXP 	stop_arrow: autoDraw = False
+322.4289 	EXP 	fixation_cross: text = '+'
+322.4289 	EXP 	fixation_cross: autoDraw = True
+323.1035 	DATA 	Keypress: 5
+323.8660 	DATA 	Keypress: 5
+324.1474 	EXP 	New trial (rep=0, index=153): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 717), ('run_end_fixation', None)])
+324.1788 	EXP 	fixation_cross: autoDraw = False
+324.1788 	EXP 	fixation_cross: autoDraw = False
+324.1788 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+324.1788 	EXP 	stop_arrow: image = None
+324.1788 	EXP 	arrow_key: autoDraw = True
+324.6476 	DATA 	Keypress: 5
+324.6651 	DATA 	Keypress: 2
+324.6797 	EXP 	arrow_key: autoDraw = False
+324.6797 	EXP 	stop_arrow: autoDraw = False
+324.6797 	EXP 	fixation_cross: text = '+'
+324.6797 	EXP 	fixation_cross: autoDraw = True
+325.4328 	DATA 	Keypress: 5
+325.8974 	EXP 	New trial (rep=0, index=154): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1278), ('run_end_fixation', None)])
+325.9295 	EXP 	fixation_cross: autoDraw = False
+325.9295 	EXP 	fixation_cross: autoDraw = False
+325.9295 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+325.9295 	EXP 	stop_arrow: image = None
+325.9295 	EXP 	arrow_key: autoDraw = True
+326.2164 	DATA 	Keypress: 5
+326.4164 	DATA 	Keypress: 1
+326.4293 	EXP 	arrow_key: autoDraw = False
+326.4293 	EXP 	stop_arrow: autoDraw = False
+326.4293 	EXP 	fixation_cross: text = '+'
+326.4293 	EXP 	fixation_cross: autoDraw = True
+326.9818 	DATA 	Keypress: 5
+327.7664 	DATA 	Keypress: 5
+328.2144 	EXP 	New trial (rep=0, index=155): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1066), ('run_end_fixation', None)])
+328.2459 	EXP 	fixation_cross: autoDraw = False
+328.2459 	EXP 	fixation_cross: autoDraw = False
+328.2459 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+328.2459 	EXP 	stop_arrow: image = None
+328.2459 	EXP 	arrow_key: autoDraw = True
+328.5490 	DATA 	Keypress: 5
+328.6151 	DATA 	Keypress: 2
+328.6301 	EXP 	arrow_key: autoDraw = False
+328.6301 	EXP 	stop_arrow: autoDraw = False
+328.6301 	EXP 	fixation_cross: text = '+'
+328.6301 	EXP 	fixation_cross: autoDraw = True
+329.3151 	DATA 	Keypress: 5
+330.0986 	DATA 	Keypress: 5
+330.3143 	EXP 	New trial (rep=0, index=156): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 742), ('run_end_fixation', None)])
+330.3465 	EXP 	fixation_cross: autoDraw = False
+330.3465 	EXP 	fixation_cross: autoDraw = False
+330.3465 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+330.3465 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+330.3465 	EXP 	arrow_key: autoDraw = True
+330.6962 	EXP 	arrow_key: autoDraw = False
+330.7132 	EXP 	stop_arrow: autoDraw = True
+330.8322 	DATA 	Keypress: 1
+330.8468 	EXP 	arrow_key: autoDraw = False
+330.8468 	EXP 	stop_arrow: autoDraw = False
+330.8468 	EXP 	fixation_cross: text = '+'
+330.8468 	EXP 	fixation_cross: autoDraw = True
+330.8817 	DATA 	Keypress: 5
+331.6476 	DATA 	Keypress: 5
+332.0801 	EXP 	New trial (rep=0, index=157): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 752), ('run_end_fixation', None)])
+332.1024 	EXP 	fixation_cross: autoDraw = False
+332.1024 	EXP 	fixation_cross: autoDraw = False
+332.1024 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+332.1024 	EXP 	stop_arrow: image = None
+332.1024 	EXP 	arrow_key: autoDraw = True
+332.4331 	DATA 	Keypress: 5
+332.7152 	DATA 	Keypress: 1
+332.7304 	EXP 	arrow_key: autoDraw = False
+332.7304 	EXP 	stop_arrow: autoDraw = False
+332.7304 	EXP 	fixation_cross: text = '+'
+332.7304 	EXP 	fixation_cross: autoDraw = True
+333.2155 	DATA 	Keypress: 5
+333.8480 	EXP 	New trial (rep=0, index=158): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 715), ('run_end_fixation', None)])
+333.8797 	EXP 	fixation_cross: autoDraw = False
+333.8797 	EXP 	fixation_cross: autoDraw = False
+333.8797 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+333.8797 	EXP 	stop_arrow: image = None
+333.8797 	EXP 	arrow_key: autoDraw = True
+333.9819 	DATA 	Keypress: 5
+334.3669 	DATA 	Keypress: 2
+334.3804 	EXP 	arrow_key: autoDraw = False
+334.3804 	EXP 	stop_arrow: autoDraw = False
+334.3804 	EXP 	fixation_cross: text = '+'
+334.3804 	EXP 	fixation_cross: autoDraw = True
+334.7665 	DATA 	Keypress: 5
+335.5491 	DATA 	Keypress: 5
+335.5981 	EXP 	New trial (rep=0, index=159): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 893), ('run_end_fixation', None)])
+335.6300 	EXP 	fixation_cross: autoDraw = False
+335.6300 	EXP 	fixation_cross: autoDraw = False
+335.6300 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+335.6300 	EXP 	stop_arrow: image = None
+335.6300 	EXP 	arrow_key: autoDraw = True
+336.1654 	DATA 	Keypress: 1
+336.1805 	EXP 	arrow_key: autoDraw = False
+336.1805 	EXP 	stop_arrow: autoDraw = False
+336.1805 	EXP 	fixation_cross: text = '+'
+336.1805 	EXP 	fixation_cross: autoDraw = True
+336.3160 	DATA 	Keypress: 5
+337.1003 	DATA 	Keypress: 5
+337.5150 	EXP 	New trial (rep=0, index=160): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 998), ('run_end_fixation', None)])
+337.5467 	EXP 	fixation_cross: autoDraw = False
+337.5467 	EXP 	fixation_cross: autoDraw = False
+337.5467 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+337.5467 	EXP 	stop_arrow: image = None
+337.5467 	EXP 	arrow_key: autoDraw = True
+337.8837 	DATA 	Keypress: 5
+338.1823 	DATA 	Keypress: 1
+338.1970 	EXP 	arrow_key: autoDraw = False
+338.1970 	EXP 	stop_arrow: autoDraw = False
+338.1970 	EXP 	fixation_cross: text = '+'
+338.1970 	EXP 	fixation_cross: autoDraw = True
+338.6480 	DATA 	Keypress: 5
+339.4324 	DATA 	Keypress: 5
+339.5481 	EXP 	New trial (rep=0, index=161): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 745), ('run_end_fixation', None)])
+339.5884 	EXP 	fixation_cross: autoDraw = False
+339.5884 	EXP 	fixation_cross: autoDraw = False
+339.5884 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+339.5884 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+339.5884 	EXP 	arrow_key: autoDraw = True
+339.8971 	EXP 	arrow_key: autoDraw = False
+339.9127 	EXP 	stop_arrow: autoDraw = True
+340.0325 	DATA 	Keypress: 1
+340.0475 	EXP 	arrow_key: autoDraw = False
+340.0475 	EXP 	stop_arrow: autoDraw = False
+340.0475 	EXP 	fixation_cross: text = '+'
+340.0475 	EXP 	fixation_cross: autoDraw = True
+340.2178 	DATA 	Keypress: 5
+340.9830 	DATA 	Keypress: 5
+341.3318 	EXP 	New trial (rep=0, index=162): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1453), ('run_end_fixation', None)])
+341.3639 	EXP 	fixation_cross: autoDraw = False
+341.3639 	EXP 	fixation_cross: autoDraw = False
+341.3639 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+341.3639 	EXP 	stop_arrow: image = None
+341.3639 	EXP 	arrow_key: autoDraw = True
+341.7662 	DATA 	Keypress: 5
+342.0506 	DATA 	Keypress: 2
+342.0645 	EXP 	arrow_key: autoDraw = False
+342.0645 	EXP 	stop_arrow: autoDraw = False
+342.0645 	EXP 	fixation_cross: text = '+'
+342.0645 	EXP 	fixation_cross: autoDraw = True
+342.5499 	DATA 	Keypress: 5
+343.3167 	DATA 	Keypress: 5
+343.8153 	EXP 	New trial (rep=0, index=163): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 847), ('run_end_fixation', None)])
+343.8396 	EXP 	fixation_cross: autoDraw = False
+343.8396 	EXP 	fixation_cross: autoDraw = False
+343.8396 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+343.8396 	EXP 	stop_arrow: image = None
+343.8396 	EXP 	arrow_key: autoDraw = True
+344.0998 	DATA 	Keypress: 5
+344.5163 	DATA 	Keypress: 1
+344.5313 	EXP 	arrow_key: autoDraw = False
+344.5313 	EXP 	stop_arrow: autoDraw = False
+344.5313 	EXP 	fixation_cross: text = '+'
+344.5313 	EXP 	fixation_cross: autoDraw = True
+344.8845 	DATA 	Keypress: 5
+345.6509 	DATA 	Keypress: 5
+345.6830 	EXP 	New trial (rep=0, index=164): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1248), ('run_end_fixation', None)])
+345.7142 	EXP 	fixation_cross: autoDraw = False
+345.7142 	EXP 	fixation_cross: autoDraw = False
+345.7142 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+345.7142 	EXP 	stop_arrow: image = None
+345.7142 	EXP 	arrow_key: autoDraw = True
+346.2343 	DATA 	Keypress: 2
+346.2476 	EXP 	arrow_key: autoDraw = False
+346.2476 	EXP 	stop_arrow: autoDraw = False
+346.2476 	EXP 	fixation_cross: text = '+'
+346.2476 	EXP 	fixation_cross: autoDraw = True
+346.4325 	DATA 	Keypress: 5
+347.2172 	DATA 	Keypress: 5
+347.9655 	EXP 	New trial (rep=0, index=165): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 829), ('run_end_fixation', None)])
+347.9873 	DATA 	Keypress: 5
+347.9969 	EXP 	fixation_cross: autoDraw = False
+347.9969 	EXP 	fixation_cross: autoDraw = False
+347.9969 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+347.9969 	EXP 	stop_arrow: image = None
+347.9969 	EXP 	arrow_key: autoDraw = True
+348.7000 	DATA 	Keypress: 2
+348.7144 	EXP 	arrow_key: autoDraw = False
+348.7144 	EXP 	stop_arrow: autoDraw = False
+348.7144 	EXP 	fixation_cross: text = '+'
+348.7144 	EXP 	fixation_cross: autoDraw = True
+348.7660 	DATA 	Keypress: 5
+349.5504 	DATA 	Keypress: 5
+349.8325 	EXP 	New trial (rep=0, index=166): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 1113), ('run_end_fixation', None)])
+349.8643 	EXP 	fixation_cross: autoDraw = False
+349.8643 	EXP 	fixation_cross: autoDraw = False
+349.8643 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+349.8643 	EXP 	stop_arrow: image = None
+349.8643 	EXP 	arrow_key: autoDraw = True
+350.3333 	DATA 	Keypress: 2
+350.3356 	DATA 	Keypress: 5
+350.3480 	EXP 	arrow_key: autoDraw = False
+350.3480 	EXP 	stop_arrow: autoDraw = False
+350.3480 	EXP 	fixation_cross: text = '+'
+350.3480 	EXP 	fixation_cross: autoDraw = True
+351.0993 	DATA 	Keypress: 5
+351.8840 	DATA 	Keypress: 5
+351.9825 	EXP 	New trial (rep=0, index=167): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 1154), ('run_end_fixation', None)])
+352.0142 	EXP 	fixation_cross: autoDraw = False
+352.0142 	EXP 	fixation_cross: autoDraw = False
+352.0142 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+352.0142 	EXP 	stop_arrow: image = None
+352.0142 	EXP 	arrow_key: autoDraw = True
+352.6666 	DATA 	Keypress: 5
+352.8341 	DATA 	Keypress: 1
+352.8482 	EXP 	arrow_key: autoDraw = False
+352.8482 	EXP 	stop_arrow: autoDraw = False
+352.8482 	EXP 	fixation_cross: text = '+'
+352.8482 	EXP 	fixation_cross: autoDraw = True
+353.4325 	DATA 	Keypress: 5
+354.1659 	EXP 	New trial (rep=0, index=168): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 928), ('run_end_fixation', None)])
+354.1972 	EXP 	fixation_cross: autoDraw = False
+354.1972 	EXP 	fixation_cross: autoDraw = False
+354.1972 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+354.1972 	EXP 	stop_arrow: image = None
+354.1972 	EXP 	arrow_key: autoDraw = True
+354.2184 	DATA 	Keypress: 5
+354.6326 	DATA 	Keypress: 2
+354.6485 	EXP 	arrow_key: autoDraw = False
+354.6485 	EXP 	stop_arrow: autoDraw = False
+354.6485 	EXP 	fixation_cross: text = '+'
+354.6485 	EXP 	fixation_cross: autoDraw = True
+355.0013 	DATA 	Keypress: 5
+355.7663 	DATA 	Keypress: 5
+356.1329 	EXP 	New trial (rep=0, index=169): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 988), ('run_end_fixation', None)])
+356.1639 	EXP 	fixation_cross: autoDraw = False
+356.1639 	EXP 	fixation_cross: autoDraw = False
+356.1639 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+356.1639 	EXP 	stop_arrow: image = None
+356.1639 	EXP 	arrow_key: autoDraw = True
+356.5505 	DATA 	Keypress: 5
+356.7016 	DATA 	Keypress: 2
+356.7151 	EXP 	arrow_key: autoDraw = False
+356.7151 	EXP 	stop_arrow: autoDraw = False
+356.7151 	EXP 	fixation_cross: text = '+'
+356.7151 	EXP 	fixation_cross: autoDraw = True
+357.3343 	DATA 	Keypress: 5
+358.1005 	DATA 	Keypress: 5
+358.1495 	EXP 	New trial (rep=0, index=170): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 813), ('run_end_fixation', None)])
+358.1750 	EXP 	fixation_cross: autoDraw = False
+358.1750 	EXP 	fixation_cross: autoDraw = False
+358.1750 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+358.1750 	EXP 	stop_arrow: image = None
+358.1750 	EXP 	arrow_key: autoDraw = True
+358.7004 	DATA 	Keypress: 1
+358.7146 	EXP 	arrow_key: autoDraw = False
+358.7146 	EXP 	stop_arrow: autoDraw = False
+358.7146 	EXP 	fixation_cross: text = '+'
+358.7146 	EXP 	fixation_cross: autoDraw = True
+358.8841 	DATA 	Keypress: 5
+359.6685 	DATA 	Keypress: 5
+359.9829 	EXP 	New trial (rep=0, index=171): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 783), ('run_end_fixation', None)])
+360.0149 	EXP 	fixation_cross: autoDraw = False
+360.0149 	EXP 	fixation_cross: autoDraw = False
+360.0149 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+360.0149 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+360.0149 	EXP 	arrow_key: autoDraw = True
+360.2651 	EXP 	arrow_key: autoDraw = False
+360.2809 	EXP 	stop_arrow: autoDraw = True
+360.3508 	DATA 	Keypress: 2
+360.3649 	EXP 	arrow_key: autoDraw = False
+360.3649 	EXP 	stop_arrow: autoDraw = False
+360.3649 	EXP 	fixation_cross: text = '+'
+360.3649 	EXP 	fixation_cross: autoDraw = True
+360.4340 	DATA 	Keypress: 5
+361.2159 	DATA 	Keypress: 5
+361.7996 	EXP 	New trial (rep=0, index=172): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 931), ('run_end_fixation', None)])
+361.8314 	EXP 	fixation_cross: autoDraw = False
+361.8314 	EXP 	fixation_cross: autoDraw = False
+361.8314 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+361.8314 	EXP 	stop_arrow: image = None
+361.8314 	EXP 	arrow_key: autoDraw = True
+362.0017 	DATA 	Keypress: 5
+362.4342 	DATA 	Keypress: 2
+362.4484 	EXP 	arrow_key: autoDraw = False
+362.4484 	EXP 	stop_arrow: autoDraw = False
+362.4484 	EXP 	fixation_cross: text = '+'
+362.4484 	EXP 	fixation_cross: autoDraw = True
+362.7673 	DATA 	Keypress: 5
+363.5509 	DATA 	Keypress: 5
+363.7664 	EXP 	New trial (rep=0, index=173): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 946), ('run_end_fixation', None)])
+363.7909 	EXP 	fixation_cross: autoDraw = False
+363.7909 	EXP 	fixation_cross: autoDraw = False
+363.7909 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+363.7909 	EXP 	stop_arrow: image = None
+363.7909 	EXP 	arrow_key: autoDraw = True
+364.3354 	DATA 	Keypress: 2
+364.3377 	DATA 	Keypress: 5
+364.3485 	EXP 	arrow_key: autoDraw = False
+364.3485 	EXP 	stop_arrow: autoDraw = False
+364.3485 	EXP 	fixation_cross: text = '+'
+364.3485 	EXP 	fixation_cross: autoDraw = True
+365.1008 	DATA 	Keypress: 5
+365.7327 	EXP 	New trial (rep=0, index=174): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 800), ('run_end_fixation', None)])
+365.7577 	EXP 	fixation_cross: autoDraw = False
+365.7577 	EXP 	fixation_cross: autoDraw = False
+365.7577 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+365.7577 	EXP 	stop_arrow: image = None
+365.7577 	EXP 	arrow_key: autoDraw = True
+365.8837 	DATA 	Keypress: 5
+366.1688 	DATA 	Keypress: 2
+366.1820 	EXP 	arrow_key: autoDraw = False
+366.1820 	EXP 	stop_arrow: autoDraw = False
+366.1820 	EXP 	fixation_cross: text = '+'
+366.1820 	EXP 	fixation_cross: autoDraw = True
+366.6679 	DATA 	Keypress: 5
+367.4350 	DATA 	Keypress: 5
+367.5499 	EXP 	New trial (rep=0, index=175): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 962), ('run_end_fixation', None)])
+367.5742 	EXP 	fixation_cross: autoDraw = False
+367.5742 	EXP 	fixation_cross: autoDraw = False
+367.5742 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+367.5742 	EXP 	stop_arrow: image = None
+367.5742 	EXP 	arrow_key: autoDraw = True
+368.1187 	DATA 	Keypress: 1
+368.1327 	EXP 	arrow_key: autoDraw = False
+368.1327 	EXP 	stop_arrow: autoDraw = False
+368.1327 	EXP 	fixation_cross: text = '+'
+368.1327 	EXP 	fixation_cross: autoDraw = True
+368.2178 	DATA 	Keypress: 5
+369.0027 	DATA 	Keypress: 5
+369.5337 	EXP 	New trial (rep=0, index=176): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 740), ('run_end_fixation', None)])
+369.5579 	EXP 	fixation_cross: autoDraw = False
+369.5579 	EXP 	fixation_cross: autoDraw = False
+369.5579 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+369.5579 	EXP 	stop_arrow: image = None
+369.5579 	EXP 	arrow_key: autoDraw = True
+369.7689 	DATA 	Keypress: 5
+370.0513 	DATA 	Keypress: 2
+370.0659 	EXP 	arrow_key: autoDraw = False
+370.0659 	EXP 	stop_arrow: autoDraw = False
+370.0659 	EXP 	fixation_cross: text = '+'
+370.0659 	EXP 	fixation_cross: autoDraw = True
+370.5500 	DATA 	Keypress: 5
+371.3004 	EXP 	New trial (rep=0, index=177): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', None), ('corrAns', '1'), ('jitter', 758), ('run_end_fixation', None)])
+371.3247 	EXP 	fixation_cross: autoDraw = False
+371.3247 	EXP 	fixation_cross: autoDraw = False
+371.3247 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+371.3247 	EXP 	stop_arrow: image = None
+371.3247 	EXP 	arrow_key: autoDraw = True
+371.3271 	DATA 	Keypress: 5
+371.8526 	DATA 	Keypress: 1
+371.8658 	EXP 	arrow_key: autoDraw = False
+371.8658 	EXP 	stop_arrow: autoDraw = False
+371.8658 	EXP 	fixation_cross: text = '+'
+371.8658 	EXP 	fixation_cross: autoDraw = True
+372.1190 	DATA 	Keypress: 5
+372.8837 	DATA 	Keypress: 5
+373.0825 	EXP 	New trial (rep=0, index=178): OrderedDict([('trial_type', 'stop'), ('arrow_1', 'sst_images/Left_Arrow.bmp'), ('arrow_2', 'sst_images/Stop_Arrow.bmp'), ('corrAns', 'none'), ('jitter', 798), ('run_end_fixation', None)])
+373.1251 	EXP 	fixation_cross: autoDraw = False
+373.1251 	EXP 	fixation_cross: autoDraw = False
+373.1251 	EXP 	arrow_key: image = 'sst_images/Left_Arrow.bmp'
+373.1251 	EXP 	stop_arrow: image = 'sst_images/Stop_Arrow.bmp'
+373.1251 	EXP 	arrow_key: autoDraw = True
+373.3328 	EXP 	arrow_key: autoDraw = False
+373.3484 	EXP 	stop_arrow: autoDraw = True
+373.6658 	EXP 	stop_arrow: autoDraw = False
+373.6658 	EXP 	arrow_key: autoDraw = False
+373.6658 	EXP 	stop_arrow: autoDraw = False
+373.6658 	EXP 	fixation_cross: text = '+'
+373.6658 	EXP 	fixation_cross: autoDraw = True
+373.6690 	DATA 	Keypress: 5
+374.4524 	DATA 	Keypress: 5
+374.9508 	EXP 	New trial (rep=0, index=179): OrderedDict([('trial_type', 'go'), ('arrow_1', 'sst_images/Right_Arrow.bmp'), ('arrow_2', None), ('corrAns', '2'), ('jitter', 737), ('run_end_fixation', 2661.0)])
+374.9745 	EXP 	fixation_cross: autoDraw = False
+374.9745 	EXP 	fixation_cross: autoDraw = False
+374.9745 	EXP 	arrow_key: image = 'sst_images/Right_Arrow.bmp'
+374.9745 	EXP 	stop_arrow: image = None
+374.9745 	EXP 	arrow_key: autoDraw = True
+375.2180 	DATA 	Keypress: 5
+375.5011 	DATA 	Keypress: 2
+375.5165 	EXP 	arrow_key: autoDraw = False
+375.5165 	EXP 	stop_arrow: autoDraw = False
+375.5165 	EXP 	fixation_cross: text = '+'
+375.5165 	EXP 	fixation_cross: autoDraw = True
+376.0010 	DATA 	Keypress: 5
+376.7329 	EXP 	fixation_cross: autoDraw = False
+376.7329 	EXP 	fixation_cross: autoDraw = False
+376.7329 	EXP 	final_fixation_cross: autoDraw = True
+376.7860 	DATA 	Keypress: 5
+377.5510 	DATA 	Keypress: 5
+378.3358 	DATA 	Keypress: 5
+379.1197 	DATA 	Keypress: 5
+390.7021 	DATA 	Keypress: 5
+391.4873 	DATA 	Keypress: 5
+392.2529 	DATA 	Keypress: 5
+393.0355 	DATA 	Keypress: 5
+395.6043 	DATA 	Keypress: escape
+395.9051 	EXP 	window1: mouseVisible = True
