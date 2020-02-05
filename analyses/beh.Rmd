@@ -1,0 +1,197 @@
+---
+title: "ULG fMRI-task behavioral data"
+output:
+  html_document: 
+    toc: true
+    toc_depth: 3
+    html_preview: false
+  html_notebook: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+rm(list=ls(all=TRUE))  #clear previous
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(ggpubr)
+library(lme4)  
+library(data.table)
+library(lmerTest)
+library(effects)
+library(pander)
+library(psych)
+library(Hmisc)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(ggpubr)
+library(ggrepel)
+
+is_outlier <- function(x) {
+  return(x < quantile(x, 0.25) - 1.5 * IQR(x) | x > quantile(x, 0.75) + 1.5 * IQR(x))
+}
+```
+
+
+# MID
+```{r}
+MID_long <- read.csv("MID/data/MID_merged_bdat.csv")
+MID_long$probeResp.corr <- as.integer(MID_long$probeResp.corr)
+MID_long$run <- as.factor(MID_long$run)
+
+# replace NA with 0s
+MID_long$probeResp.corr[is.na(MID_long$probeResp.corr)] <- 0
+MID_long$probeResp.rt[is.na(MID_long$probeResp.rt)] <- 0
+
+MID_wide <- MID_long %>% 
+  filter(Condition != "") %>%
+  group_by(participant, Condition, run) %>%
+  summarise(meanacc = mean(probeResp.corr), meanrt =1000* mean(probeResp.rt, na.rm=TRUE), frameRate = mean(frameRate))
+
+# recategorize conditions
+MID_wide <- MID_wide %>% mutate(cond = case_when(
+        Condition == "LgPun" | Condition == "SmallPun" ~ "Loss",
+        Condition == "LgReward" | Condition == "SmallReward" ~ "Reward", 
+        Condition == "Triangle" ~ "Neutral")) 
+
+MID_wide <- MID_wide %>% mutate(frameRate = case_when(
+        frameRate < 40 ~  24,
+        frameRate > 50 ~ 60))
+
+MID_wide$frameRate <- as.factor(MID_wide$frameRate)
+
+ggdensity(MID_long, x = "frameRate")
+
+ggboxplot(MID_wide, "cond", "meanacc", fill = "run", ylab = "Hit Rate", facet.by = "frameRate", short.panel.labs = FALSE) + 
+  geom_text(aes(label=ifelse((meanacc < quantile(meanacc, 0.25) - 1.5 * IQR(meanacc) | meanacc > quantile(meanacc, 0.75) + 1.5 * IQR(meanacc)),paste(participant),"")), hjust=1.1, check_overlap = TRUE, size=3, position = position_dodge(1))
+
+# meanrt is for correct trials only
+ggboxplot(MID_wide, "cond", "meanrt", fill = "run", ylab = "Reaction Time (ms)", facet.by = "frameRate", short.panel.labs = FALSE) + 
+  geom_text(aes(label=ifelse((meanrt < quantile(meanrt, 0.25) - 1.5 * IQR(meanrt) | meanrt > quantile(meanrt, 0.75) + 1.5 * IQR(meanrt)),paste(participant),"")), hjust=1.1, check_overlap = TRUE, size=3, position = position_dodge(1))
+```
+
+# SST
+
+```{r}
+SST_long <- read.csv("SST/data/SST_merged_bdat.csv")
+SST_long$frameRate <- as.character(SST_long$frameRate)
+SST_long$run <- as.factor(SST_long$run)
+
+# manually change 038's framerate
+SST_long$frameRate[SST_long$participant == 38 & SST_long$run == 1] <- 24
+
+SST_long <- SST_long %>% mutate(frameRate = case_when(
+        frameRate < 26 ~  24,
+        frameRate > 58 ~ 60))
+
+SST_long$frameRate <- as.factor(SST_long$frameRate)
+
+# calculate corr go RT
+SST_corr_go_rt <- SST_long %>%
+  filter(trial_type == "go" & key_response.corr == 1) %>%
+  group_by(participant, run) %>%
+  summarise(go_correct_rt = 1000*mean(key_response.rt)) %>% ungroup()
+
+# calc stop err RT
+SST_stop_err_rt <- SST_long %>%
+  filter(trial_type == "stop" & key_response.corr == 0) %>%
+  group_by(participant, run) %>%
+  summarise(stop_error_rt = 1000*mean(key_response.rt)) %>% ungroup() 
+
+SST_wide <- SST_long %>% 
+  filter(trial_type != "") %>%
+  group_by(participant, trial_type, run, frameRate) %>%
+  summarise(meanacc = mean(key_response.corr, na.rm = TRUE), meanrt = 1000* mean(key_response.rt, na.rm=TRUE), ssd = 1000*mean(ss_delay), stopError = sum(trial_type == "stop" & key_response.corr == 0), stopTotal = sum(trial_type == "stop"), GoCorr = sum(trial_type == "go" & key_response.corr == 1), GoTotal = sum(trial_type == "go")) %>% ungroup() 
+            
+
+SST_wide <- merge(SST_wide, SST_corr_go_rt, by = c('participant', 'run'))
+
+SST_wide <- merge(SST_wide, SST_stop_err_rt, by = c('participant', 'run'))
+
+
+
+SST_wide <- SST_wide %>% mutate(stopError_prop = stopError/stopTotal,
+                    goCorr_prop = GoCorr/GoTotal)
+
+SST_rt <- SST_wide %>% ungroup() %>% select(participant, run, frameRate, go_correct_rt, stop_error_rt, ssd) %>% gather(condition, value, go_correct_rt:ssd)
+
+SST_prop <- merge(SST_wide %>% ungroup() %>% subset(trial_type == "go") %>% select(participant, run, frameRate, goCorr_prop), SST_wide %>% ungroup() %>% subset(trial_type == "stop") %>% select(participant, run, frameRate, stopError_prop), by = c("participant", "run", "frameRate"))
+
+SST_prop <- gather(SST_prop, condition, value, goCorr_prop:stopError_prop)
+
+
+
+
+
+
+
+
+
+
+SST_prop %>%
+  group_by(condition, run) %>%
+  mutate(outlier = ifelse(is_outlier(value), participant, as.numeric(NA))) %>%
+  ggboxplot(., "condition", "value", fill = "run", ylab = "Proportion of Responses", xlab = "", facet.by = "frameRate", short.panel.labs = FALSE) + 
+    geom_text(aes(label = outlier), na.rm = TRUE, hjust=1.1, check_overlap = TRUE, size=3, position = position_dodge(1)) +
+   scale_x_discrete(labels = c('Go Correct','Stop Error', 'SSD')) 
+
+SST_rt %>%
+  group_by(condition, run) %>%
+  mutate(outlier = ifelse(is_outlier(value), participant, as.numeric(NA))) %>% 
+  ggboxplot(., "condition", "value", fill = "run", ylab = "Reaction Time (ms)", xlab = "", facet.by = "frameRate", short.panel.labs = FALSE) + 
+    scale_x_discrete(labels = c('Go Correct','Stop Error', 'SSD')) + 
+    geom_text(aes(label = outlier), na.rm = TRUE, hjust=1.1, check_overlap = TRUE, size=3, position = position_dodge(1))
+
+
+```
+
+# calculate SSRT
+- mean corr_go_rt minus mean SSD?
+
+```{r eval = FALSE}
+
+SST_long_go_correct <- SST_long %>%
+  filter(trial_type == 'go' & key_response.corr == 1) %>%
+  group_by(participant, run) %>%
+  mutate(rank = rank(key_response.rt), n = n())
+
+
+SST_long_go_correct %>%
+  filter(trial_type == 'go' & key_response.corr == 1) %>%
+  select(participant, run, key_response.rt, rank, n) %>%
+  arrange(rank) %>%
+  group_by(participant, run) %>%
+
+  filter(row_number()==1)
+
+%>% slice(c(1,n()))
+
+key_response.rt where rank = n/2
+```
+
+# CoV
+```{r}
+
+SST_long %>%
+  filter(trial_type != "") %>%
+  group_by(participant, run, trial_type, frameRate) %>%
+  summarise(sd_rt = sd(key_response.rt, na.rm=TRUE), mean_rt = mean(key_response.rt, na.rm=TRUE)) %>%
+  mutate(CoV = sd_rt/mean_rt) %>%
+  filter(sd_rt > 0.001) %>% 
+  mutate(outlier = ifelse(is_outlier(CoV), participant, as.numeric(NA))) %>% 
+  ggboxplot(., "trial_type", "CoV", fill = "run", ylab = "Coefficient of variation (all trials)", facet.by = "frameRate", xlab = "Trial Type", add = "dotplot", short.panel.labs = FALSE) + 
+    geom_text(aes(label = outlier), na.rm = TRUE, hjust=1.1, check_overlap = TRUE, size=3, position = position_dodge(1))
+
+SST_long %>%
+  filter(trial_type == 'go' & key_response.corr == 1) %>%
+  group_by(participant, run, frameRate) %>%
+  summarise(sd_rt = sd(key_response.rt), mean_rt = mean(key_response.rt)) %>%
+  mutate(CoV = sd_rt/mean_rt) %>%
+   filter(sd_rt > 0.001) %>% 
+  mutate(outlier = ifelse(is_outlier(CoV), participant, as.numeric(NA))) %>% 
+  ggboxplot(., "run", "CoV", fill = "run", ylab = "Coefficient of variation (Correct Go Trials)", xlab = "Run", facet.by = "frameRate", add = "dotplot", short.panel.labs = FALSE) + 
+    geom_text(aes(label = outlier), na.rm = TRUE, hjust=1.1, check_overlap = TRUE, size=3, position = position_dodge(1))
+```
+
